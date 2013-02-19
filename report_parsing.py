@@ -13,6 +13,7 @@
 
 import urllib2
 import time
+from getLocation import getLocation
 
 SITE_URL = 'http://www.lbp.police.uk'
 
@@ -84,7 +85,11 @@ class Incident(object):
 		self.populate_data()
 		if self.full_location != ', ' and self.full_location != None:
 			self.viable = True
-			#attempt to get coords here, set viable to false if coords fail?
+			try:
+				getLocation(self.full_location)
+			except Exception as e:
+				print e.message
+				self.viable = False
 	def download_html(self):
 		try:
 			self.raw_html = url_request(self.url)
