@@ -14,12 +14,14 @@
 import urllib2
 import time
 
+SITE_URL = 'http://www.lbp.police.uk'
+
 MONTHS = ['january','february','march','april','may','june','july','august',\
 			'september','october','november','december']
 
 
 fillable_archive_url = lambda month, year:\
-		 "http://www.lbp.police.uk/information/latest_news/news_archives/%s/%s_%s.aspx" %(year,month,year)
+		 SITE_URL + "/information/latest_news/news_archives/%s/%s_%s.aspx" %(year,month,year)
 
 DEFAULT_HEADERS = {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)',\
                    'Accept-Language': 'en-us',\
@@ -44,12 +46,30 @@ def get_archive_page(month,year):
 	url = fillable_archive_url(month,str(year))
 	if year == 2012:
 		url = url.replace('_','%20') # fucking dumb fucking replacement of underscores with spaces for 2012 only. wtf lothian police???
+	if year == 2013:
+		if month == 'january':
+			url = url.replace('_2013','')
+		if month == 'february':
+			url = url.replace('_2013','-1') #???????? fuck whoever made this
 	return url_request(url)
+
+def get_incident_urls(raw_html):
+	start_title_tag = '<table summary="box">'
+	end_title_tag = "</table>"
+	if start_title_tag not in raw_html:
+		return None
+	raw_html = raw_html[raw_html.find(start_title_tag)+len(start_title_tag):]
+	raw_html = raw_html[:raw_html.find(end_title_tag)]
+	link_starts = raw_html.split('''<a " href="''')
+	link_starts = link_starts[1:] #first is gibberish
+	links = [SITE_URL + link[:link.find('"')] for link in link_starts]
+	return links
 
 
 class Incident(object):
 	def __init__(self,url):
 		self.url = url
+		self.error404 = False
 		self.viable = False
 		self.raw_html = None
 		self.report = None
@@ -66,7 +86,12 @@ class Incident(object):
 			self.viable = True
 			#attempt to get coords here, set viable to false if coords fail?
 	def download_html(self):
-		self.raw_html = url_request(self.url)
+		try:
+			self.raw_html = url_request(self.url)
+		except HTTPError as e:
+			self.error404 = True
+			self.errortext = e.message
+
 	def populate_data(self):
 		self.report = get_report(self.raw_html)
 		self.plaintext_location = get_report_location(self.report)
@@ -82,6 +107,8 @@ class Incident(object):
 
 
 road_names = ['avenue','street','road','estate','lane']
+road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'East', 'Way', 'SQ', 'Steps', 'Craigour', 'park', 'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Leith', 'Court', 'Terrace', 'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', 'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', 'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', 'Station', 'House', 'Kirkliston', 'West', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', 'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'South', 'La', 'North', 'Avenue', 'Port', 'Green', 'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', 'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
+#^ taken from Egidijus' data (from council)
 incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?']
 
 get_street_locations = lambda split_report: filter(lambda (x,y): y.lower() in road_names and y.istitle(),enumerate(split_report))
