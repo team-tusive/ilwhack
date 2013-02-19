@@ -22,6 +22,3 @@ def getLocation(location):
    #we know that results contains exactly one entry (since status != OK if we don't get any results)
    #extract and return the given location to our caller.
    return data['results'][0]['geometry']['location']
-
-print getLocation("Eiffel tower")
-
