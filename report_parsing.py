@@ -102,14 +102,15 @@ class Incident(object):
 			self.crimetype, self.general_location = self.title.split(', ')
 			self.full_location = ', '.join([self.street_location,self.general_location])
 		except ValueError: #title not of format "crimetype, location"
-			if DEFAULT_LOCATION:
+			if DEFAULT_LOCATION and self.street_location:
 				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
-
+		except TypeError:
+			self.full_locations = None
 
 road_names = ['avenue','street','road','estate','lane']
-road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'East', 'Way', 'SQ', 'Steps', 'Craigour', 'park', 'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Leith', 'Court', 'Terrace', 'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', 'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', 'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', 'Station', 'House', 'Kirkliston', 'West', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', 'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'South', 'La', 'North', 'Avenue', 'Port', 'Green', 'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', 'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
+road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Steps', 'Craigour', 'park', 'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Leith', 'Court', 'Terrace', 'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', 'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', 'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', 'Station', 'House', 'Kirkliston', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', 'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'South', 'La', 'North', 'Avenue', 'Port', 'Green', 'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', 'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
 #^ taken from Egidijus' data (from council)
-incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?']
+incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?','recovered']
 
 get_street_locations = lambda split_report: filter(lambda (x,y): y.lower() in road_names and y.istitle(),enumerate(split_report))
 
@@ -159,6 +160,8 @@ def get_timedate(raw_html):
 	raw_html = raw_html[raw_html.find(start_report_tag)+len(start_report_tag):]
 	raw_html = raw_html[:raw_html.find(end_report_tag)]
 	#http://docs.python.org/2/library/time.html#time.strptime
+	if not raw_html:
+		return None
 	timedate = time.strptime(raw_html, "%d %B %Y %H:%M") #day (00-31), month (full), year (full), hour(00-23), : minute
 	return timedate #returns a struct_time http://docs.python.org/2/library/time.html#time.struct_time
 
