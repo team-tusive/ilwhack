@@ -118,7 +118,6 @@ class Incident(object):
 		self.title = get_title(self.raw_html)
 		try:
 			self.crimetype, self.general_location = self.title.split(', ')
-			self.title = self.crimetype + self.general_location
 			self.full_location = ', '.join([self.street_location,self.general_location])
 		except ValueError: #title not of format "crimetype, location"
 			if DEFAULT_LOCATION:
@@ -184,6 +183,6 @@ def get_title(raw_html):
 	end_title_tag = end_tag(start_title_tag)
 	if start_title_tag not in raw_html:
 		return None
-	raw_html = raw_html[raw_html.find(start_title_tag)+len(start_title_tag)]
+	raw_html = raw_html[raw_html.find(start_title_tag)+len(start_title_tag):]
 	raw_html = raw_html[:raw_html.find(end_title_tag)]
-	return raw_html
+	return raw_html.replace('\n','').replace('\r','').replace('\t','')
