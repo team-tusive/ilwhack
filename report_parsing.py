@@ -13,6 +13,7 @@ DEFAULT_HEADERS = {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)
                    'Keep-Alive': '300',\
                    'Connection': 'keep-alive',\
                    'Cache-Control': 'max-age=0'}
+DEFAULT_LOCATION = 'Edinburgh'
 
 s1 = '''Lothian and Borders Police are appealing for witnesses following a report of indecent exposure in Edinburgh.
 
@@ -84,7 +85,7 @@ Anyone with any information should contact Lothian and Borders Police on 0131 31
 
 def url_request(url):
     txdata = None
-    txheaders = _default_headers
+    txheaders = DEFAULT_HEADERS
     request = urllib2.Request(url, txdata, txheaders)
     data = urllib2.urlopen(request).read()
     return data
@@ -92,25 +93,44 @@ def url_request(url):
 class Incident(object):
 	def __init__(self,url):
 		self.url = url
+		self.viable = False
 		self.raw_html = None
 		self.report = None
 		self.datetime = None
 		self.crimetype = None
-		self.plaintext_location = None
+		self.street_location = None
+		self.general_location = None
+		self.title = None
+		self.full_location = None
 		self.coords = (None,None)
+		self.download_html()
+		self.populate_data()
+		if self.full_location != ', ' and self.full_location != None:
+			self.viable = True
+			#attempt to get coords here, set viable to false if coords fail?
 	def download_html(self):
 		self.raw_html = url_request(self.url)
 	def populate_data(self):
 		self.report = get_report(self.raw_html)
 		self.plaintext_location = get_report_location(self.report)
-		self.
+		self.street_location = self.plaintext_location
+		self.datetime = get_timedate(self.raw_html)
+		self.title = get_title(self.raw_html)
+		try:
+			self.crimetype, self.general_location = self.title.split(', ')
+			self.title = self.crimetype + self.general_location
+			self.full_location = ', '.join([self.street_location,self.general_location])
+		except ValueError: #title not of format "crimetype, location"
+			if DEFAULT_LOCATION:
+				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
+
 
 road_names = ['avenue','street','road','estate','lane']
-incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?','']
+incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?']
 
 get_street_locations = lambda split_report: filter(lambda (x,y): y.lower() in road_names and y.istitle(),enumerate(split_report))
 
-explode_report = lambda report: filter(lambda x: len(x)>0, x.report.replace('\n',' ').split(' '))
+explode_report = lambda report: filter(lambda x: len(x)>0, report.replace('\n',' ').split(' '))
 
 end_tag = lambda start_tag: start_tag[0] + '/' + start_tag[1:]
 
@@ -141,7 +161,7 @@ def get_report_location(report):
 			break
 	start_location_index = street_incidence_index
 	while True: 
-		prevword = report_words[street_incidence_index - 1]
+		prevword = report_words[start_location_index - 1]
 		if prevword.istitle() or prevword.isdigit():
 			start_location_index-=1
 		else:
@@ -150,10 +170,20 @@ def get_report_location(report):
 
 def get_timedate(raw_html):
 	start_report_tag = '"Template_NewsDate1_lblDate" style="float:right">'
+	if start_report_tag not in raw_html:
+		return None
 	end_report_tag = "</span>"
-	raw_html = raw_html[raw_html.find(start_report_tag)+len(start_report_tag)]
+	raw_html = raw_html[raw_html.find(start_report_tag)+len(start_report_tag):]
 	raw_html = raw_html[:raw_html.find(end_report_tag)]
 	#http://docs.python.org/2/library/time.html#time.strptime
 	timedate = time.strptime(raw_html, "%d %B %Y %H:%M") #day (00-31), month (full), year (full), hour(00-23), : minute
 	return timedate #returns a struct_time http://docs.python.org/2/library/time.html#time.struct_time
 
+def get_title(raw_html):
+	start_title_tag = "<title>"
+	end_title_tag = end_tag(start_title_tag)
+	if start_title_tag not in raw_html:
+		return None
+	raw_html = raw_html[raw_html.find(start_title_tag)+len(start_title_tag)]
+	raw_html = raw_html[:raw_html.find(end_title_tag)]
+	return raw_html
