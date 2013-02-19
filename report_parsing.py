@@ -114,11 +114,12 @@ class Incident(object):
 			self.full_locations = None
 	def tostring(self):
 		d = dict()
-		d[full_location] = self.full_location
-		d[coords] = str(self.coords)
-		d[title] = self.title
-		d[crimetype] = self.crimetype
-		d[datetime] = time.mktime(self.datetime)
+		d['full_location'] = self.full_location
+		d['coords'] = str(self.coords)
+		d['title'] = self.title
+		d['crimetype'] = self.crimetype
+		d['datetime'] = time.mktime(self.datetime)
+		d['url'] = self.url
 		return str(d).replace("u'","'")
 
 road_names = ['avenue','street','road','estate','lane']
