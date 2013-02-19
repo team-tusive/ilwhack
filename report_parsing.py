@@ -13,7 +13,7 @@
 
 import urllib2
 import time
-from getLocation import getLocation
+import getLocation
 
 SITE_URL = 'http://www.lbp.police.uk'
 
@@ -86,7 +86,9 @@ class Incident(object):
 		if self.full_location != ', ' and self.full_location != None:
 			self.viable = True
 			try:
-				getLocation(self.full_location)
+				print "\t\tLocation: " + self.full_location
+				print "\t\tGetLocation: " + str(getLocation.getLocation(self.full_location))
+				self.coords = getLocation.getLocation(self.full_location)
 			except Exception as e:
 				print e.message
 				self.viable = False
@@ -96,7 +98,6 @@ class Incident(object):
 		except HTTPError as e:
 			self.error404 = True
 			self.errortext = e.message
-
 	def populate_data(self):
 		self.report = get_report(self.raw_html)
 		self.plaintext_location = get_report_location(self.report)
@@ -111,9 +112,17 @@ class Incident(object):
 				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
 		except TypeError:
 			self.full_locations = None
+	def tostring(self):
+		d = dict()
+		d[full_location] = self.full_location
+		d[coords] = str(self.coords)
+		d[title] = self.title
+		d[crimetype] = self.crimetype
+		d[datetime] = time.mktime(self.datetime)
+		return str(d).replace("u'","'")
 
 road_names = ['avenue','street','road','estate','lane']
-road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Steps', 'Craigour', 'park', 'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Leith', 'Court', 'Terrace', 'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', 'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', 'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', 'Station', 'House', 'Kirkliston', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', 'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'South', 'La', 'North', 'Avenue', 'Port', 'Green', 'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', 'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
+road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Steps', 'Craigour', 'park', 'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Leith', 'Court', 'Terrace', 'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', 'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', 'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', 'Station', 'House', 'Kirkliston', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', 'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'La', 'Avenue', 'Port', 'Green', 'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', 'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
 #^ taken from Egidijus' data (from council)
 incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?','recovered']
 
