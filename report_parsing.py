@@ -14,6 +14,11 @@
 import urllib2
 import time
 import getLocation
+import traceback
+import sys
+
+global debug_incident
+debug_incident = None
 
 SITE_URL = 'http://www.lbp.police.uk'
 
@@ -45,8 +50,15 @@ def get_archive_page(month,year):
 	if not month in MONTHS:
 		raise ValueError("Illegal month: " + month)
 	url = fillable_archive_url(month,str(year))
-	if year == 2012:
+	if year == 2012 and MONTHS.index(month) < MONTHS.index('june'): #fuck you
 		url = url.replace('_','%20') # fucking dumb fucking replacement of underscores with spaces for 2012 only. wtf lothian police???
+	if year == 2012: #not even worth trying:
+		if month == 'august':
+			url = 'http://www.lbp.police.uk/information/latest_news/news_archives/2012/aug_2012.aspx'
+		elif month == 'september':
+			url = 'http://www.lbp.police.uk/information/latest_news/news_archives/2012/sept_2012.aspx'
+		elif month == 'december':
+			url = 'http://www.lbp.police.uk/information/latest%20news/news%20archives/2012/december%202012.aspx'
 	if year == 2013:
 		if month == 'january':
 			url = url.replace('_2013','')
@@ -86,16 +98,20 @@ class Incident(object):
 		if self.full_location != ', ' and self.full_location != None:
 			self.viable = True
 			try:
-				print "\t\tLocation: " + self.full_location
-				print "\t\tGetLocation: " + str(getLocation.getLocation(self.full_location))
-				self.coords = getLocation.getLocation(self.full_location)
+				print "\t\tLocation: " + str(self.full_location)
+				print "\t\tGetLocation: " + str(getLocation.getLocation(str(self.full_location)))
+				self.coords = getLocation.getLocation(str(self.full_location))
 			except Exception as e:
 				print e.message
+				if "concatenate" in e.message:
+					global debug_incident
+					debug_incident = self
+					traceback.print_exc(file=sys.stdout)
 				self.viable = False
 	def download_html(self):
 		try:
 			self.raw_html = url_request(self.url)
-		except HTTPError as e:
+		except urllib2.HTTPError as e:
 			self.error404 = True
 			self.errortext = e.message
 	def populate_data(self):
@@ -106,24 +122,38 @@ class Incident(object):
 		self.title = get_title(self.raw_html)
 		try:
 			self.crimetype, self.general_location = self.title.split(', ')
-			self.full_location = ', '.join([self.street_location,self.general_location])
+			if not self.general_location.istitle():
+				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
+			else:
+				self.full_location = ', '.join([self.street_location,self.general_location])
 		except ValueError: #title not of format "crimetype, location"
 			if DEFAULT_LOCATION and self.street_location:
 				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
 		except TypeError:
 			self.full_locations = None
 	def tostring(self):
-		d = dict()
-		d['full_location'] = self.full_location
-		d['coords'] = str(self.coords)
-		d['title'] = self.title
-		d['crimetype'] = self.crimetype
-		d['datetime'] = time.mktime(self.datetime)
-		d['url'] = self.url
-		return str(d).replace("u'","'")
+		try: 
+			d = dict()
+			d['full_location'] = self.full_location
+			d['coords'] = str(self.coords)
+			d['title'] = self.title
+			d['crimetype'] = self.crimetype
+			d['datetime'] = time.mktime(self.datetime)
+			d['url'] = self.url
+			return str(d).replace("u'","'")
+		except: #some occasional errors with time.mktime: 
+			return ""
 
 road_names = ['avenue','street','road','estate','lane']
-road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Steps', 'Craigour', 'park', 'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Leith', 'Court', 'Terrace', 'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', 'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', 'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', 'Station', 'House', 'Kirkliston', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', 'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'La', 'Avenue', 'Port', 'Green', 'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', 'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
+road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Steps', 'Craigour', 'park', \
+    'Ratho', 'Crammond', 'grove', 'Cross', 'terrace', 'Crescent', 'Wharf', 'Terrace', \
+    'Terr', 'Comiston', 'Pend', 'Grange', 'Fountainbridge', 'Newbridge', 'View', 'Gait', 'Shaw', 'Lane', \
+    'Queensferry', 'Medway', 'Brae', 'Rd', 'Causeway', 'Maybury', 'Loan', 'Wynd', 'gardens', 'Medway', 'raod', \
+    'Crest', 'Row', 'Drive', 'Crecent', 'Hill', 'Place', 'hermitage', 'Steil', 'lane', 'Bow', 'S.Queensferry', \
+    'Station', 'House', 'Kirkliston', 'Dykes', 'Yards', 'Circus', 'Lade', 'Bughtlinfield', 'drive', 'Links', \
+    'Pl', 'Gdns', 'Grove', 'Balerno', 'Bank', 'Neuk', 'G', 'Glebe', 'Dr', 'Drylaw', 'La', 'Avenue', 'Port', 'Green', \
+    'Close', 'Village', 'Square', 'Breakwater', 'Haugh', 'Road', 'Cres', 'Avenue', 'Werberside', 'Street', 'Ferry', 'Park', \
+    'crescent', 'Joppa', 'Rise', 'Hermiston', 'Walk', 'L'])
 #^ taken from Egidijus' data (from council)
 incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?','recovered']
 
@@ -154,7 +184,7 @@ def get_report_location(report):
 		return None
 	while True: #account for cases like "Queensferry Street Lane"
 		nextword = report_words[street_incidence_index + 1]
-		if nextword.istitle() and nextword.lower() in road_names:
+		if nextword.istitle(): #changed from requiring trailing words to be in road_words
 			street_incidence_index+=1
 		else:
 			break

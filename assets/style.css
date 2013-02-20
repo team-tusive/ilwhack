@@ -1,0 +1,28 @@
+body {
+  background: #EBEBEB;
+}
+
+svg {
+  background: #DCDCDC;
+}
+
+body {
+  font-family: Helvetica, Arial, sans;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+
+svg circle {
+  fill: #FF0043;
+}
+svg rect {
+  fill: #FF9D00;
+}
+svg path {
+  fill: #FF9D00;
+}
