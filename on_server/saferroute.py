@@ -8,8 +8,8 @@ import re
 class MainPage(webapp.RequestHandler):
    def get(self):
       self.response.headers['Content-Type'] = 'text/plain'
-      self.response.out.write("testRoute('Edinburgh', 'Glasgow')\n")
-      self.response.out.write(testRoute('Edinburgh', 'Glasgow'))
+      self.response.out.write("testRoute('EH11 2JG', 'EH6')\n")
+      self.response.out.write(testRoute('EH11 2JG', 'EH6'))
 
 application = webapp.WSGIApplication(
                                      [('/', MainPage)],

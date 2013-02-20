@@ -1,0 +1,783 @@
+SeqNum,St Name,Town,Month,Date,Time,Grade,Zone,Dogfoul,Vandalism,Graffiti,Weeds,Detritus,Fly Posting,Bin Count,Number Overflowing,Smoking,Drinks,Confectionery,Fast Food,Pedestrian Individual,Business,Domestic,Construction,Animal Faeces,Other,Comments
+1,Wester Coates Terrace,Edinburgh,April,4/28/2010,7:15,A,3,1,1,1,1,4,1,0,0,0,0,0,0,0,0,0,0,0,0,No litter but heavy detritus
+2,Saughton Park,Edinburgh,April,4/28/2010,9:25,B,3,1,1,1,3,3,1,0,0,0,1,1,0,1,0,0,0,0,0,
+3,Carrick Knowe Rd,Edinburgh,April,4/28/2010,9:40,B,3,2,1,1,3,3,1,0,0,0,1,0,0,1,0,0,1,1,0,Construction waste at Drway number 73
+4,Carrick Knowe Rd,Edinburgh,April,4/28/2010,9:50,C,3,2,1,1,3,3,1,0,0,1,1,0,0,1,0,0,0,1,0,Dog fouling
+5,Belgrave Rd,Edinburgh,April,4/28/2010,10:10,C,3,1,1,1,4,4,1,0,0,1,0,1,0,1,0,0,0,0,0,
+6,Belgrave Rd,Edinburgh,April,4/28/2010,10:15,B,3,1,1,1,3,4,1,0,0,1,1,1,0,1,0,0,0,0,0,
+7,Barony Terrace,Edinburgh,April,4/28/2010,10:30,B,2,1,1,1,3,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+8,Barony Terrace,Edinburgh,April,4/28/2010,10:40,B,2,1,1,1,2,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+9,Bramble Dr,Edinburgh,April,4/28/2010,10:55,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,I x crisp bag and 1 x cigarette end
+10,Braehead Rd,Edinburgh,April,4/28/2010,11:15,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+11,Braehead Rd,Edinburgh,April,4/28/2010,11:20,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+12,Crammond Crescent,Edinburgh,April,4/28/2010,11:30,B,3,1,1,2,3,3,1,0,0,1,1,1,0,1,0,0,0,0,0,
+13,Kirk Crammond,Edinburgh,April,4/28/2010,11:40,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Wildlife trust - area cleaned by task force
+14,Bughtlin Dr,Edinburgh,April,4/28/2010,11:50,B,3,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+15,North Bughtlin Pl,Edinburgh,April,4/28/2010,12:00,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+16,Turnhouse Rd,Edinburgh,April,4/28/2010,12:15,A,4,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+17,Turnhouse Rd,Edinburgh,April,4/28/2010,12:20,C,4,1,1,1,2,2,1,0,0,1,1,1,1,1,0,0,0,0,1,Wind blown litter from adjacent premises/business
+18,Gogarloch Bank,Edinburgh,April,4/28/2010,12:50,B,3,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+19,Fairview Rd,Edinburgh,April,4/28/2010,13:00,B,4,1,1,1,3,2,1,0,0,0,1,1,0,1,0,0,0,0,0,
+20,Hillwood Rd,Edinburgh,April,4/28/2010,13:10,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+21,Queen Anne Dr,Edinburgh,April,4/28/2010,13:20,D,3,1,1,1,3,3,1,0,0,1,1,1,1,1,1,0,1,0,0,Dumped pallet and barriers + windblown litter
+22,Queen Anne Dr,Edinburgh,April,4/28/2010,13:30,C,3,1,1,1,3,3,1,0,0,0,1,1,1,1,1,1,0,0,0,Windblown litter
+23,Scotstoun Avenue,Edinburgh,April,4/28/2010,13:50,B,3,1,1,1,2,3,1,0,0,0,0,1,0,1,0,1,0,0,0,Spillage from overblown wheelie bin
+24,Burgess Rd,Edinburgh,April,4/28/2010,14:05,B,3,1,1,1,2,3,1,0,0,1,1,1,0,1,0,0,0,0,0,
+25,Ashburnham Gardens,Edinburgh,April,4/28/2010,14:10,B,3,1,1,1,2,2,1,0,0,0,1,1,0,1,0,0,0,0,0,
+26,Brighouse Park Cross,Edinburgh,April,4/28/2010,14:30,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,No litter/weeds in St
+27,Torphican St,Edinburgh,April,4/26/2010,11:15,A,1,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+28,Randolph Crescent,Edinburgh,April,4/26/2010,11:05,B,1,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+29,Ramsay Gardens,Edinburgh,April,4/26/2010,10:45,B,1,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,1,1,0,
+30,Lauriston Pl,Edinburgh,April,4/26/2010,11:23,B,1,2,1,1,2,1,1,0,0,1,1,0,0,1,0,0,0,1,0,
+31,Gayfield Square,Edinburgh,April,4/26/2010,14:05,B,1,1,1,1,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,St in good order bar few cigarette ends
+32,Grosvenor Gardens,Edinburgh,April,4/26/2010,13:20,B,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,Generally in good order bar few cigarette ends & sweet wrapper
+33,North West Circus Pl,Edinburgh,April,4/26/2010,13:48,A,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Very clean with no detritus
+34,West Port,Edinburgh,April,4/26/2010,11:30,B,1,1,1,1,1,1,1,0,0,1,0,0,1,1,0,0,0,0,0,West port taken as Cordiners Land as this falls into private dev
+35,Grassmarket,Edinburgh,April,4/26/2010,11:45,B,1,1,1,1,1,1,1,0,0,1,0,0,1,1,0,0,0,0,0,Cigarette ends and food plastic carton
+36,Leamingston Terrace,Edinburgh,April,4/26/2010,8:35,B,2,1,1,2,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,Graffiti on utility box 
+37,South Oswald Rd,Edinburgh,April,4/26/2010,9:20,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean no litter/detritus/weeds
+38,Cameron Park,Edinburgh,April,4/26/2010,6:40,B,3,1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,Fast food carton
+39,Little Rd,Edinburgh,April,4/26/2010,11:00,B,3,1,1,1,2,1,1,0,0,0,1,0,1,1,0,0,0,0,0,
+40,Cluny Dr,Edinburgh,April,4/26/2010,7:40,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+41,Moredunvale Way,Edinburgh,April,4/26/2010,10:10,B,3,2,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,1,0,"Dog fouling in channel,cigarette ends"
+42,Mayfield Terrace,Edinburgh,April,4/26/2010,7:30,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+43,Millar Pl,Edinburgh,April,4/26/2010,7:55,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+44,Gillsland Park,Edinburgh,April,4/26/2010,8:15,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,Sweet wrappers and drinks can
+45,Lady Rd,Edinburgh,April,4/26/2010,6:50,B,3,1,1,1,1,1,1,0,0,0,1,1,0,1,0,0,0,0,0,"Paper wrapper, drink carton back of pavement"
+46,Murdonevale grove,Edinburgh,April,4/26/2010,9:55,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+47,Wilton Rd,Edinburgh,April,4/26/2010,7:15,B,3,1,1,1,2,2,1,0,0,0,0,1,1,1,0,0,0,0,0,
+48,Hyvot Mill Dr,Edinburgh,April,4/26/2010,10:25,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+49,Cameron Toll Lade,Edinburgh,April,4/26/2010,7:00,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+50,Carnbee Crescent,Edinburgh,April,4/26/2010,10:40,B,3,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,Dog fouling on pavement
+51,Marshall St,Edinburgh,April,4/26/2010,8:25,B,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+52,Summerhall Square,Edinburgh,April,4/26/2010,8:55,B,2,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+53,Melville Terrace,Edinburgh,April,4/26/2010,8:45,B,2,2,1,1,1,1,1,0,0,0,1,0,1,1,0,0,0,1,0,Small litter present at back of pavement/
+54,Murrayburn Rd,Edinburgh,April,4/14/2010,9:00,B,2,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+55,Murrayburn Rd,Edinburgh,April,4/14/2010,9:10,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+56,Wheatfield Terrace,Edinburgh,April,4/14/2010,9:20,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Some leaves/weeds
+57,Lewis Terrace,Edinburgh,April,4/14/2010,9:40,B,2,1,1,1,1,1,1,0,0,0,1,1,0,1,0,0,0,0,0,
+58,Gardners Crescent ,Edinburgh,April,4/14/2010,9:05,B,2,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+59,Shnadon St,Edinburgh,April,4/14/2010,9:30,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+60,Cowan Rd,Edinburgh,April,4/14/2010,9:50,B,3,1,1,1,1,2,1,0,0,0,1,1,0,1,0,0,0,0,0,
+61,Meggetland Wynd,Edinburgh,April,4/14/2010,10:00,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Small amount of detritus
+62,Firrhill Dr,Edinburgh,April,4/14/2010,10:15,C,3,1,1,1,1,2,1,0,0,1,1,1,1,1,0,0,0,0,0,Litter accumulations on pavement
+63,Oxgangs St,Edinburgh,April,4/14/2010,10:25,C,3,1,1,1,2,2,1,0,0,0,1,1,1,1,0,0,0,0,0,Grassed area littered
+64,Oxgangs Row,Edinburgh,April,4/14/2010,10:35,B,3,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,Cigarette ends in channel
+65,Caiystane Dr,Edinburgh,April,4/14/2010,10:45,B,3,1,1,1,1,2,1,0,0,0,1,0,1,1,0,0,0,0,0,Small amount of detritus
+66,Buckstone Terrace,Edinburgh,April,4/14/2010,11:00,B,3,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,
+67,Otterburn Park,Edinburgh,April,4/14/2010,11:15,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+68,Munro Dr,Edinburgh,April,4/14/2010,11:25,B,3,1,1,1,1,2,1,0,0,1,0,1,1,1,0,0,0,0,0,
+69,Pentland Pl,Edinburgh,April,4/14/2010,11:35,B,3,1,1,1,1,2,1,0,0,1,1,0,1,1,0,0,0,0,0,
+70,Mansfield Rd,Edinburgh,April,4/14/2010,11:45,B,3,1,1,1,1,2,1,0,0,0,1,1,1,1,0,0,0,0,0,Sweet wrapper and drink can
+71,Deanpark ,Edinburgh,April,4/14/2010,11:55,B,3,1,1,1,1,2,1,0,0,1,0,1,1,1,0,0,0,0,0,
+72,Redhall Rd,Edinburgh,April,4/14/2010,12:10,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Clean St
+73,Parkhead View,Edinburgh,April,4/14/2010,12:20,B,3,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,"Cigarette ends,drinks carton"
+74,West fairbrae crescent,Edinburgh,April,4/14/2010,12:45,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+75,Wilkieston Rd Ratho,Edinburgh,April,4/14/2010,16:30,B,3,1,1,1,1,1,1,0,0,1,0,0,1,1,0,0,0,0,0,
+76,Moray Park Terrace,Edinburgh,April,4/14/2010,13:40,C,3,1,1,1,2,2,1,0,0,1,1,0,1,1,0,0,0,0,0,Some litter could be windblown from recycling site opposite
+77,Fishwives Causeway,Edinburgh,April,4/14/2010,13:40,B,3,1,1,1,3,2,1,0,0,1,1,1,0,1,0,0,0,0,0,Weeds
+78,Sydney Pl,Edinburgh,April,4/14/2010,15:36,B,3,2,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,1,0,Concrete pavements damaged
+79,Bath St Ln,Edinburgh,April,4/14/2010,6:00,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,High presence of cigarette ends o/s bookmakers rear entrance
+80,Bellfield Ln,Edinburgh,April,4/14/2010,7:40,B,2,1,1,1,2,3,1,0,0,1,1,0,1,1,0,0,0,0,0,
+81,Bellfield St,Edinburgh,April,4/14/2010,10:19,C,2,1,1,1,2,2,1,0,0,1,1,0,1,1,0,0,0,0,0,Fast food carrier bags on pavement o/s partobello swim pool
+82,Eastfield,Edinburgh,April,4/14/2010,12:00,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+83,Castlepark Gait,Edinburgh,April,4/14/2010,13:12,C,3,1,1,1,2,2,1,0,0,1,1,1,1,1,0,1,0,0,0,
+84,Old Church Ln,Edinburgh,April,4/14/2010,16:19,B,3,1,1,1,2,3,1,0,0,1,1,1,0,1,0,0,0,0,0,Accumulations of litter in St
+85,Abercorn Dr,Edinburgh,April,4/14/2010,6:28,B,3,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,Potholes in Rd and overhanging branches
+86,Abercorn Grove,Edinburgh,April,4/14/2010,8:09,B,3,1,1,1,2,2,1,0,0,1,0,1,1,1,0,0,1,0,0,Builders skip at number 5 construction waste on pavement
+87,Salamander Yards,Edinburgh,April,4/29/2010,11:18,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,0,0,Small pieces of wood
+88,Pattison St,Edinburgh,April,4/29/2010,11:24,C,2,2,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,1,0,
+89,Duncan Pl,Edinburgh,April,4/29/2010,11:36,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+90,Academy St,Edinburgh,April,4/29/2010,11:45,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+91,East hermitage,Edinburgh,April,4/29/2010,11:53,B,2,1,1,1,1,1,1,0,0,0,1,0,0,0,0,1,0,0,0,
+92,Albion Pl,Edinburgh,April,4/29/2010,12:05,B,2,1,1,1,1,1,2,0,0,1,1,1,0,1,0,0,0,0,0,
+93,Kirk St,Edinburgh,April,4/29/2010,12:15,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+94,Parliament St,Edinburgh,April,4/29/2010,12:20,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+95,Sandport St,Edinburgh,April,4/29/2010,12:27,B,2,1,1,1,2,1,1,0,0,1,0,0,1,1,0,0,0,0,0,
+96,Carfae park,Edinburgh,April,4/29/2010,12:36,B,3,1,1,1,1,2,1,0,0,1,0,1,1,1,0,0,0,0,0,
+97,Carfrae Rd,Edinburgh,April,4/29/2010,12:43,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,1,
+98,Ferrt Gait Dr,Edinburgh,April,4/29/2010,12:50,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+99,East Pilton Farm Wynd,Edinburgh,April,4/29/2010,12:55,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+100,Granton Terrace,Edinburgh,April,4/29/2010,13:03,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+101,Primrose Bank Rd,Edinburgh,April,4/29/2010,13:10,B,3,1,1,1,2,2,1,0,0,1,0,1,1,1,0,0,0,0,0,Cigarette ends only
+102,Beresford Pl,Edinburgh,April,4/29/2010,13:14,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+103,Beresford Terrace,Edinburgh,April,4/29/2010,13:25,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,1,Broke wood/cardboard
+104,Craighall Avenue,Edinburgh,April,4/29/2010,13:36,B,3,1,1,1,2,2,1,0,0,1,0,0,0,0,1,1,0,0,0,
+105,Annfield St,Edinburgh,April,4/29/2010,13:49,B,2,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,1,
+106,Dudley Grove,Edinburgh,April,4/29/2010,12:53,B,3,1,1,1,4,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+107,Bonnington Avenue,Edinburgh,April,4/29/2010,13:05,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,1,Plastic pieces in channel
+108,Marshall St,Edinburgh,June,4/26/2010,8:25,B,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+109,Summerhall Square,Edinburgh,June,4/26/2010,8:55,B,2,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+110,Melville Terrace,Edinburgh,June,4/26/2010,8:45,B,2,2,1,1,1,1,1,0,0,0,1,0,1,1,0,0,0,1,0,Small litter present at back of pavement/
+111,Bellevue Crescent,Edinburgh,June,6/9/2010,13:10,B,2,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+112,Dublin St,Edinburgh,June,6/9/2010,13:25,A,2,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+113,South Gayfield Ln,Edinburgh,June,6/9/2010,13:40,A,2,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+114,Waverley Park,Edinburgh,June,6/9/2010,13:55,B,2,2,1,1,2,2,1,0,0,1,1,1,0,1,0,1,0,1,0,
+115,Bulls Close,Edinburgh,June,6/9/2010,14:40,B,1,2,1,1,2,2,1,0,0,1,1,1,0,1,0,1,0,1,0,
+116,Cockburn St,Edinburgh,June,6/9/2010,14:25,B,1,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+117,Spittal St,Edinburgh,June,6/9/2010,14:40,B,1,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+118,Chuckie Pend,Edinburgh,June,6/9/2010,14:55,B,1,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+119,Conference Square,Edinburgh,June,6/9/2010,15:10,B,1,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+120,Tytler Court,Edinburgh,June,6/10/2010,9:30,B,2,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+121,Pennywell Gardens,Edinburgh,June,6/24/2010,12:00,C,3,1,1,2,3,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+122,Ferry Gair Dr,Edinburgh,June,6/24/2010,9:57,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+123,Easter Drylaw,Edinburgh,June,6/24/2010,10:03,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+124,Easter Drylaw Grove,Edinburgh,June,6/24/2010,10:08,B,3,1,1,1,3,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+125,Hillpark Terrace,Edinburgh,June,6/24/2010,10:18,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+126,Craigleith Rd,Edinburgh,June,6/24/2010,10:26,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+127,Craigleith Rd,Edinburgh,June,6/24/2010,10:33,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+128,W Werberside,Edinburgh,June,6/26/2010,10:44,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+129,Arboretum Avenue,Edinburgh,June,6/26/2010,10:55,B,3,2,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,1,0,
+130,Grierson Avenue,Edinburgh,June,6/26/2010,11:05,B,3,1,1,1,3,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+131,Boswall Loan,Edinburgh,June,6/26/2010,11:15,B,3,1,1,1,3,2,1,0,0,1,1,0,0,1,0,0,0,0,0,0
+132,Boswall Loan,Edinburgh,June,6/26/2010,11:18,B,3,2,1,2,2,2,1,0,0,1,1,0,0,1,0,0,0,1,0,
+133,Saltire St ,Edinburgh,June,6/26/2010,11:25,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+134,Laverock Bank Avenue S,Edinburgh,June,6/26/2010,11:32,B,3,1,1,1,2,2,2,0,0,1,0,0,0,1,0,0,0,0,0,
+135,Bleachfield ,Edinburgh,June,6/26/2010,11:42,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+136,Spey Terrace,Edinburgh,June,6/26/2010,11:53,C,2,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+137,Beadalbane St,Edinburgh,June,6/26/2010,12:00,C,2,1,1,2,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,
+138,Commercial Wharf,Edinburgh,June,6/26/2010,12:10,C,2,1,1,1,2,2,1,0,0,1,1,1,0,1,1,0,0,0,0,
+139,Industrial Rd,Edinburgh,June,6/26/2010,12:13,B,2,1,2,2,2,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+140,Ryehill Avenue,Edinburgh,June,6/26/2010,12:30,B,2,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+141,Annandale St Ln,Edinburgh,June,6/26/2010,12:42,B,2,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+142,Ashley Terrace,Edinburgh,June,6/23/2010,14:28,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Envelope and cigarette ends
+143,Cluny Pl,Edinburgh,June,6/23/2010,14:47,B,3,1,1,1,1,3,1,0,0,0,0,0,0,1,0,0,0,0,0,Small pieces of paper
+144,Newbattle Terrace,Edinburgh,June,6/23/2010,14:53,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,"Cigarette end, plastic knife"
+145,Barclay Pl,Edinburgh,June,6/23/2010,14:59,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+146,Warrender Park Crescent,Edinburgh,June,6/23/2010,15:10,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+147,Boroughloch,Edinburgh,June,6/23/2010,15:02,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,"Chocolate organe box, cigarette ends"
+148,Potterow,Edinburgh,June,6/23/2010,15:45,A,2,1,1,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Graffiti on junction box
+149,St Leonards Bank,Edinburgh,June,6/23/2010,15:56,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+150,Findhorn Pl,Edinburgh,June,6/23/2010,16:07,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+151,Granby Rd,Edinburgh,June,6/23/2010,16:16,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+152,Ross Pl,Edinburgh,June,6/23/2010,16:29,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+153,Rankin Avenue,Edinburgh,June,6/23/2010,16:32,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+154,Gordon terrace,Edinburgh,June,6/23/2010,16:39,B,3,1,1,1,1,3,1,0,0,0,0,1,0,1,0,0,0,0,0,Plastic comb
+155,Kingston Avenue,Edinburgh,June,6/23/2010,16:57,A,3,1,1,1,1,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+156,Moredunvale Loan,Edinburgh,June,6/23/2010,17:05,A,3,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+157,Cadogan Rd,Edinburgh,June,6/23/2010,17:23,B,3,1,1,1,2,3,1,0,0,0,0,1,0,1,0,0,0,0,0,Plastic spoon
+158,Carnbee Park,Edinburgh,June,6/23/2010,17:40,B,3,1,1,1,2,3,1,0,0,0,0,1,1,1,0,0,0,0,0,Chewing gum wrappers/fast food wrapper
+159,Lasswade Rd,Edinburgh,June,6/23/2010,17:58,C,3,1,1,1,1,3,1,0,0,1,0,0,1,1,0,0,0,0,0,All clear then pile of cigarette packets and food wrappers
+160,Lasswade Rd,Edinburgh,June,6/23/2010,18:06,B,3,1,1,1,1,3,1,0,0,1,1,0,0,1,0,0,0,0,0,Cigarette packet and juice carton
+161,North St Ratho,Edinburgh,June,6/10/2010,9:50,B,3,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+162,East Hermiston,Edinburgh,June,6/10/2010,10:05,B,4,1,1,1,2,1,1,0,0,1,1,1,0,1,0,0,0,0,0,"Small amount of litter = 3 small pieces, including 1 x cigarette end"
+163,Bankhead Medway,Edinburgh,June,6/10/2010,10:12,C,3,1,1,1,2,3,1,0,0,1,1,1,0,1,0,0,0,0,0,
+164,Wester Hailes Rd,Edinburgh,June,6/10/2010,10:17,B,2,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+165,Wester Hailes Rd,Edinburgh,June,6/10/2010,10:25,B,2,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+166,Dumbryden Dr,Edinburgh,June,6/10/2010,10:34,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+167,Grant Avenue,Edinburgh,June,6/10/2010,10:43,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,St recently cleaned - very clean
+168,Harlaw Rd,Edinburgh,June,6/10/2010,10:49,A,4,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,St recently cleaned - very clean
+169,Thorburn Grove,Edinburgh,June,6/10/2010,10:54,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+170,Woodhall Avenue,Edinburgh,June,6/10/2010,11:45,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+171,Cherry Tree Pl,Edinburgh,June,6/10/2010,11:57,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,"Well maintained area, very clean"
+172,Clayhills Grove,Edinburgh,June,6/10/2010,12:05,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+173,Deanpark Court,Edinburgh,June,6/10/2010,12:12,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+174,Arnott Gardens,Edinburgh,June,6/10/2010,12:26,B,3,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,1,
+175,Peatville Terrace,Edinburgh,June,6/10/2010,12:32,B,3,1,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,
+176,Craiglockhart Pl,Edinburgh,June,6/10/2010,12:54,B,3,1,1,1,2,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+177,South Steil,Edinburgh,June,6/10/2010,13:03,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+178,Meggetland View,Edinburgh,June,6/10/2010,13:13,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+179,Darly Gait,Edinburgh,June,6/10/2010,13:39,B,3,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+180,Ardmillan Terrace Ln,Edinburgh,June,6/10/2010,14:05,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+181,Wheatfield Rd,Edinburgh,June,6/10/2010,14:10,B,2,1,1,1,2,2,1,3,0,1,1,1,0,1,0,1,0,0,0,Dumped items between 2xrecycle bins
+182,Stenhouse Crescent,Edinburgh,June,6/10/2010,14:23,B,3,3,1,1,2,3,1,0,0,1,1,1,0,1,0,0,0,1,0,
+183,Borthwick Pl,Edinburgh,June,6/24/2010,9:35,B,3,1,1,1,3,3,1,0,0,0,0,1,1,1,0,1,0,0,0,
+184,Roseburn Avenue,Edinburgh,June,6/24/2010,9:50,C,2,1,1,1,4,4,1,0,0,1,1,1,0,1,0,0,0,0,0,"Litter in gutters, part of school run"
+185,Corstorphine Hill Avenue,Edinburgh,June,6/24/2010,10:05,B,3,1,1,1,4,3,1,0,0,0,0,1,0,1,0,0,0,0,0,Large weeds
+186,Corstorphine House Terrace,Edinburgh,June,6/24/2010,10:30,B,3,1,1,1,3,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+187,North Gyle Loan,Edinburgh,June,6/24/2010,10:45,B,3,1,1,1,3,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+188,South Maybury,Edinburgh,June,6/24/2010,11:30,B,3,1,1,1,2,2,1,0,0,1,0,1,1,1,0,0,0,0,0,
+189,Gyle Avenue,Edinburgh,June,6/24/2010,11:10,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+190,Barnton Park Dr,Edinburgh,June,6/24/2010,11:45,B,3,1,1,1,2,4,1,0,0,0,0,1,0,1,0,0,0,0,0,
+191,Cramond Terrace,Edinburgh,June,6/24/2010,12:15,B,3,1,1,1,3,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+192,The Green,Edinburgh,June,6/24/2010,12:00,B,3,1,1,1,4,3,1,0,0,0,1,0,0,1,0,0,0,0,0,
+193,The Green,Edinburgh,June,6/24/2010,12:05,B,3,1,1,1,4,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+194,Cammo Rd,Edinburgh,June,6/24/2010,12:30,B,3,1,1,1,3,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+195,Cammo Rd,Edinburgh,June,6/24/2010,12:35,B,3,1,1,1,3,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+196,Milton Farm Rd,Edinburgh,June,6/24/2010,13:00,B,4,1,1,1,4,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+197,Milton Farm Rd,Edinburgh,June,6/24/2010,13:10,B,4,1,1,1,4,3,1,0,0,0,0,1,0,1,0,0,0,0,0,
+198,Milton Farm Rd,Edinburgh,June,6/24/2010,13:15,B,4,1,1,1,4,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+199,Scotstoun Avenue,Edinburgh,June,6/24/2010,13:25,B,3,1,1,1,3,2,1,1,0,1,0,1,0,1,0,0,0,0,0,
+200,Scotstoun Avenue,Edinburgh,June,6/24/2010,13:30,B,3,1,1,1,3,1,1,1,0,1,0,1,0,1,0,0,0,0,0,
+201,Scotstoun Avenue,Edinburgh,June,6/24/2010,13:40,B,3,1,1,1,2,1,1,2,0,1,1,1,0,1,0,0,0,0,0,
+202,Echline Pl,Edinburgh,June,6/24/2010,13:55,B,3,1,1,1,2,2,1,0,0,0,0,1,0,0,1,0,0,0,0,
+203,Echline Park,Edinburgh,June,6/24/2010,14:00,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+204,Echline Gardens,Edinburgh,June,6/24/2010,14:10,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+205,Forth Terrace,Edinburgh,June,6/24/2010,14:25,A,3,1,1,1,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+206,Old Liston Rd,Edinburgh,June,6/24/2010,14:40,C,4,1,1,1,1,3,3,0,0,1,1,1,0,1,0,0,0,0,0,Litter accumulations
+207,Cleekim Dr,Edinburgh,June,6/25/2010,10:00,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+208,Cleekim Dr,Edinburgh,June,6/25/2010,10:03,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+209,Parrotshot,Edinburgh,June,6/25/2010,10:07,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+210,Park Avenue,Edinburgh,June,6/25/2010,10:11,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,Bottle top and dead leaves in channel
+211,Park Avenue,Edinburgh,June,6/25/2010,10:13,B,3,2,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,1,0,Small presence of dog fouling and 1 x cigarette end
+212,Rosefield Pl,Edinburgh,June,6/25/2010,10:17,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+213,Pipe St,Edinburgh,June,6/25/2010,10:23,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+214,Sydney Terrace,Edinburgh,June,6/25/2010,11:05,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+215,Piershill Ln,Edinburgh,June,6/25/2010,11:20,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Dumped drawer unit
+216,Sunnybank,Edinburgh,June,6/25/2010,11:25,B,2,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+217,Comely Green Pl,Edinburgh,June,6/25/2010,11:28,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,1,0,0,0,Substitute for Tytler Court which belongs to City Centre.  Dumped pallet.  Cat food foil tray in channel
+218,Queens Park Avenue,Edinburgh,June,6/25/2010,11:35,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Substitute for Duke's Walk - St cleansing done by Queens Park staff - not Council.  Building works being carried out in St - a lot of dust but otherwise clean.
+219,Duddingston Gardens S,Edinburgh,June,6/25/2010,11:52,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+220,Turnhouse Rd,Drumbrae,August,,8:24,B,4,1,1,1,1,2,1,0,0,1,1,1,0,1,1,0,0,0,0,
+221,South Maybury St,Drumbrae,August,,9:36,B,4,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+222,Forth Park,Almond,August,,10:00,B,4,1,1,1,1,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+223,Inchgarvie Park,Almond,August,,10:10,B,4,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+224,Scotstoun Green,Almond,August,,10:15,B,3,1,1,1,2,1,1,0,0,0,0,0,1,1,0,0,0,0,0,
+225,Newmains Farm La,West,August,,10:25,B,3,1,1,2,3,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+226,The Glebe,Almond,August,,10:28,B,4,1,1,1,3,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+227,Gateside Rd,,August,,10:35,B,3,1,1,1,3,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+228,Avenal,Almond,August,,11:00,B,4,1,1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,0,0,
+229,Corbiehill Crescent,Almond,August,,11:05,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+230,Parkgrove View,Drumbrae,August,,11:20,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+231,Finlaggan Court,DunbLn,August,,11:40,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+232,Craigmount Terrace,Drumbrae,August,,11:40,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+233,CBA,Corstophine,August,,11:45,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+234,Forrester Rd,Corstophine,August,,11:50,B,3,1,1,1,1,2,1,0,0,0,1,1,0,1,0,0,0,0,0,
+235,Clerwood Bank,Drumbrae,August,,11:59,B,3,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+236,Campbell Rd,Corstophin,August,,12:25,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,0,0,
+237,Roseburn Terrace,Corstophin,August,,12:30,B,1,1,1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,0,0,
+238,Stanhope Pl,Corstophin,August,,12:35,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+239,Coltbridge Gardens,Inverleith,August,,12:50,B,3,1,1,1,3,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+240,Ravelston Pl,Inverleith,August,,13:05,B,3,1,1,1,3,2,1,1,0,1,1,0,1,1,0,0,0,0,0,
+241,Belford Terrace,Inverleith,August,,13:10,B,3,1,1,1,2,1,1,1,0,1,0,0,0,1,0,0,0,0,0,
+242,Upper Dean Terr,Inverleith,August,,13:15,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+243,Orchard Bank,Inverleith,August,,13:20,B,3,1,1,1,3,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+244,Queensferry Rd,Inverleith,August,,13:28,B,3,1,1,1,3,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+245,Queensferry Rd,Inverleith,August,,13:30,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+246,Craigcrook Park,Inverleith,August,,13:40,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+247,Saxe Coburg St,Inverleith,August,,13:55,B,3,1,1,1,3,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+248,Silvermills,Inverleith,August,,13:59,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+249,Meadow Pl Rd,Drumbrae,August,,14:20,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+250,Westerhailes Park,Pentland,August,,8:05,B,2,2,1,1,2,1,1,0,0,1,1,1,0,1,0,0,0,1,0,
+251,Barn Park,Pentland,August,,8:25,C,3,1,1,1,2,2,1,0,0,1,1,1,0,1,1,0,0,0,0,
+252,Muirwood Crescent,Pentland,August,,8:35,A,3,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+253,Dolphin Rd,Pentland,August,,8:45,B,3,1,1,1,2,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+254,Marchbank Dr,Pentland,August,,8:55,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+255,Pilton Avenue,Forth,August,,9:30,B,3,1,1,1,2,2,1,0,0,1,1,0,1,1,0,0,0,0,0,
+256,Craighill Gardens,Meadows,August,,9:35,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+257,Greenbank Avenue,Meadows,August,,9:40,B,3,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+258,Springvalley Terr,Meadows,August,,9:55,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+259,Churchill Pl,Meadows,August,,10:05,B,2,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+260,Tarvit St,Meadows,August,,10:10,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+261,Leven Terrace,Meadows,August,,10:20,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+262,Potter Row,Southside,August,,10:30,A,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+263,Mayfield Rd,Southside,August,,10:40,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+264,Mayfield Rd,Southside,August,,10:50,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+265,Mayfield Rd,Southside,August,,11:00,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+266,Backlee,Liberton,August,,11:10,A,2,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+267,Little Rd,Liberton,August,,11:20,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+268,Little Rd,Liberton,August,,11:25,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+269,Burdiehouse Dr,Liberton,August,,11:35,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+270,Clackmae Grove,Liberton,August,,11:45,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+271,Red Gaunlet Terr,Liberton,August,,11:55,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+272,Moredun Vale Park,Liberton,August,,12:05,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+273,Old Dalkeith Rd,Liberton,August,,12:15,B,3,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+274,Old Dalkeith Rd,Liberton,August,,12:20,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+275,Old Dalkeith Rd,Liberton,August,,12:25,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+276,St Catherines Pl,Southside,August,,12:35,B,2,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+277,East Market St,City,August,,12:50,A,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+278,East Market St,City,August,,13:00,A,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+279,Calton Rd,City,August,,13:10,B,1,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+280,Calton Rd,City,August,,13:20,B,1,1,1,1,2,1,1,0,0,0,0,0,1,1,0,0,0,0,0,
+281,Calton Rd,City,August,,13:25,B,1,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+282,Horse Wynd,City,August,,13:35,B,1,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+283,Gullans Close,City,August,,13:45,B,1,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+284,Brand Pl,City,August,,13:55,B,1,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+285,Barony St,City,August,,14:05,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+286,Forth St,City,August,,14:15,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+287,West Maitland St,City,August,,14:25,B,1,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+288,Ponton St,City,August,,14:35,B,1,1,1,1,1,2,1,0,0,0,0,0,1,1,0,0,0,0,0,
+289,Braid Hills Cres,Meadows,August,,14:45,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+290,Trotters Haugh,Southside,August,,8:20,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+291,Niddrie Mains Rd,Portobello,August,,8:30,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+292,Craigmillar Castle L,Portobello,August,,8:40,B,2,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+293,Niddrie Mains Rd,Portobello,August,,8:50,A,2,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+294,Niddrie Mains Rd,Portobello,August,,9:00,B,2,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+295,New Craighall Dr,Portobello,August,,9:10,B,3,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+296,Bingham Way,Portobello,August,,9:30,A,3,1,1,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+297,Duddingston Row,Portobello,August,,9:40,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+298,Duddingston Row,Portobello,August,,9:45,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+299,Magdeline Court,Portobello,August,,9:55,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+300,Magdeline Medway,,August,,10:00,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+301,Coillsdene Loan,Portobello,August,,10:10,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+302,South Mellis Park,Craigentin,August,,10:20,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+303,Duddingston Rd West,Craigentin,August,,10:30,B,3,1,1,1,2,2,1,0,0,0,0,0,1,1,0,0,0,0,0,
+304,Duddingston Rd West,Craigentin,August,,10:40,B,3,1,1,1,2,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+305,Duddingston Rd West,Craigentin,August,,10:50,B,3,1,1,1,2,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+306,Comely Green Cres,Craigentin,August,,11:00,B,3,1,1,1,2,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+307,Mertoun Pl,Fountain,August,,11:10,B,2,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+308,Laurel Terrace,Fountain,August,,11:20,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+309,Hutchison Rd,Fountain,August,,11:30,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+310,Hutchison Rd,Fountain,August,,11:35,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+311,Hutchison Grove,Fountain,August,,11:40,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+312,Redhall House Dr,Fountain,August,,11:50,A,2,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+313,Elliot Park ,Fountain,August,,12:00,B,2,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+314,Woodhall Bank,Colinton,August,,12:10,B,2,1,1,1,2,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+315,Torduff Rd,Colinton,August,,12:20,A,4,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+316,Laverockdale Cres,Colinton,August,,12:30,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+317,Firrhill Dr,Colinton,August,,12:40,B,2,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+318,Firrhill Dr,Colinton,August,,12:50,B,2,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+319,Firrhill Dr,Colinton,August,,12:55,B,2,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+320,Eltringham Terrace,Fountain,August,,13:10,B,2,1,1,1,2,2,1,0,0,0,0,1,1,1,0,0,0,0,0,
+321,Frasergrove,Forth,August,,9:40,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+322,Zetland Pl,Forth,August,,9:45,B,3,1,1,1,3,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+323,Willowbank Row,Leith,August,,9:50,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+324,N Fort St,Leith,August,,9:55,B,2,2,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,1,0,
+325,Portland Terrace,Leith,August,,10:00,B,2,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+326,Bernard St,Leith,August,,10:06,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+327,Smiths Pl,Leith Walk,August,,10:10,B,2,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+328,Elizafield,Leith Walk,August,,10:16,B,2,1,1,2,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+329,Redbraes Pl,Leith Walk,August,,10:20,B,2,1,1,1,1,2,1,0,0,1,0,0,1,1,0,0,0,0,0,
+330,Elliot St,Leith Walk,August,,10:25,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+331,Elm Row,Leith Walk,August,,10:30,B,2,1,1,1,1,1,1,1,0,1,1,0,1,1,0,0,0,0,0,
+332,Breadalbane Terr,Sighthill,August,,11:00,B,2,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+333,Stevenson St,Sighthill,August,,11:10,B,3,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,
+334,Stevenson St,Sighthill,August,,11:15,B,3,2,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,1,0,
+335,Dania Court,Sighthill,August,,11:20,B,3,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+336,Saughton Mains G,Sighthill,August,,11:28,C,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+337,Middle Park,Sighthill,August,,11:38,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+338,Silverknowes Hill,Edinburgh,October,10/12/2010,7:30,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Small accumulation of leaves
+339,Cramond Green,Edinburgh,October,10/12/2010,7:40,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Small accumulation of leaves
+340,North lawn Terrace,Edinburgh,October,10/12/2010,7:35,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean
+341,Craigleith Rise,Edinburgh,October,10/12/2010,7:50,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Small accumulation of leaves
+342,Glendevon Grove,Edinburgh,October,10/12/2010,9:25,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+343,Stanhope St,Edinburgh,October,10/12/2010,9:30,B,3,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Small accumulation of leaves
+344,Corstorphine Park Gardens,Edinburgh,October,10/12/2010,9:43,A,3,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+345,Dovecot Rd,Edinburgh,October,10/12/2010,9:50,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Leaves and weeds
+346,Corstorphine Bank Dr,Edinburgh,October,10/12/2010,9:55,B,3,1,1,1,1,2,1,0,0,1,1,1,0,1,0,0,0,0,0,Small bits of litter
+347,Dunollie Court,Edinburgh,October,10/12/2010,10:00,A,3,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean/substitute for Craiievar Wynd
+348,Braehead Loan,Edinburgh,October,10/12/2010,10:10,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+349,Essex Rd,Edinburgh,October,10/12/2010,10:15,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,"Only couple of cigarette ends, leaves "
+350,Brighouse Park Rigg,Edinburgh,October,10/12/2010,10:30,A,3,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean
+351,North Bughtlinfield,Edinburgh,October,10/12/2010,10:40,B,3,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+352,Turnhouse Rd,Edinburgh,October,10/12/2010,10:45,B,4,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+353,Turnhouse Rd,Edinburgh,October,10/12/2010,10:47,B,4,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,Small sweet wrappers
+354,Dundas Mains S.Queensferry,Edinburgh,October,10/12/2010,11:10,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+355,Stewart Terrace SQ,Edinburgh,October,10/12/2010,11:13,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+356,Maitland Rd,Edinburgh,October,10/12/2010,11:30,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Small amount of weeds
+357,Harvest Rd,Edinburgh,October,10/12/2010,11:45,B,4,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+358,Gogar Station,Edinburgh,October,10/15/2010,12:00,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,1,Paper
+359,Lauriston Park,Edinburgh,October,10/15/2010,8:20,B,1,1,1,1,2,1,1,0,0,1,0,0,1,1,0,0,0,0,0,Packaging bank at end of St needs litter flap-reported
+360,Quarry Close,Edinburgh,October,10/15/2010,8:40,B,2,1,1,1,3,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Leaves
+361,Gilmore St,Edinburgh,October,10/15/2010,8:50,C,2,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+362,Grange Terrace,Edinburgh,October,10/15/2010,9:10,B,3,1,1,1,2,2,1,0,0,0,0,1,1,1,0,1,0,0,0,Leaves & small bits of litter present
+363,Coben Rd,Edinburgh,October,10/15/2010,9:25,B,3,1,1,1,1,2,1,0,0,0,1,1,0,1,0,0,0,0,0,Overhanging tree over pavement
+364,Lussielaw Rd,Edinburgh,October,10/15/2010,9:30,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,Pavements need to be re-surfaced
+365,Liberton Rd,Edinburgh,October,10/15/2010,9:45,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+366,Nether Craigour,Edinburgh,October,10/15/2010,9:55,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+367,Nellfield,Edinburgh,October,10/15/2010,10:05,B,3,1,1,1,1,1,1,0,0,0,1,0,1,1,0,1,0,0,0,Domestic waste sack outside no.21
+368,Goodtrees Gardens,Edinburgh,October,10/15/2010,10:15,B,3,1,1,2,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,Recycling site - all containers with plenty of capacity
+369,Carnbee Crecent,Edinburgh,October,10/15/2010,10:35,B,3,1,1,1,1,2,1,0,0,1,1,1,0,1,0,0,0,0,0,Drinks can outside house on pavement.
+370,Lasswade Bank,Edinburgh,October,10/15/2010,10:45,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,"Grass recently cut, very tidy, very clean, recently swept?"
+371,Southhouse Loan,Edinburgh,October,10/15/2010,10:50,B,3,1,1,1,1,2,1,0,0,0,1,1,0,1,0,0,0,0,0,
+372,Bramdean Grove,Edinburgh,October,10/15/2010,11:05,B,3,1,1,1,3,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+373,Cluny Avenue,Edinburgh,October,10/15/2010,11:15,B,3,1,1,1,2,3,1,0,0,0,1,1,0,1,0,0,0,0,0,"W/bins presented for uplift, pavement in poor condition"
+374,Craighouse Avenue,Edinburgh,October,10/15/2010,11:30,B,3,2,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,1,0,"Dog fouling, lid on 1280L bin missing - reported"
+375,Mid Gillsland Rd,Edinburgh,October,10/15/2010,11:35,B,3,1,1,1,2,2,1,0,0,0,1,1,1,1,0,0,0,0,0,Leaves and small bits of litter
+376,Meadowfield Terrace,Edinburgh,October,10/26/2010,10:45,B,2,1,1,1,1,1,1,0,0,0,1,0,0,1,0,1,0,0,0,W/bins presented and emptied. Tissue in channel
+377,Meadowfield Court,Edinburgh,October,10/26/2010,10:52,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+378,Royal Park Terrace,Edinburgh,October,10/26/2010,10:56,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,0,0,Dumped pallet beside OMB bin
+379,Duke Walk,Edinburgh,October,10/26/2010,10:59,B,2,1,1,1,1,3,1,0,0,0,1,0,0,1,0,0,0,0,0,Leaves in channel
+380,Meadowbank Terrace,Edinburgh,October,10/26/2010,11:31,B,2,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+381,Restalrig Square,Edinburgh,October,10/26/2010,11:37,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,St recently cleaned 
+382,Loganlea Pl,Edinburgh,October,10/26/2010,12:00,B,3,1,1,1,1,1,1,0,0,0,1,1,0,1,0,0,0,0,0,
+383,Duddingston Grove East,Edinburgh,October,10/26/2010,12:07,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,St very clean
+384,Brunstane Rd,Edinburgh,October,10/26/2010,12:17,B,3,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,1,0,0,"Sand on the Rd from pile for house renovation, w/b's presented"
+385,Hillcoat Pl,Edinburgh,October,10/26/2010,12:25,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+386,Corbiewynd,Edinburgh,October,10/26/2010,8:09,B,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,"W/bins presented, large piece of cardboard beside bin @ no 27"
+387,Cheyne St,Edinburgh,October,10/22/2010,,B,2,1,1,1,2,2,2,0,0,1,1,0,0,1,0,0,0,0,0,
+388,Miller Row,Edinburgh,October,10/22/2010,10:48,B,3,2,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,1,0,Small amount of dog fouling on pavement
+389,Orchard Brae Gardens,Edinburgh,October,,12:10,B,3,1,1,1,2,2,1,0,0,0,0,0,0,1,0,0,0,0,0,Platic boards
+390,Blink Bonny Rd,Edinburgh,October,10/22/2010,12:35,B,3,2,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,1,0,
+391,Corbiehill Rd,Edinburgh,October,10/22/2010,12:55,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean
+392,Silverknowes View,Edinburgh,October,10/22/2010,13:10,B,3,2,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,1,0,
+393,Lower Granton Rd,Edinburgh,October,10/22/2010,13:40,B,2,2,1,2,2,2,1,0,0,1,1,1,0,1,0,0,0,1,0,
+394,Lower Granton Rd,Edinburgh,October,10/22/2010,13:45,C,2,2,1,2,2,2,1,0,0,1,1,1,1,1,0,0,0,1,0,
+395,Lower Granton Rd,Edinburgh,October,10/22/2010,13:50,B,2,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+396,Spencer Pl,Edinburgh,October,10/22/2010,13:55,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+397,Laverockbank Gdns,Edinburgh,October,10/22/2010,14:10,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+398,Newhaven Rd,Edinburgh,October,10/22/2010,14:15,B,3,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,
+399,Prince Regent St,Edinburgh,October,10/22/2010,14:35,B,2,1,1,2,2,2,1,0,0,1,1,1,0,1,1,0,0,1,0,Rubber post office bands
+400,Madeira Pl,Edinburgh,October,10/22/2010,14:40,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+401,New Cut Rigg,Edinburgh,October,10/22/2010,14:55,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+402,Bleachfield,Edinburgh,October,10/22/2010,15:50,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,1,0,0,0,
+403,Burns Pl ,Edinburgh,October,10/22/2010,8:24,B,3,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,
+404,Pilrig gardens,Edinburgh,October,10/22/2010,,B,2,2,1,2,2,2,1,0,0,1,1,1,0,1,0,0,0,1,0,
+405,Iona St,Edinburgh,October,10/22/2010,7:12,B,3,1,1,2,2,2,1,0,0,1,1,1,1,1,0,1,0,1,0,
+406,Duke Pl,Edinburgh,October,10/22/2010,10:48,B,2,1,1,1,3,2,2,0,0,1,1,1,0,1,0,0,0,0,0,
+407,Ryehill Gardens,Edinburgh,October,10/22/2010,,A,2,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean
+408,East Claremont St,Edinburgh,October,10/22/2010,8:24,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,1,0,
+409,East Claremont St,Edinburgh,October,10/22/2010,9:36,B,2,1,1,1,2,2,1,0,0,1,0,1,1,1,0,0,0,0,0,
+410,Carrubbers Close,Edinburgh,October,10/28/2010,,C,1,1,1,3,2,1,1,0,0,1,1,1,1,1,1,0,0,1,1,"Glass in close, dog fouling @entrance"
+411,Fountain Close,Edinburgh,October,10/28/2010,10:15,B,1,1,1,2,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+412,Kyle Pl,Edinburgh,October,10/28/2010,8:24,B,2,1,1,2,4,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+413,Marshall Court,Edinburgh,October,10/28/2010,12:00,B,1,1,1,1,3,2,1,0,0,1,1,0,0,1,0,0,0,0,0,Moss on pavement
+414,York Pl,Edinburgh,October,10/28/2010,13:26,C,1,1,1,2,2,2,1,0,0,1,1,0,1,1,0,0,0,0,0,
+415,York Ln,Edinburgh,October,10/28/2010,9:36,B,2,1,1,1,2,3,1,0,0,1,1,0,0,1,1,1,0,0,0,
+416,Dublin St Ln,Edinburgh,October,10/28/2010,,B,1,1,1,2,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+417,York Pl,Edinburgh,October,10/28/2010,,B,1,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+418,Abercromby Pl,Edinburgh,October,10/28/2010,,B,2,1,1,1,2,3,1,0,0,1,0,0,1,1,0,0,0,0,1,
+419,Abercromby Pl,Edinburgh,October,10/28/2010,8:24,B,2,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+420,Lothian Rd,Edinburgh,October,10/28/2010,13:12,B,1,1,1,1,2,2,1,2,0,1,0,1,0,1,0,0,0,0,0,
+421,Lothian Rd,Edinburgh,October,10/28/2010,,B,1,1,1,1,2,2,1,1,0,1,0,0,0,1,0,1,0,0,0,
+422,Lothian Rd,Edinburgh,October,10/28/2010,,B,1,1,1,1,2,2,1,1,0,1,1,0,0,1,0,0,0,0,0,
+423,Cathcart Pl,Edinburgh,October,10/29/2010,,C,2,1,1,1,3,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+424,Wheatfield Terrace,Edinburgh,October,10/29/2010,,C,2,1,1,1,2,2,1,1,0,1,1,0,1,1,0,0,0,0,0,Accumulation of litter and leaves/weeds present
+425,Sighthill Grove,Edinburgh,October,10/29/2010,,B,2,1,1,1,2,2,1,0,0,0,0,0,1,1,0,0,0,0,0,
+426,Quarrybank End,Edinburgh,October,10/29/2010,,B,2,1,1,1,3,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+427,Broomhouse St S,Edinburgh,October,10/29/2010,8:24,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+428,Broomhouse Pl S,Edinburgh,October,10/29/2010,10:30,B,2,1,1,1,2,1,1,0,0,1,1,1,0,1,0,0,0,0,0,
+429,Broomhouse Pl S,Edinburgh,October,10/29/2010,10:30,B,2,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+430,East Hermiston,Edinburgh,October,10/29/2010,10:50,B,3,1,1,1,1,4,1,1,0,1,0,0,0,1,0,0,0,0,0,
+431,Addiston Farm Rd,Edinburgh,October,10/29/2010,11:00,B,4,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+432,Addiston Farm Rd,Edinburgh,October,10/29/2010,11:00,B,4,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+433,Bavelaw Rd,Edinburgh,October,10/29/2010,11:10,B,3,1,1,1,2,4,1,0,0,1,0,0,0,1,0,0,0,0,0,
+434,Bavelaw Rd,Edinburgh,October,10/29/2010,11:15,B,3,1,1,1,2,4,1,0,0,1,0,1,0,1,0,0,0,0,0,
+435,Bavelaw Rd,Edinburgh,October,10/29/2010,11:20,B,3,1,1,1,2,4,1,0,0,1,0,1,0,1,0,0,0,0,0,
+436,Corslet Crescent,Edinburgh,October,10/29/2010,11:25,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Only few cigarette ends otherwise clean
+437,Muirwood Grove,Edinburgh,October,10/29/2010,12:15,B,3,1,1,1,2,4,1,0,0,1,0,1,0,1,0,0,0,0,0,
+438,Viewfield Rd,Edinburgh,October,10/29/2010,12:25,B,3,1,1,1,3,4,1,0,0,1,1,0,0,1,0,0,0,0,0,
+439,Bonaly Brae,Edinburgh,October,10/29/2010,12:35,B,3,1,1,1,3,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+440,Bonaly Avenue,Edinburgh,October,10/29/2010,12:45,B,3,1,1,1,3,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+441,Campbell Park Dr,Edinburgh,October,10/29/2010,12:30,B,3,1,1,1,2,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+442,Oxgangs Terrace,Edinburgh,October,10/29/2010,12:50,C,3,1,1,1,3,3,1,0,0,1,1,1,0,1,0,0,0,0,0,Litter accumulations
+443,Greenbank Dr,Edinburgh,October,10/29/2010,13:00,B,3,1,1,1,2,4,1,0,0,1,0,1,0,1,0,0,0,0,0,Leaves
+444,Greenbank Dr,Edinburgh,October,10/29/2010,13:05,B,3,1,1,1,2,4,1,0,0,1,1,0,0,1,0,0,0,0,0,Leaves only 2 small bits of litter otherwise clean
+445,Greenbank Dr,Edinburgh,October,10/29/2010,13:10,B,3,1,1,1,2,4,1,0,0,1,0,0,0,1,0,0,0,0,0,Leaves 
+446,Colinton Rd,Edinburgh,October,10/29/2010,13:45,B,3,1,1,1,2,4,1,0,0,1,0,0,0,1,0,0,0,0,0,"Clean except few cigarette ends, no other litter"
+447,Colinton Rd,Edinburgh,October,10/29/2010,13:50,B,3,1,1,1,2,4,1,0,0,1,1,0,0,1,0,0,0,0,0,
+448,Colinton Rd,Edinburgh,October,,13:55,B,3,1,1,1,2,4,1,0,0,1,1,1,0,1,0,0,0,0,0,Small bits of litter and leaves
+449,Leith Links,Edinburgh,December,2/2/2011,9:30,B,2,1,1,2,1,1,1,1,0,1,1,0,0,1,0,0,0,0,0,
+450,Leith Links,Edinburgh,December,2/2/2011,9:40,B,2,1,1,2,1,1,1,1,0,1,0,1,0,1,0,0,0,0,0,
+451,Leith Links,Edinburgh,December,2/2/2011,9:46,B,2,2,1,2,1,1,1,0,0,0,1,1,0,1,0,0,0,1,0,
+452,Bath Rd,Edinburgh,December,2/2/2011,9:55,B,2,1,1,1,2,3,1,0,0,1,0,0,1,1,0,0,0,0,0,
+453,Spiers Pl,Edinburgh,December,2/2/2011,10:05,B,2,2,1,1,2,3,2,0,0,1,1,0,0,1,0,0,0,1,0,"Dog fouling opp No 22 cars straddling pavement, "
+454,Coalhill,Edinburgh,December,2/2/2011,10:12,B,2,1,1,2,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Heavy with cigarette ends from businesses
+455,Pilrig St,Edinburgh,December,2/2/2011,10:30,B,3,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,1,Subsititute for Pilrig Cottages/footwear in channel
+456,Gosford Pl,Edinburgh,December,2/2/2011,10:40,B,3,1,1,2,2,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+457,Stanley Rd,Edinburgh,December,2/2/2011,10:50,B,3,1,1,1,2,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+458,Trinity Grove,Edinburgh,December,2/2/2011,10:58,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+459,Kingsburgh Crescent,Edinburgh,December,2/2/2011,11:10,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+460,Granton Park Avenue,Edinburgh,December,2/2/2011,11:20,A,3,1,1,1,2,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+461,Drylaw Gardens,Edinburgh,December,2/2/2011,11:30,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean
+462,Strachan Gardens,Edinburgh,December,2/2/2011,11:40,B,3,1,1,1,2,2,1,0,0,0,1,0,1,1,0,0,0,0,0,
+463,Blinkbonny Grove West,Edinburgh,December,2/2/2011,11:50,B,3,1,1,1,3,3,1,0,0,1,0,0,0,1,0,0,0,0,0,
+464,Craigleith Hill Gardens,Edinburgh,December,2/2/2011,11:58,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+465,Craigleith Hill Gardens,Edinburgh,December,2/2/2011,12:06,B,2,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+466,Lennox St,Edinburgh,December,2/2/2011,12:15,B,2,1,1,1,2,2,1,0,0,0,1,0,0,1,0,1,0,0,0,Looks like recyling box blown down St
+467,Saunders St,Edinburgh,December,2/2/2011,12:25,B,2,1,1,1,1,2,1,0,0,1,0,0,1,1,0,0,0,0,0,
+468,India Pl,Edinburgh,December,2/2/2011,12:35,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+469,Glenogle Rd,Edinburgh,December,2/2/2011,12:45,B,2,1,1,1,2,4,1,0,0,1,0,0,0,1,0,0,0,0,0,
+470,Glenogle Rd,Edinburgh,December,2/2/2011,12:53,B,2,1,1,1,2,4,1,0,0,1,0,1,0,1,0,0,0,0,0,
+471,Teviot Dale Pl,Edinburgh,December,2/2/2011,12:58,B,2,1,1,1,2,3,1,0,0,1,1,1,0,1,0,0,0,0,0,
+472,Glenogle Rd,Edinburgh,December,2/2/2011,13:05,B,2,1,1,1,2,3,1,0,0,1,1,0,1,1,0,0,0,0,0,
+473,Elidon Terrace,Edinburgh,December,2/2/2011,13:15,B,2,1,1,1,2,4,1,0,0,1,1,0,0,1,0,0,0,0,0,
+474,Canon Ln,Edinburgh,December,2/2/2011,13:25,C,2,1,1,2,3,4,1,0,0,1,1,1,0,1,0,0,0,0,1,
+475,Cammo Brae,Edinburgh,December,1/27/2011,10:40,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,Small amount of grit
+476,Braehead Rd,Edinburgh,December,1/27/2011,14:55,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Small amount of sweet papers
+477,Brighouse Park Dr,Edinburgh,December,1/27/2011,15:00,B,3,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+478,Stuart Wynd,Edinburgh,December,1/27/2011,15:13,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+479,Henderland Rd,Edinburgh,December,1/27/2011,15:23,B,3,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,Small amount of sweet wrappers between cars
+480,Russell Rd,Edinburgh,December,1/27/2011,15:31,B,3,1,1,1,1,2,1,0,0,0,0,1,1,1,0,0,0,0,0,Small amount of sweet wrappers and one food wrapper
+481,Ba;green Rd,Edinburgh,December,1/27/2011,9:40,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+482,Balgreen Rd,Edinburgh,December,1/27/2011,9:45,B,3,1,1,1,2,3,1,0,0,1,1,0,0,1,0,0,0,0,0,
+483,N Gyle Farm Court,Edinburgh,December,1/27/2011,10:00,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+484,Ravelston Dykes,Edinburgh,December,1/27/2011,10:07,B,3,1,1,1,1,3,1,0,0,0,0,1,0,1,0,0,0,0,0,
+485,Ravelston Dykes,Edinburgh,December,1/27/2011,10:10,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+486,Succoth Gardens,Edinburgh,December,1/27/2011,10:21,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+487,Maybury Rd,Edinburgh,December,1/27/2011,10:34,B,4,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+488,Maybury Rd,Edinburgh,December,1/27/2011,10:37,B,4,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+489,Maybury Rd,Edinburgh,December,1/27/2011,10:40,B,4,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+490,Cammo Rd,Edinburgh,December,1/27/2011,10:45,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Small amount of sweet wrappers
+491,Cammo Rd,Edinburgh,December,1/27/2011,10:47,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+492,S Gyle Gardens,Edinburgh,December,1/27/2011,15:45,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+493,Almond Rd,Edinburgh,December,1/27/2011,16:03,B,3,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+494,Hallyards Rd,Edinburgh,December,1/28/2011,16:10,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+495,Auldgate Kirkliston,Edinburgh,December,1/28/2011,13:12,C,3,1,1,2,2,1,1,0,0,0,0,1,1,0,0,1,0,0,0,Domestic waste from burst bag
+496,Hillwood Crescent Ratho,Edinburgh,December,1/28/2011,13:28,C,3,1,1,1,1,2,1,0,0,0,1,1,1,0,0,1,0,0,0,Domestic waste from burst bag
+497,Scotstoun Green SQ Ferry,Edinburgh,December,1/27/2011,13:55,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+498,Villa Rd SQ Ferry,Edinburgh,December,1/28/2011,14:10,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+499,Breadalbane Terrace,Edinburgh,December,2/2/2011,9:55,A,2,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,No litter on St
+500,Lewis Terrace,Edinburgh,December,2/11/2011,10:37,B,2,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+501,Granville Terrace,Edinburgh,December,2/11/2011,10:45,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+502,Polwarth Grove,Edinburgh,December,2/11/2011,10:47,B,3,1,1,1,2,2,1,0,0,0,1,0,1,1,0,0,0,0,0,
+503,Colinton Grove West,Edinburgh,December,2/11/2011,10:05,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+504,Swanston Village,Edinburgh,December,2/11/2011,11:04,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+505,Auchingane,Edinburgh,December,2/11/2011,11:08,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,1,Post office rubber bands
+506,Buckstone Gardens,Edinburgh,December,2/11/2011,11:14,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+507,East Comiston,Edinburgh,December,2/11/2011,11:16,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,No litter on St
+508,Torduff Rd,Edinburgh,December,2/11/2011,11:42,C,4,1,1,1,2,2,1,0,0,1,1,1,1,1,0,1,0,0,0,Litter in trees and bushes
+509,Woodhall Dr,Edinburgh,December,2/11/2011,11:49,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+510,Lanark Rd West,Edinburgh,December,2/11/2011,11:52,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+511,Lanark Rd West,Edinburgh,December,2/11/2011,11:55,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+512,Lanark Rd West,Edinburgh,December,2/11/2011,12:00,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+513,Thomson Grove,Edinburgh,December,2/11/2011,12:05,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,No litter on St
+514,Lovedale Crescent,Edinburgh,December,2/11/2011,12:10,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+515,Ravelrig Gait,Edinburgh,December,2/11/2011,12:15,B,3,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+516,Woodhall Avenue,Edinburgh,December,2/11/2011,12:25,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,"Substitute for Pentland View, unable to find St"
+517,Kingsknowe Terrace,Edinburgh,December,2/11/2011,12:39,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+518,Chesser Crescent,Edinburgh,December,2/11/2011,,B,3,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,Juice bottle
+519,Broomhouse Square,Edinburgh,December,2/11/2011,12:57,B,2,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+520,Parkhead Loan,Edinburgh,December,2/11/2011,,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+521,Hailesland Pl,Edinburgh,December,2/11/2011,13:05,C,2,1,1,1,2,2,1,0,0,1,1,1,1,1,0,0,0,0,0,
+522,Potterrow,Edinburgh,December,1/27/2011,10:40,B,1,1,1,3,2,2,2,1,0,1,0,0,0,1,0,0,0,0,0,
+523,Buccleuch St,Edinburgh,December,1/27/2011,10:50,C,2,1,1,1,2,2,2,0,0,1,0,1,1,1,0,0,0,0,0,
+524,Ratcliffe Terrace,Edinburgh,December,1/27/2011,11:00,B,2,1,1,1,1,2,2,0,0,1,0,1,0,1,0,0,0,0,0,
+525,Alnwickhill Loan,Edinburgh,December,1/27/2011,11:20,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+526,Blackford Rd,Edinburgh,December,1/27/2011,11:35,C,3,1,1,1,1,3,1,0,0,0,1,1,1,1,0,1,0,0,0,"Detritus, litter and some leaves"
+527,Blackford Avenue,Edinburgh,December,1/27/2011,11:40,B,3,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+528,Charterhall Rd,Edinburgh,December,1/27/2011,,C,2,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+529,Roseneath Terrace,Edinburgh,December,1/27/2011,,B,3,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+530,South Lauder Rd,Edinburgh,December,1/27/2011,,C,3,1,1,1,1,4,1,0,0,1,1,1,0,1,0,0,0,0,0,Litter accumulations
+531,Gracemount Pl,Edinburgh,December,1/27/2011,,B,3,1,1,1,1,3,1,0,0,1,0,1,0,1,0,0,0,0,0,
+532,Gracemount Rd,Edinburgh,December,1/27/2011,,D,3,1,1,1,2,3,1,0,0,1,1,1,1,1,0,1,0,0,0,Severe presence of litter
+533,Burdiehouse St,Edinburgh,December,1/27/2011,,C,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,1,0,0,0,Spillage from recycling collection
+534,Marchall Pl,Edinburgh,December,2/5/2011,,B,3,1,1,1,1,2,1,0,0,0,0,0,0,1,0,0,0,0,0,
+535,Liberton Brae,Edinburgh,December,2/5/2011,9:15,B,1,1,1,1,1,2,1,1,0,1,0,1,1,1,0,0,1,0,0,Traffic cones on footpath
+536,Clarinda Terrace,Edinburgh,December,2/5/2011,9:30,D,3,1,1,1,1,4,1,0,0,1,1,1,1,1,0,1,0,1,0,Severe litter may be due to high winds
+537,Southhouse Walk,Edinburgh,December,2/5/2011,9:36,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+538,Ferieside Pl,Edinburgh,December,2/5/2011,,B,3,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+539,Forkenford,Edinburgh,December,2/5/2011,8:55,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Very clean
+540,Hunters Close,Edinburgh,December,1/20/2011,12:05,B,1,1,1,2,1,4,1,0,0,1,1,0,0,1,0,0,1,0,0,Soil on Rd from construction waste
+541,High St,Edinburgh,December,1/20/2011,12:35,B,1,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends at entrance to Radison Hotel
+542,High St,Edinburgh,December,1/20/2011,12:42,B,1,1,1,1,1,1,1,3,0,1,0,0,1,1,0,0,0,0,0,
+543,Bellevue Crescent,Edinburgh,December,1/20/2011,9:00,B,2,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+544,Bellevue Crescent,Edinburgh,December,1/20/2011,9:05,B,2,1,1,1,2,3,1,1,0,1,0,1,1,1,0,0,0,0,0,
+545,Douglas Gardens,Edinburgh,December,1/20/2011,15:35,B,2,1,1,1,2,3,1,1,1,1,0,1,1,1,0,0,0,0,0,
+546,Lynedoch Pl,Edinburgh,December,1/20/2011,15:20,B,2,1,1,1,1,2,2,1,0,1,0,1,0,1,0,0,0,0,0,Stickers on lampost
+547,Northumberland st SW Ln,Edinburgh,December,1/20/2011,10:00,B,1,1,1,2,1,3,1,0,0,1,0,0,1,1,0,0,0,0,0,
+548,Robertson Close,Edinburgh,December,1/20/2011,12:20,D,1,2,1,3,1,2,2,0,0,1,1,0,0,1,1,1,0,1,0,"Broken bottles, heay cigarette ends, vomit, flyers.overflowing allied waste bin"
+549,Lothian Rd,Edinburgh,December,1/19/2011,15:50,B,1,1,1,2,1,2,1,1,1,1,1,0,0,1,0,0,0,0,0,Graffiti on phone box and greggs wall
+550,Lothian Rd,Edinburgh,December,1/19/2011,15:55,B,1,1,1,2,1,2,1,1,1,1,0,1,0,1,0,0,0,0,0,Litter bin overflow at Lazio
+551,Lothian Rd,Edinburgh,December,1/19/2011,16:03,B,1,1,1,1,1,1,2,1,0,1,0,1,0,1,0,1,0,0,0,"Stickers at lampost, black bag at no. 61"
+552,Lothian Rd,Edinburgh,December,1/19/2011,16:10,B,1,1,1,1,1,1,1,2,0,1,0,1,0,1,0,0,0,0,0,Heavy cigarette ends at entrance to st cuthberts graveyard
+553,Hanover St,Edinburgh,December,1/19/2011,13:30,B,1,1,1,1,2,2,1,1,1,1,0,0,0,1,0,0,0,0,0,
+554,Hanover St,Edinburgh,December,1/19/2011,13:20,B,1,1,1,1,2,2,1,1,0,1,1,1,0,1,0,0,1,0,0,2 x cones and Rd sign + graffiti on door at costa coffee
+555,Essex Brae,Edinburgh,February,2/22/2011,10:50,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+556,"Almondside, Kirkliston",Edinburgh,February,2/22/2011,10:10,C,3,1,1,1,3,2,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cigarette ends/packet,can,plastic bottle,sweet wrapper"
+557,Corbiehill Terrace,Edinburgh,February,2/22/2011,16:20,B,3,1,1,1,2,2,1,0,0,1,1,1,1,1,0,0,0,0,0,Cigarette ends
+558,"Rosebery Avenue, S Queensferry",Edinburgh,February,2/22/2011,10:40,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+559,"Rosebery Avenue, S Queensferry",Edinburgh,February,2/22/2011,10:42,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+560,Turnhouse Rd,Edinburgh,February,2/22/2011,11:00,D,4,1,1,1,2,2,1,0,0,1,1,1,1,1,1,1,0,0,0,"Cigarette ends,plastic bottles, sweet wrappers, cartons paper"
+561,"Hugh Russell Pl, S Queensferry",Edinburgh,February,2/22/2011,10:30,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+562,"Sommerville Gardens, S Queensferry",Edinburgh,February,2/22/2011,10:25,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette end
+563,"Chariot Dr, Newbridge",Edinburgh,February,2/22/2011,10:05,D,3,1,1,1,1,2,1,0,0,1,1,1,1,1,0,1,0,0,1,"Cigarettes,cans,bottles plastic sheeting, shop bags paper"
+564,"Cairns Gardens, Balerno",Edinburgh,February,2/22/2011,9:30,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,"Lollipop stick, sweet wrapper"
+565,"Baird Rd, Ratho",Edinburgh,February,2/22/2011,9:50,C,4,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarette ends,packets,cans bottles burger box"
+566,"Baird Rd, Ratho",Edinburgh,February,2/22/2011,9:53,C,4,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarette ends/packets, cans"
+567,"Baird Rd, Ratho",Edinburgh,February,2/22/2011,9:55,D,4,1,1,1,1,2,1,0,0,1,1,1,1,1,0,1,0,0,0,"Cigarette ends/packets,cans bag of food burger box"
+568,Long Dalmahoy Rd,Edinburgh,February,2/22/2011,9:40,B,4,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,Plastic Juice bottle
+569,Long Dalmahoy Rd,Edinburgh,February,2/22/2011,9:42,B,4,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,"Can, cigarette end"
+570,Long Dalmahoy Rd,Edinburgh,February,2/22/2011,9:44,B,4,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+571,"Main St, Balerno",Edinburgh,February,2/22/2011,9:25,B,4,1,1,1,1,2,1,2,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+572,N Bughtlin Pl,Edinburgh,February,2/22/2011,11:25,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarette ends, can"
+573,N Gyle Avenue,Edinburgh,February,2/22/2011,11:12,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+574,Essendean Terrace,Edinburgh,February,2/22/2011,11:55,D,3,4,1,1,3,2,1,0,0,1,1,1,1,1,0,1,0,1,0,"Bottles,cigarette ends, dog fouling (lots) bin bag"
+575,Clermiston Hill,Edinburgh,February,2/22/2011,12:00,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,"Can, cigarette end"
+576,Turnhouse Rd,Edinburgh,February,2/22/2011,11:05,D,4,1,1,1,2,2,1,0,0,1,1,1,1,1,1,0,0,0,0,"Cardboard box, cans, bottles,cigarettes, chippy paper"
+577,Kilchurn Court,Edinburgh,February,2/22/2011,11:10,A,2,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+578,Pennywell Medway,Edinburgh,February,2/22/2011,12:40,B,2,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cigarette ends, cans, sweet wrapper"
+579,Pennywell Medway,Edinburgh,February,2/22/2011,12:42,B,2,1,1,1,2,3,1,0,0,0,1,0,0,1,0,0,0,0,0,"Bottles, cans"
+580,Bangholm View,Edinburgh,February,2/22/2011,12:57,B,3,1,1,1,1,3,1,0,0,0,0,1,0,1,0,0,0,0,0,Sweet Papers
+581,Grierson Avenue,Edinburgh,February,2/22/2011,12:50,B,3,1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,"Cigarette ends, burger box, chip box"
+582,Boswall Dr,Edinburgh,February,2/22/2011,12:45,B,3,1,1,1,2,1,1,1,0,1,1,1,0,1,0,0,0,0,0,"Cigarette ends, can, lollipop stick, sweet paper"
+583,Boswall Dr,Edinburgh,February,2/22/2011,12:47,B,3,1,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cigarette end, can, lollipop stick, sweet paper"
+584,Bangholm Park,Edinburgh,February,2/22/2011,12:55,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+585,Tanfield,Edinburgh,February,2/22/2011,14:45,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+586,Telford Pl,Edinburgh,February,2/22/2011,12:15,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+587,Queen's Rd,Edinburgh,February,2/22/2011,12:30,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,"Bottle, can cigarette ends"
+588,Drylaw Gardens,Edinburgh,February,2/22/2011,12:25,B,3,2,1,1,1,2,1,0,0,0,1,1,0,1,0,0,0,1,0,"Bottle, sweet wrappers, dog fouling"
+589,Montagu Terrace,Edinburgh,February,2/22/2011,13:00,C,3,1,1,1,1,2,1,1,0,1,1,0,0,1,0,0,0,0,0,"Cigarettes - 1 packet, cans bottle"
+590,Eildon St,Edinburgh,February,2/22/2011,13:05,B,3,1,1,1,1,2,1,0,0,1,0,0,1,1,0,0,0,0,0,"Cigarette ends, burger box, burger bag"
+591,Hawthornbank Ln,Edinburgh,February,2/22/2011,14:20,A,2,1,1,1,1,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+592,Roseburn St,Edinburgh,February,2/22/2011,16:35,C,2,1,1,1,1,2,1,0,0,1,1,1,1,1,0,0,0,0,0,"Cigarette ends, burger box, paper, sweet wrapper"
+593,Roseburn St,Edinburgh,February,2/22/2011,16:36,B,2,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,"Cigarette ends, shop bag"
+594,Broomhall Rd,Edinburgh,February,2/22/2011,11:35,B,3,1,1,1,1,2,1,0,0,1,0,0,1,1,0,0,0,0,0,"Cigarette ends, burger box"
+595,Broomhall Rd,Edinburgh,February,2/22/2011,11:37,C,3,2,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,1,0,"Cigarette end,packet,sweet wrapper"
+596,Broompark Rd,Edinburgh,February,2/22/2011,11:40,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+597,Tyler's Acre Avenue,Edinburgh,February,2/22/2011,11:45,C,3,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,"Plasticbottle, sweet paper, burger bag"
+598,Roull Pl,Edinburgh,February,2/22/2011,11:42,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+599,Muirhouse View,Edinburgh,February,2/22/2011,14:55,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+600,Stevenson Dr,Edinburgh,February,2/22/2011,15:52,B,3,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,0,Cigarettes can
+601,Stevenson Dr,Edinburgh,February,2/22/2011,15:54,C,3,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,"Cigarette end, cans, burger wrapper"
+602,Stenhouse Crescent,Edinburgh,February,2/22/2011,16:10,C,3,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,"Glass,wrappers,McDonalds Bag, Bottle Cigarettes"
+603,Stenhouse Crescent,Edinburgh,February,2/22/2011,16:12,C,3,1,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cigarette ends, plastic bottle"
+604,Saughton Mains Dr,Edinburgh,February,2/22/2011,16:15,C,3,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,"Bottles,cans,sweet wrapper, Asda Bag"
+605,Saughton Mains Dr,Edinburgh,February,2/22/2011,16:17,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarettes,plastic bottle, cans"
+606,Winton Dr,Edinburgh,February,2/22/2011,15:40,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette Ends
+607,Hailes Park,Edinburgh,February,2/22/2011,15:50,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+608,Buckstone Shaw,Edinburgh,February,2/22/2011,16:05,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+609,E Camus Pl,Edinburgh,February,2/22/2011,16:20,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarette ends, cans"
+610,Brandfield St,Edinburgh,February,2/22/2011,15:20,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,"Cigarette ends,packet"
+611,Gibson Terrace,Edinburgh,February,2/22/2011,15:25,C,2,1,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cigarette ends, sweet paper, plastic bottle, can"
+612,Hermand St,Edinburgh,February,2/22/2011,15:30,B,2,1,1,1,1,2,1,1,0,1,0,1,0,1,0,0,0,0,0,"Cigarette ends, sweet wrapper"
+613,Craiglockhart Crescent,Edinburgh,February,2/22/2011,15:00,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+614,Oxgangs Rd N,Edinburgh,February,2/22/2011,15:45,C,3,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0,"Cigarette ends, plastic wrapping, chippy paper, bottle"
+615,Oxgangs Rd N,Edinburgh,February,2/22/2011,15:47,C,3,1,1,1,1,2,1,0,0,1,1,0,1,1,0,0,0,0,0,"Cigarette end, cans, bin bag"
+616,Ogilvie Terrace,Edinburgh,February,2/22/2011,15:55,B,3,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,"Cans, plastic bottle"
+617,Craiglockhart View,Edinburgh,February,2/22/2011,15:10,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarette ends, cans"
+618,Elliot Park,Edinburgh,February,2/22/2011,15:10,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+619,New Mart Pl,Edinburgh,February,2/22/2011,16:25,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,"Cigarette ends, sweet wrapper"
+620,Roseneath Terrace,Edinburgh,February,2/22/2011,10:06,B,2,1,1,1,2,2,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cans, bottle top, cigarettes "
+621,East Castle Rd,Edinburgh,February,2/22/2011,8:47,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,"Paper, drinks ?"
+622,Falcon Avenue,Edinburgh,February,2/22/2011,8:51,B,3,1,1,1,2,1,1,0,0,0,1,0,1,1,0,0,0,0,0,Sweet Wrapper
+623,Plewlands Avenue,Edinburgh,February,2/22/2011,8:57,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,"Cigarette, till receipt"
+624,Gillsland Rd,Edinburgh,February,2/22/2011,8:40,B,3,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Sweet Wrapper
+625,Greenbank Grove,Edinburgh,February,2/22/2011,9:05,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,"Cup, sweet wrapper"
+626,Braid Mount Crest,Edinburgh,February,2/22/2011,9:13,A,3,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+627,Comiston Dr,Edinburgh,February,2/22/2011,9:01,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarettes & Can
+628,Warden's Close,Edinburgh,February,2/22/2011,10:39,A,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+629,Hope St,Edinburgh,February,2/22/2011,10:46,B,1,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarettes
+630,Keir St,Edinburgh,February,2/22/2011,10:36,B,1,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,Cigarettes & bottle top
+631,Viewcraig Gardens,Edinburgh,February,2/22/2011,11:08,B,1,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Poly bag/cigs
+632,Moray Pl,Edinburgh,February,2/22/2011,10:55,B,2,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Sweet Wrapper
+633,Albany Ln,Edinburgh,February,2/22/2011,11:00,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+634,Coates Crescent,Edinburgh,February,2/22/2011,10:49,A,2,1,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+635,S Gayfield Ln,Edinburgh,February,2/22/2011,11:04,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarettes & till receipt
+636,Portsburgh Square,Edinburgh,February,2/22/2011,10:48,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarettes
+637,Arthur St Ln,Edinburgh,February,2/22/2011,14:25,B,2,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,"Cigarette ends, plastic bottle"
+638,Trafalgar Ln,Edinburgh,February,2/22/2011,14:00,C,2,1,1,1,1,1,1,0,0,1,1,0,1,1,1,0,0,0,0,"Cigarette ends, cans"
+639,"Dock Pl, Leith",Edinburgh,February,2/22/2011,14:10,C,2,1,1,1,2,3,1,0,0,1,1,0,1,1,0,1,0,0,0,"Cigarette ends, drink carton, plastic bag"
+640,Hamilton Wynd,Edinburgh,February,2/22/2011,14:05,C,2,1,1,1,2,1,1,0,0,1,1,1,0,1,0,0,0,0,0,"Cigarette ends, cans, burger"
+641,Sheriff Brae,Edinburgh,February,2/22/2011,14:15,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+642,Elm Pl,Edinburgh,February,2/22/2011,14:35,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+643,Alemoor Park,Edinburgh,February,2/22/2011,14:30,A,NCA,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+644,Western Harbour Breakwater,Edinburgh,February,2/22/2011,14:12,B,NCA,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette ends
+645,Hamilton Dr,Edinburgh,February,2/22/2011,12:05,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Cigarettes/sweet wrapper
+646,Meadowbank Crescent,Edinburgh,February,2/22/2011,11:19,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,Can/bottle/cigarette pack/cigarettes
+647,Northfield Circus,Edinburgh,February,2/22/2011,11:28,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+648,Abercorn Crescent,Edinburgh,February,2/22/2011,11:22,B,3,1,1,1,2,1,1,0,0,0,1,0,0,1,0,0,0,0,0,McDonalds cup
+649,Paisley Grove,Edinburgh,February,2/22/2011,11:24,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+650,Lochend Rd South,Edinburgh,February,2/22/2011,11:35,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+651,Dumbiedykes Rd,Edinburgh,February,2/22/2011,11:10,B,1,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,Cans/Cigarettes
+652,Newington Rd,Edinburgh,February,2/22/2011,10:08,B,2,1,1,1,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,Cigarettes/paper hankie
+653,Grange Loan Gardens,Edinburgh,February,2/22/2011,10:01,B,3,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Can/sweet packet
+654,Hallhead Rd,Edinburgh,February,2/22/2011,9:58,B,3,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,Cigarettes/greggs bag
+655,Southhouse Crescent,Edinburgh,February,2/22/2011,9:25,C,2,1,1,1,2,2,1,0,0,0,1,1,1,1,0,0,0,0,0,"Plastic Bag/cans,bottles,crisp packet"
+656,Southhouse Crescent,Edinburgh,February,2/22/2011,9:26,B,2,1,1,1,2,2,1,1,0,0,1,1,0,1,0,0,0,0,0,Cans/bottles
+657,Moredunvale Pl,Edinburgh,February,2/22/2011,9:47,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,Cans/bottle/cigarettes
+658,Summertrees Court,Edinburgh,February,2/22/2011,9:52,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,Plastic bottles/straw
+659,Park Gardens,Edinburgh,February,2/22/2011,9:22,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,"Paper,cigarette ends"
+660,Moredun Park Court,Edinburgh,February,2/22/2011,9:45,B,3,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,Cigarettes/sauce pot
+661,E Kilngate Rigg,Edinburgh,February,2/22/2011,9:32,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+662,Niddrie House Square,Edinburgh,February,2/22/2011,12:12,B,2,1,1,1,3,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarettes
+663,Westbank St,Edinburgh,February,2/22/2011,11:42,B,2,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Cigarette pack/pieces of paper
+664,Bailie Pl,Edinburgh,February,2/22/2011,12:00,B,2,1,1,1,2,2,1,0,0,1,0,0,1,1,0,0,0,0,0,Cigarettes/food wrapper
+665,Castlepark Gait,Edinburgh,February,2/22/2011,12:18,B,2,1,1,1,2,1,1,0,0,0,1,1,0,1,0,0,0,0,0,Can and sweet wrapper
+666,Lower Joppa,Edinburgh,February,2/22/2011,11:53,A,3,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+667,Castlelaw Rd,Edinburgh ,Validation,6/7/2010,12:10,B,3,1,1,1,3,3,1,0,0,0,0,1,1,1,0,0,0,0,0,Weed growth
+668,Stewart  Crescent ,Edinburgh ,Validation,6/7/2010,13:22,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,
+669,Malleny Avenue ,Edinburgh ,Validation,6/7/2010,13:49,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+670,Marchbank Pl,Edinburgh ,Validation,6/7/2010,13:55,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+671,Addiston Park,Edinburgh ,Validation,6/7/2010,14:17,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+672,Turnhouse Rd,Edinburgh ,Validation,6/15/2010,15:02,B,4,1,1,1,3,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+673,Turnhouse Rd,Edinburgh ,Validation,6/15/2010,15:03,B,4,1,1,1,3,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+674,Turnhouse Rd,Edinburgh ,Validation,6/15/2010,15:04,B,4,1,1,1,3,1,1,0,0,1,1,1,0,1,0,0,0,0,0,
+675,Whitson Grove,Edinburgh ,Validation,6/8/2010,10:05,C,3,1,1,1,3,4,1,0,0,1,1,1,1,1,0,1,0,0,0,"Parked cars an issue for sweeping channel, most litter in channel, litter also on pavement and backline"
+676,Washington Ln,Edinburgh ,Validation,6/8/2010,10:35,B,2,1,1,1,2,2,1,0,0,0,0,1,0,1,0,0,0,0,0,Light sporadic items of litter
+677,McLeod St,Edinburgh ,Validation,6/8/2010,11:01,B,2,1,1,1,1,1,1,2,0,0,0,1,0,1,0,0,0,0,0,
+678,Toddshill Rd,Edinburgh ,Validation,6/9/2010,12:58,B,3,1,1,1,3,2,1,0,0,1,1,0,0,1,0,0,0,0,0,3 items of litter
+679,Eltringham Grove,Edinburgh ,Validation,6/8/2010,11:22,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+680,Laichpark Rd,Edinburgh ,Validation,6/8/2010,11:34,B,3,1,1,1,1,3,1,0,0,0,0,1,0,1,0,0,0,0,0,"Sweet litter in channel, detritus on pavement and in channel "
+681,Redhall Pl,Edinburgh ,Validation,6/8/2010,11:44,B,3,2,1,1,1,2,1,0,0,1,0,1,1,1,0,0,0,1,0,Littered channel
+682,Allanpark Dr ,Edinburgh ,Validation,6/8/2010,13:16,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+683,Colinton Rd,Edinburgh ,Validation,6/8/2010,13:29,B,3,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+684,Colinton Rd,Edinburgh ,Validation,6/8/2010,13:30,B,3,1,1,1,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,
+685,Colinton Rd,Edinburgh ,Validation,6/8/2010,13:32,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+686,Calder Rd,Edinburgh ,Validation,6/8/2010,14:43,C,3,1,1,1,1,2,1,0,0,1,1,1,1,1,0,0,0,0,0,All litter types mainly in the channel
+687,Calder Rd,Edinburgh ,Validation,6/8/2010,14:44,C,3,1,1,1,1,2,1,0,0,1,1,1,1,1,0,0,0,0,0,All litter types mainly in the channel
+688,John St Ln E,Edinburgh ,Validation,6/16/2010,12:56,A,2,1,1,1,4,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+689,Broomhouse Rd,Edinburgh ,Validation,6/10/2010,10:46,B,2,1,1,2,1,2,1,0,0,0,1,0,0,1,0,0,0,0,0,Graffiti on tin shed
+690,Broomhouse Rd,Edinburgh ,Validation,6/10/2010,10:47,B,2,1,1,1,1,3,1,0,0,1,1,0,0,1,0,0,0,0,0,Detritus in channel with drinks and smoking related litter trapped in amongst it
+691,E Camus Pl,Edinburgh ,Validation,6/10/2010,12:11,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,1,0,"Animal faeces= seagull droppings on pavement, cigarette ends in channel "
+692,Buckstone Neuk,Edinburgh ,Validation,6/10/2010,13:48,B,3,1,1,1,2,2,1,0,0,0,1,0,0,1,0,0,0,0,0,1 item of litter
+693,Pentland Terrace ,Edinburgh ,Validation,6/10/2010,14:05,B,3,1,3,2,2,2,1,1,0,1,0,1,0,1,0,0,0,0,0,Vandalism on bus shelter 
+694,Nicolson St,Edinburgh ,Validation,6/21/2010,15:17,B,1,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+695,Falcon Gardens ,Edinburgh ,Validation,6/10/2010,15:08,B,2,1,1,1,1,2,1,0,0,0,1,0,1,1,0,0,0,0,0,
+696,Forteviot House,Edinburgh ,Validation,6/17/2010,11:08,C,2,1,1,1,3,1,1,0,0,1,1,1,1,1,0,0,0,0,0,"Litter on pavement mostly paper and confectionery, broken glass and smoking related litter in channel amongst weeds, litter on cobbled area also"
+697,Leamington Pl,Edinburgh ,Validation,6/21/2010,14:05,B,2,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,
+698,St Leonard's Hill,Edinburgh ,Validation,6/21/2010,15:08,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+699,Midmar Dr ,Edinburgh ,Validation,6/10/2010,14:19,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,2 items of litter
+700,Midmar Dr ,Edinburgh ,Validation,6/10/2010,14:21,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+701,Balcarres Court,Edinburgh ,Validation,6/10/2010,14:53,B,3,1,1,1,1,4,1,0,0,1,0,0,0,1,0,0,0,0,0,
+702,Abbotsford Park,Edinburgh ,Validation,6/10/2010,15:26,B,3,1,1,1,1,2,1,0,0,0,0,1,0,1,0,0,0,0,0,
+703,Newtoft St,Edinburgh ,Validation,6/17/2010,10:36,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,1,0,0,0,0,Littered backline  
+704,Priory Grove,Edinburgh ,Validation,6/9/2010,11:47,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+705,Malbet Wynd,Edinburgh ,Validation,6/17/2010,15:00,B,3,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+706,Balmwell Terrace,Edinburgh ,Validation,6/21/2010,10:30,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Smoking related litter at backline
+707,Little Rd,Edinburgh ,Validation,6/21/2010,10:40,B,3,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,Litter in channel 
+708,Doublehedges Rd,Edinburgh ,Validation,6/21/2010,11:31,B,3,2,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,"Bagged dog foul in channel, also fast food related litter "
+709,Ventnor Terrace,Edinburgh ,Validation,6/21/2010,11:58,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+710,Rankin Avenue ,Edinburgh ,Validation,6/21/2010,12:02,B,3,1,1,1,2,3,1,0,0,0,0,1,0,1,0,0,0,0,0,Light sweets related litter in channel 
+711,Craigcrook Terrace ,Edinburgh ,Validation,6/11/2010,10:28,B,3,1,1,1,2,2,1,2,1,1,1,0,0,1,0,0,0,0,0,Litter on pavement 
+712,Templeand Grove,Edinburgh ,Validation,6/14/2010,11:30,B,3,1,1,1,2,3,1,0,0,0,1,1,0,1,0,0,0,0,0,Littered backline
+713,Wolseley Pl,Edinburgh ,Validation,6/16/2010,11:52,B,2,1,1,1,1,1,1,2,0,1,0,0,0,1,1,0,0,0,0,Litter at backline
+714,Figgate St,Edinburgh ,Validation,6/16/2010,12:26,B,2,1,1,1,2,2,1,0,0,1,0,1,0,1,0,0,0,0,0,
+715,Comiston Pl,Edinburgh ,Validation,6/10/2010,14:31,B,2,1,1,1,1,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+716,Bristo Square ,Edinburgh ,Validation,6/21/2010,14:33,A,2,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+717,Joppa Park,Edinburgh ,Validation,6/16/2010,13:05,B,3,1,1,1,3,1,1,0,0,0,1,1,0,1,0,0,0,0,0,
+718,Gilberstoun Pl,Edinburgh ,Validation,6/16/2010,14:10,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+719,Corbieshot,Edinburgh ,Validation,6/16/2010,14:28,B,3,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,2 items of litter 
+720,Magdalene Loan,Edinburgh ,Validation,6/16/2010,14:45,C,3,1,1,1,1,2,1,0,0,1,1,1,0,1,0,0,0,0,0,
+721,The Causeway,Edinburgh ,Validation,6/17/2010,13:48,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+722,Duddingston Row,Edinburgh ,Validation,6/17/2010,14:07,B,3,1,1,1,1,2,1,1,0,0,0,0,1,1,0,0,0,0,0,
+723,Duddingston Row,Edinburgh ,Validation,6/17/2010,14:08,B,3,1,1,1,1,2,1,0,0,0,0,0,0,1,0,0,0,0,0,
+724,Willowbrae Gardens ,Edinburgh ,Validation,6/17/2010,14:27,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+725,Rosebery Crescent ,Edinburgh ,Validation,6/15/2010,14:20,B,2,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+726,John Mason Court,Edinburgh ,Validation,6/9/2010,10:38,B,3,1,1,1,3,1,1,0,0,1,1,0,0,1,0,0,0,0,0,"Weed growth all over paved area, drinking straw at backline, smoking related litter in channel "
+727,Bankhead Grove,Edinburgh ,Validation,6/9/2010,11:00,A,3,1,1,1,1,4,1,0,0,0,0,0,0,0,0,0,0,0,0,
+728,Shore Rd,Edinburgh ,Validation,6/9/2010,11:28,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+729,Shore Rd,Edinburgh ,Validation,6/9/2010,11:29,B,3,1,1,1,1,2,1,0,0,0,0,0,1,1,0,0,0,0,0,Sandwich packet on backline
+730,Toddshill Rd,Edinburgh ,Validation,6/9/2010,12:58,B,3,1,1,1,3,2,1,0,0,1,1,0,0,1,0,0,0,0,0,3 items of litter
+731,Bankhead Grove,Edinburgh ,Validation,6/9/2010,11:00,A,3,1,1,1,4,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+732,Silverknowes Pl,Edinburgh ,Validation,6/9/2010,14:16,B,3,1,1,1,2,1,1,0,0,1,0,0,1,1,0,0,0,0,0,3 items of litter
+733,Fauldburn,Edinburgh ,Validation,6/14/2010,10:00,B,3,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Litter in channel 
+734,Maybury Rd,Edinburgh ,Validation,6/14/2010,10:20,B,3,1,1,1,1,2,1,0,0,1,0,1,1,1,0,0,0,0,0,"Other=clothing, backline which includes smoking and sweets litter"
+735,Maybury Rd,Edinburgh ,Validation,6/14/2010,10:22,B,3,1,1,1,1,2,1,0,0,1,1,1,1,1,0,0,0,0,0,Littered backline
+736,Pearce Avenue ,Edinburgh ,Validation,6/14/2010,11:19,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Smoking related litter in channel 
+737,Templeand Grove,Edinburgh ,Validation,6/14/2010,11:30,B,3,1,1,1,2,3,1,0,0,0,1,1,0,1,0,0,0,0,0,Littered backline
+738,Carrick Knowe Hill,Edinburgh ,Validation,6/14/2010,11:43,B,3,1,1,1,2,1,1,0,0,1,1,0,1,1,0,1,0,0,0,"Drinks and fast food related litter in channel, other items=fast food packaging on backline"
+739,Glebe Terrace,Edinburgh ,Validation,6/14/2010,12:00,A,3,1,1,1,1,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+740,South Gyle Wynd,Edinburgh ,Validation,6/14/2010,13:20,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+741,Lochside Pl,Edinburgh ,Validation,6/14/2010,13:37,B,3,1,1,1,1,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+742,Balgreen Gardens ,Edinburgh ,Validation,6/15/2010,10:18,B,3,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Light smoking litter in channel 
+743,Western Pl,Edinburgh ,Validation,6/15/2010,10:30,B,3,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Clothing and smoking related litter with light sweets litter also trapped in channel 
+744,Glebe Terrace,Edinburgh ,Validation,6/14/2010,12:00,A,3,1,1,1,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+745,Rose Ln,Edinburgh ,Validation,6/9/2010,11:22,A,4,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+746,Huly Hill Rd,Edinburgh ,Validation,6/15/2010,15:30,B,4,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,2 x bottles
+747,Mount Grange,Edinburgh ,Validation,6/21/2010,12:47,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+748,Bath Rd,Edinburgh ,Validation,6/18/2010,11:15,D,2,1,1,1,1,3,1,0,0,1,1,1,1,1,1,0,0,0,0,Heavily and consistently littered channel and backline
+749,Salamander Yards ,Edinburgh ,Validation,6/18/2010,11:38,B,2,1,1,1,1,2,1,0,0,1,1,1,0,1,0,0,0,0,0,Littered backline 
+750,Ethel Terrace ,Edinburgh ,Validation,6/10/2010,14:45,B,2,1,1,1,1,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+751,Halmyre St,Edinburgh ,Validation,6/18/2010,12:19,A,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+752,Haddington Pl,Edinburgh ,Validation,6/18/2010,12:46,B,2,1,1,1,1,1,1,3,0,0,1,0,0,1,0,0,0,0,0,Litter at backline
+753,Pilrig St,Edinburgh ,Validation,6/18/2010,13:04,B,2,1,1,2,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Light smoking related litter
+754,Pilrig St,Edinburgh ,Validation,6/18/2010,13:05,B,2,1,1,1,2,1,1,0,0,1,0,0,0,1,0,0,0,0,0,Light smoking related litter on pavement 
+755,Agnew Terrace ,Edinburgh ,Validation,6/18/2010,13:59,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+756,Craigcrook Terrace ,Edinburgh ,Validation,6/11/2010,10:28,B,3,1,1,1,2,2,1,2,1,1,1,0,0,1,0,0,0,0,0,Litter on pavement 
+757,Wardie Steps,Edinburgh ,Validation,6/11/2010,13:35,B,3,1,1,2,2,2,1,1,1,1,0,1,0,1,0,0,0,0,0,
+758,Park Pl,Edinburgh ,Validation,6/11/2010,14:10,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+759,Frazer Avenue ,Edinburgh ,Validation,6/11/2010,14:37,B,3,1,1,1,2,2,1,0,0,1,1,0,1,1,0,0,0,0,0,Mainly drinks related litter in channel 
+760,Telford Gardens ,Edinburgh ,Validation,6/11/2010,14:50,B,3,1,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,
+761,Hillpark Gardens ,Edinburgh ,Validation,6/14/2010,14:21,A,3,1,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+762,Craigleith Hill,Edinburgh ,Validation,6/14/2010,14:50,B,3,1,1,1,2,2,1,0,0,1,1,0,0,1,0,0,0,0,0,
+763,Crarae Avenue ,Edinburgh ,Validation,6/15/2010,11:45,A,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,
+764,Belford Gardens,Edinburgh ,Validation,6/15/2010,12:43,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+765,Belford Gardens,Edinburgh ,Validation,6/15/2010,12:44,A,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+766,Beaverbank Pl,Edinburgh ,Validation,6/18/2010,12:57,C,3,1,1,1,3,2,1,3,0,1,1,1,0,1,0,0,0,0,0,"Littered channel, smoking related litter and drinks in channel, flytipped ironing board on backline"
+767,Dean St,Edinburgh ,Validation,6/18/2010,14:41,B,3,1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,
+768,Upper Dean Pl,Edinburgh ,Validation,6/22/2010,11:36,B,3,1,1,1,1,3,1,0,0,1,0,0,0,1,0,0,0,0,0,Litter in channel 
+769,Belgrave Crescent ,Edinburgh ,Validation,6/22/2010,11:43,A,3,1,1,1,1,3,1,0,0,0,0,0,0,0,0,0,0,0,0,
+770,East Fountainbridge,Edinburgh ,Validation,6/20/2010,12:10,B,1,1,1,1,1,1,2,0,0,1,0,0,1,1,1,0,0,0,0,Elastic band. flyposting (sticker) on lampost
+771,Lady Stair's Close,Edinburgh ,Validation,6/22/2010,13:00,B,1,1,1,1,2,1,1,1,0,1,0,0,0,1,1,0,0,0,0,Litter along backline
+772,Dewar Pl Ln,Edinburgh ,Validation,6/20/2010,10:12,C,1,1,1,1,2,2,1,0,0,1,1,1,1,1,0,0,0,0,0,"Accumulation of litter in channel. latex gloves, windscreen wiper rubbers."
+773,Frederick St,Edinburgh ,Validation,6/20/2010,11:25,B,1,1,1,1,2,1,1,0,0,1,0,1,0,1,0,0,0,0,0,Lots of A boards.
+774,Frederick St,Edinburgh ,Validation,6/20/2010,11:30,B,1,1,1,1,2,1,1,0,0,1,1,1,0,1,0,0,0,0,0,Fliers and accumulation of cigarette ends in grit bin
+775,Ramsay Ln,Edinburgh ,Validation,6/20/2010,11:45,C,1,1,1,2,2,1,1,0,0,1,1,1,1,1,0,0,0,0,0,Graffiti on wall. Accumulation of litter in channel. advertising fliers.
+776,West Bow,Edinburgh ,Validation,6/22/2010,12:47,B,1,1,1,1,1,2,1,0,0,1,0,1,0,1,0,0,0,0,0,Smoking and sweets related in channel 
+777,Tweeddale Court,Edinburgh ,Validation,6/22/2010,13:36,A,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+778,Grosvenor Crescent ,Edinburgh ,Validation,6/15/2010,12:29,B,2,1,1,1,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,
+779,Manor Pl,Edinburgh ,Validation,6/20/2010,10:21,B,2,1,1,1,2,2,1,0,0,1,0,0,1,1,1,0,0,0,0,"Cigarette ends and fast food wrapper, otherwise very clean"
+780,Manor Pl,Edinburgh ,Validation,6/20/2010,10:27,B,2,1,1,2,2,2,1,0,0,1,0,0,0,1,0,0,0,0,0,Only cigarette ends and 1 paper tissue. graffiti on parking meter
+781,Spittal St Ln,Edinburgh ,Validation,6/20/2010,12:20,C,2,1,1,4,2,2,1,0,0,1,1,1,1,1,0,0,0,0,0,Accumulation of various litter types at steps. litter and graffiti on wall. Piece of clothing
+782,Broughton St,Edinburgh ,Validation,6/22/2010,11:15,B,2,1,1,2,1,1,1,2,0,1,0,1,1,1,0,0,0,0,0,"Fast food related litter on pavement, also littered backline and channel"
