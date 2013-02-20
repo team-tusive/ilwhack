@@ -55,3 +55,45 @@ def _get_height(width,tuplelist):
 	lngdelta = lngmax - lngmin
 	height = (latdelta / lngdelta) * width
 	return int(math.ceil(height))
+
+def convert_to_range(width,height,tuplelist):
+	tuplelist = filter(lambda x: x != (), tuplelist)
+	lats = [float(item[0]) for item in tuplelist]
+	lngs = [float(item[1]) for item in tuplelist]
+	latmin = min(lats)
+	latmax = max(lats)
+	lngmin = min(lngs)
+	lngmax = max(lngs)
+	oldlatrange = latmax - latmin
+	newlatrange = height
+	oldlngrange = lngmax - lngmin
+	newlngrange = width
+	convert_lat = lambda oldval: (((oldval - latmin) * newlatrange) / oldlatrange)
+	convert_lng = lambda oldval: (((oldval - lngmin) * newlngrange) / oldlngrange)
+	tuplelist = [(convert_lat(t[0]),convert_lng(t[1])) for t in tuplelist]
+	return tuplelist
+
+def pixelate_coords(tuplelist):
+	return [(int(round(t[0])),int(round(t[1]))) for t in tuplelist]
+
+def plot_coords(tuplelist,immap,color=(255,255,255)):
+	for t in tuplelist:
+		try:
+			immap.setpixel(t,color)
+		except:
+			pass
+	return immap
+
+def get_coord_tuples(heatmap_filename):
+	tuplelist = filter(lambda x: x != (), read_heatmap_file(heatmap_filename))
+	tuplelist = [(float(item[0]),float(item[1])) for item in tuplelist]
+	return tuplelist
+
+def plot_heatmap(heatmap_filename,color=(255,255,255)):
+	im = fromHeatmapFile(heatmap_filename)
+	h = get_coord_tuples(heatmap_filename)
+	h = convert_to_range(im.size[1],im.size[0],h) #gets reversed somewhere... maybe
+	h = pixelate_coords(h)
+	print h
+	im = plot_coords(h,im,color)
+	return im
