@@ -29,9 +29,9 @@ def _requestMap(width=500,*args):
 	'''Takes width and (lat,long) tuples. 
 	Width defaults to 500'''
 	#paramstring = 'http://maps.googleapis.com/maps/api/staticmap?sensor=false&size=%s&visible=' %(str(size)[1:-1].replace(' ',''))
-	size = (width,_get_height(width))
+	size = (width,_get_height(width,args))
 	paramstring = 'http://maps.googleapis.com/maps/api/staticmap?visible=STUFF_HERE&size=MORE_STUFF&sensor=false'
-	paramstring = paramstring.replace(str(size[0]) + 'x' + str(size[1]))
+	paramstring = paramstring.replace("MORE_STUFF",str(size[0]) + 'x' + str(size[1]))
 	#example = "50,30%7C50.5,30.5"
 	delimiter = '%7C'
 	visible = delimiter.join([','.join(arg) for arg in args])
@@ -49,9 +49,9 @@ def _get_height(width,tuplelist):
 	lngs = [float(item[1]) for item in tuplelist]
 	latmin = min(lats)
 	latmax = max(lats)
-	lngmin = min(lats)
-	lngmax = max(lats)
+	lngmin = min(lngs)
+	lngmax = max(lngs)
 	latdelta = latmax - latmin
 	lngdelta = lngmax - lngmin
 	height = (latdelta / lngdelta) * width
-	return math.ceil(height)
+	return int(math.ceil(height))
