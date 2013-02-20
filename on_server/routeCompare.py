@@ -13,7 +13,7 @@ def testRoute(origin, destination):
    if data['status'] != 'OK':
       raise Exception("Unexpected status returned: " + data['status'])
 
-   regex = ur"<b>[0-9]?/?([A-Z].+?)</b>+?"
+   regex = ur"<b>[0-9]?/?([A-Z].+?)(?:/[A-Z][0-9]+?)??</b>+?"
 
    thestring = ""
    ratings = Results()
