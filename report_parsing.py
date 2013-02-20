@@ -52,7 +52,7 @@ def get_archive_page(month,year):
 	url = fillable_archive_url(month,str(year))
 	if year == 2012 and MONTHS.index(month) < MONTHS.index('june'): #fuck you
 		url = url.replace('_','%20') # fucking dumb fucking replacement of underscores with spaces for 2012 only. wtf lothian police???
-	if year == 2012:
+	if year == 2012: #not even worth trying:
 		if month == 'august':
 			url = 'http://www.lbp.police.uk/information/latest_news/news_archives/2012/aug_2012.aspx'
 		elif month == 'september':
@@ -132,14 +132,17 @@ class Incident(object):
 		except TypeError:
 			self.full_locations = None
 	def tostring(self):
-		d = dict()
-		d['full_location'] = self.full_location
-		d['coords'] = str(self.coords)
-		d['title'] = self.title
-		d['crimetype'] = self.crimetype
-		d['datetime'] = time.mktime(self.datetime)
-		d['url'] = self.url
-		return str(d).replace("u'","'")
+		try: 
+			d = dict()
+			d['full_location'] = self.full_location
+			d['coords'] = str(self.coords)
+			d['title'] = self.title
+			d['crimetype'] = self.crimetype
+			d['datetime'] = time.mktime(self.datetime)
+			d['url'] = self.url
+			return str(d).replace("u'","'")
+		except: #some occasional errors with time.mktime: 
+			return ""
 
 road_names = ['avenue','street','road','estate','lane']
 road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Steps', 'Craigour', 'park', \
