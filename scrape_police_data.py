@@ -26,21 +26,32 @@ def write_heatmap_file():
         out += str(inc.coords['lat']) + ',' + str(inc.coords['lng']) + ',100\n'
     f.write(out)
     f.close()
-for year in [2011,2012,2013]:
-    for month in MONTHS:
-        month_incidents = []
-        print 'Scraping %s, %s' %(year, month)
-        urls = get_incident_urls(get_archive_page(month,year))
-        for url in urls:
-            print '\tScraping ' + url
-            month_incidents.append(Incident(url))
-            full_incidents.append(month_incidents[-1])
-        if month_incidents[-1].coords == (None, None) or not month_incidents[-1].full_location or not month_incidents[-1].viable:
-            failed_list.append({'url':url,'coordfail?':month_incidents[-1].coords == (None, None), 'locfail?': not month_incidents[-1].full_locations,\
-                                'generalviabilityfail?': not month_incidents[-1].viable})
-        f = open(month + '.' + str(year) + '.csv','w')
-        f.write('[' + ',\n'.join([str(incident.tostring()) for incident in month_incidents]) + ']')
-        f.close()
-        incidents[month+str(year)] = month_incidents
+
+def read_heatmap_file(filename):
+    f = open(filename,'r')
+    contents = f.read()
+    f.close()
+    lines = contents.split('\n')
+    tuples = [tuple(line.split(',')[:-1]) for line in lines] #removing "dummy" 100 intensity value
+    return tuples
+
+if __name__ == "__main__":
+    for year in [2011,2012,2013]:
+        for month in MONTHS:
+            month_incidents = []
+            print 'Scraping %s, %s' %(year, month)
+            urls = get_incident_urls(get_archive_page(month,year))
+            for url in urls:
+                print '\tScraping ' + url
+                month_incidents.append(Incident(url))
+                full_incidents.append(month_incidents[-1])
+            if month_incidents[-1].coords == (None, None) or not month_incidents[-1].full_location or not month_incidents[-1].viable:
+                failed_list.append({'url':url,'coordfail?':month_incidents[-1].coords == (None, None), 'locfail?': not month_incidents[-1].full_locations,\
+                                    'generalviabilityfail?': not month_incidents[-1].viable})
+            f = open(month + '.' + str(year) + '.csv','w')
+            f.write('[' + ',\n'.join([str(incident.tostring()) for incident in month_incidents]) + ']')
+            f.close()
+            incidents[month+str(year)] = month_incidents
+    write_heatmap_file()
 
 
