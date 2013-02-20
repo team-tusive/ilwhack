@@ -122,7 +122,10 @@ class Incident(object):
 		self.title = get_title(self.raw_html)
 		try:
 			self.crimetype, self.general_location = self.title.split(', ')
-			self.full_location = ', '.join([self.street_location,self.general_location])
+			if not self.general_location.istitle():
+				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
+			else:
+				self.full_location = ', '.join([self.street_location,self.general_location])
 		except ValueError: #title not of format "crimetype, location"
 			if DEFAULT_LOCATION and self.street_location:
 				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
@@ -178,7 +181,7 @@ def get_report_location(report):
 		return None
 	while True: #account for cases like "Queensferry Street Lane"
 		nextword = report_words[street_incidence_index + 1]
-		if nextword.istitle() and nextword.lower() in road_names:
+		if nextword.istitle(): #changed from requiring trailing words to be in road_words
 			street_incidence_index+=1
 		else:
 			break
