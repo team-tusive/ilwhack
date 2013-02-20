@@ -13,9 +13,17 @@ def testRoute(origin, destination):
       raise Exception("Unexpected status returned: " + data['status'])
 
    regex = ur"<b>[0-9]?/?([A-Z].+?)</b>+?"
+
+   thestring = ""
+
    for route in data['routes']:
-      print "------------------\n"
+      thestring += "------------------\n"
+      streets = []
       for step in route['legs'][0]['steps']:
-#         print step['html_instructions']
+#        print step['html_instructions']
          if len(re.findall(regex, step['html_instructions']))>0:
-            print re.findall(regex, step['html_instructions'])[0]
+            streets.append(re.findall(regex, step['html_instructions'])[0])
+      streets = list(set(streets))
+      for street in streets:
+         thestring += street + "\n"
+   return thestring
