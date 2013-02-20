@@ -16,6 +16,7 @@ import time
 import getLocation
 import traceback
 import sys
+import re
 
 global debug_incident
 debug_incident = None
@@ -78,10 +79,12 @@ def get_incident_urls(raw_html):
 	links = [SITE_URL + link[:link.find('"')] for link in link_starts]
 	return links
 
+def isurl(input):
+    return re.match("http",input)
+
 
 class Incident(object):
-	def __init__(self,url):
-		self.url = url
+	def __init__(self,inpt):
 		self.error404 = False
 		self.viable = False
 		self.raw_html = None
@@ -93,7 +96,15 @@ class Incident(object):
 		self.title = None
 		self.full_location = None
 		self.coords = (None,None)
-		self.download_html()
+		if isurl(inpt):
+			self.url = inpt
+			self.download_html()
+		else:
+			self.url = None
+			try:
+				self.raw_html = open(inpt,'r').read()
+			except IOError as e:
+				print e.message
 		self.populate_data()
 		if self.full_location != ', ' and self.full_location != None:
 			self.viable = True
@@ -107,7 +118,8 @@ class Incident(object):
 					global debug_incident
 					debug_incident = self
 					traceback.print_exc(file=sys.stdout)
-				self.viable = False
+				self.viable = False                
+                
 	def download_html(self):
 		try:
 			self.raw_html = url_request(self.url)
@@ -128,7 +140,7 @@ class Incident(object):
 				self.full_location = ', '.join([self.street_location,self.general_location])
 		except ValueError: #title not of format "crimetype, location"
 			if DEFAULT_LOCATION and self.street_location:
-				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION])
+				self.full_location = ', '.join([self.street_location,DEFAULT_LOCATION]).replace(',,',',')
 		except TypeError:
 			self.full_locations = None
 	def tostring(self):
@@ -157,9 +169,10 @@ road_names += map(str.lower,['Gardens', 'End', 'Rigg', 'road', 'Way', 'SQ', 'Ste
 #^ taken from Egidijus' data (from council)
 incident_exclusion_list = ['charged','arrested','arrest','arrests','appeal','update','?','recovered']
 
-get_street_locations = lambda split_report: filter(lambda (x,y): y.lower() in road_names and y.istitle(),enumerate(split_report))
+get_street_locations = lambda split_report: filter(lambda (x,y): re.sub('[^a-z]','',y.lower()) in road_names and y.istitle(),enumerate(split_report))
 
-explode_report = lambda report: filter(lambda x: len(x)>0, report.replace('\n',' ').split(' '))
+explode_report = lambda report: filter(lambda x: len(x)>0, re.split('\s+',report))
+
 
 end_tag = lambda start_tag: start_tag[0] + '/' + start_tag[1:]
 
@@ -217,4 +230,4 @@ def get_title(raw_html):
 		return None
 	raw_html = raw_html[raw_html.find(start_title_tag)+len(start_title_tag):]
 	raw_html = raw_html[:raw_html.find(end_title_tag)]
-	return raw_html.replace('\n','').replace('\r','').replace('\t','')
+	return re.sub('[\r\t\n]','',raw_html)
