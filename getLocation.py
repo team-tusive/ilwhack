@@ -11,6 +11,7 @@ def getLocation(location):
    #send query, get json, ???, profit!
    response = urllib2.urlopen(url)
    data = json.load(response)
+   print data
 
    #if google reports an error, we propagate it to our caller
    if data['status']!='OK':
@@ -22,3 +23,22 @@ def getLocation(location):
    #we know that results contains exactly one entry (since status != OK if we don't get any results)
    #extract and return the given location to our caller.
    return data['results'][0]['geometry']['location']
+
+def getName(coords):
+   "Given a pair of GPS coordinates, this function returns a location name"
+
+   # build the url we will use to query googles API. We join the tokens in the location string with plusses, e.g. "Royal+Mile+Edinburgh"
+   url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f&sensor=false" % coords
+   
+   #send query, get json, ???, profit!
+   response = urllib2.urlopen(url)
+   data = json.load(response)
+
+   #if google reports an error, we propagate it to our caller
+   if data['status']!='OK':
+      raise Exception("Unexpected status returned: " + str(data['status']))
+   #Yay! regexp!
+   return re.sub(",.*","",re.sub("^[^a-zA-Z]*","",data['results'][0]['formatted_address']))
+
+   
+
