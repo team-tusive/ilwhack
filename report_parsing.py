@@ -14,6 +14,8 @@
 import urllib2
 import time
 import getLocation
+import traceback
+import sys
 
 global debug_incident
 debug_incident = None
@@ -102,8 +104,9 @@ class Incident(object):
 			except Exception as e:
 				print e.message
 				if "concatenate" in e.message:
-					debug_instance = self
-					raise Exception("CONCAT")
+					global debug_incident
+					debug_incident = self
+					traceback.print_exc(file=sys.stdout)
 				self.viable = False
 	def download_html(self):
 		try:

@@ -1,19 +1,19 @@
 from report_parsing import *
 
-urls = []
-for year in [2011,2012,2013]:
-    for month in MONTHS:
-        print "getting %s %s" %(str(month),str(year))
-        try:
-            urls += get_incident_urls(get_archive_page(month,year))
-        except:
-            print "\t404"
-
-for url in urls:
-    print url
-
-
-raw_input()
+##urls = []
+##for year in [2011,2012,2013]:
+##    for month in MONTHS:
+##        print "getting %s %s" %(str(month),str(year))
+##        try:
+##            urls += get_incident_urls(get_archive_page(month,year))
+##        except:
+##            print "\t404"
+##
+##for url in urls:
+##    print url
+##
+##
+##raw_input()
 incidents = dict()
 full_incidents = []
 urls = None
