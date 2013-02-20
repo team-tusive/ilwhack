@@ -26,7 +26,7 @@ def write_heatmap_file():
         out += str(inc.coords['lat']) + ',' + str(inc.coords['lng']) + ',100\n'
     f.write(out)
     f.close()
-for year in [2012,2013]:
+for year in [2011,2012,2013]:
     for month in MONTHS:
         month_incidents = []
         print 'Scraping %s, %s' %(year, month)
@@ -35,7 +35,7 @@ for year in [2012,2013]:
             print '\tScraping ' + url
             month_incidents.append(Incident(url))
             full_incidents.append(month_incidents[-1])
-        if month_incidents[-1].coords == (None, None) or not month_incidents[-1].full_locations or not month_incidents[-1].viable:
+        if month_incidents[-1].coords == (None, None) or not month_incidents[-1].full_location or not month_incidents[-1].viable:
             failed_list.append({'url':url,'coordfail?':month_incidents[-1].coords == (None, None), 'locfail?': not month_incidents[-1].full_locations,\
                                 'generalviabilityfail?': not month_incidents[-1].viable})
         f = open(month + '.' + str(year) + '.csv','w')
