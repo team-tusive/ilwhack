@@ -5,5 +5,11 @@ threadsafe: false
 api_version: 1
 
 handlers:
+- url: /
+  static_files: templates/index.html
+  upload: templates/index\.html
+- url: /css/stylesheet.css
+  static_files: css/stylesheet.css
+  upload: css/stylesheet\.css
 - url: /.*
   script: saferroute.py

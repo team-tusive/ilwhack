@@ -1,24 +1,13 @@
-from google.appengine.ext import webapp
-from google.appengine.ext.webapp.util import run_wsgi_app
-from routeCompare import testRoute
+#import os
 import urllib2
 import json
 import re
 import cgi
+from google.appengine.ext.webapp.util import run_wsgi_app
+#from google.appengine.ext.webapp import template
+from google.appengine.ext import webapp
+from routeCompare import testRoute
 
-class MainPage(webapp.RequestHandler):
-   def get(self):
-      self.response.headers['Content-Type'] = 'text/html'
-      self.response.out.write("""
-          <html>
-            <body>
-              <form action="/search" method="post">
-                <div><input type="text" name="origin"><label for="origin">Origin</label></div>
-                <div><input type="text" name="destination"><label for="destination">Destination</label></div>
-                <div><input type="submit" value="Get Routes"></div>
-              </form>
-            </body>
-          </html>""")
 
 class GetRoutes(webapp.RequestHandler):
    def post(self):
@@ -28,9 +17,17 @@ class GetRoutes(webapp.RequestHandler):
       self.response.out.write("testRoute('" + origin + "', '" + destination + "')\n")
       self.response.out.write(testRoute(origin, destination))
 
+#      template_values = {
+#         'greetings': greetings,
+#         'url': url,
+#         'url_linktext': url_linktext,
+#      }
+#      path = os.path.join(os.path.dirname(__file__), 'index.html')
+#      self.response.out.write(template.render(path, template_values))
+
+
 application = webapp.WSGIApplication(
-                                     [('/', MainPage),
-                                      ('/search', GetRoutes)],
+                                     [('/search', GetRoutes)],
                                       debug=True)
 
 def main():
