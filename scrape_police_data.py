@@ -17,7 +17,15 @@ from report_parsing import *
 incidents = dict()
 full_incidents = []
 urls = None
-for year in [2011,2012,2013]:
+def write_heatmap_file():
+    coord_incs = [incident for incident in full_incidents if incident.coords != (None,None)]
+    f = open('heatmap.csv','w')
+    out = ''
+    for inc in coord_incs:
+        out += str(inc.coords['lat']) + ',' + str(inc.coords['lng']) + ',100\n'
+    f.write(out)
+    f.close()
+for year in [2012,2013]:
     for month in MONTHS:
         month_incidents = []
         print 'Scraping %s, %s' %(year, month)
@@ -30,3 +38,5 @@ for year in [2011,2012,2013]:
         f.write('[' + ',\n'.join([str(incident.tostring()) for incident in month_incidents]) + ']')
         f.close()
         incidents[month+str(year)] = month_incidents
+
+
