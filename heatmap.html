@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps JavaScript API v3 Example: Heatmap Layer</title>
+    <link href="https://developers.google.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
+    <script src="./heatmap_data_filtered.js"></script>
+    <script>
+      // Adding 500 Data Points
+      var map, pointarray, heatmap;
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 12,
+          center: new google.maps.LatLng(55.95, -3.22),
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+            mapOptions);
+
+        pointArray = new google.maps.MVCArray(heatmapData);
+
+        heatmap = new google.maps.visualization.HeatmapLayer({
+          data: pointArray
+        });
+
+        heatmap.setMap(map);
+        heatmap.setOptions({dissipating: true});
+        heatmap.setOptions({radius: 30});
+        heatmap.setOptions({maxIntensity: 10});
+      }
+
+      function toggleHeatmap() {
+        heatmap.setMap(heatmap.getMap() ? null : map);
+      }
+
+      function changeGradient() {
+        var gradient = [
+          'rgba(0, 255, 255, 0)',
+          'rgba(0, 255, 255, 1)',
+          'rgba(0, 191, 255, 1)',
+          'rgba(0, 127, 255, 1)',
+          'rgba(0, 63, 255, 1)',
+          'rgba(0, 0, 255, 1)',
+          'rgba(0, 0, 223, 1)',
+          'rgba(0, 0, 191, 1)',
+          'rgba(0, 0, 159, 1)',
+          'rgba(0, 0, 127, 1)',
+          'rgba(63, 0, 91, 1)',
+          'rgba(127, 0, 63, 1)',
+          'rgba(191, 0, 31, 1)',
+          'rgba(255, 0, 0, 1)'
+        ]
+        heatmap.setOptions({
+          gradient: heatmap.get('gradient') ? null : gradient
+        });
+      }
+
+      function changeOpacity() {
+        heatmap.setOptions({opacity: heatmap.get('opacity') ? null : 0.2});
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="map_canvas" style="height: 600px; width: 800px;"></div>
+    <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+    <button onclick="changeGradient()">Change gradient</button>
+    <button onclick="changeRadius()">Change radius</button>
+    <button onclick="changeOpacity()">Change opacity</button>
+  </body>
+</html>
