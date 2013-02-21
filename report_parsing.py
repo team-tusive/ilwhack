@@ -109,8 +109,8 @@ class Incident(object):
 		if self.full_location != ', ' and self.full_location != None:
 			self.viable = True
 			try:
-				print "\t\tLocation: " + str(self.full_location)
-				print "\t\tGetLocation: " + str(getLocation.getLocation(str(self.full_location)))
+				#print "\t\tLocation: " + str(self.full_location)
+				#print "\t\tGetLocation: " + str(getLocation.getLocation(str(self.full_location)))
 				self.coords = getLocation.getLocation(str(self.full_location))
 			except Exception as e:
 				print e.message

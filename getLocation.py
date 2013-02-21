@@ -11,7 +11,7 @@ def getLocation(location):
    #send query, get json, ???, profit!
    response = urllib2.urlopen(url)
    data = json.load(response)
-   print data
+   #print data
 
    #if google reports an error, we propagate it to our caller
    if data['status']!='OK':
@@ -19,7 +19,7 @@ def getLocation(location):
 
    #if we get several results, we can't determine what our caller wants, so we raise an exception.
    if len(data['results'])>1:
-      raise Exception("Ambigous result returned: " + str(data['results']))
+      raise Exception("Ambigous result returned: ") #removed printing this, was cluttering up output. Please change in future to use first result returned as opposed to raising exception
    #we know that results contains exactly one entry (since status != OK if we don't get any results)
    #extract and return the given location to our caller.
    return data['results'][0]['geometry']['location']
@@ -36,7 +36,7 @@ def getName(coords):
 
    #if google reports an error, we propagate it to our caller
    if data['status']!='OK':
-      raise Exception("Unexpected status returned: " + str(data['status']))
+      raise Exception("\tUnexpected status returned: " + str(data['status']))
    #Yay! regexp!
    return re.sub(",.*","",re.sub("^[^a-zA-Z]*","",data['results'][0]['formatted_address']))
 
