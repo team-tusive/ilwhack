@@ -62,12 +62,27 @@
       function changeOpacity() {
         heatmap.setOptions({opacity: heatmap.get('opacity') ? null : 0.2});
       }
+
+      function loadNewData(json_filename) {
+        var _xmlhttp = new XMLHttpRequest();
+        _xmlhttp.onreadystatechange = function() {
+          alert(_xmlhttp.readyState + ' ' + _xmlhttp.status);
+          if (_xmlhttp.readyState == 4 && _xmlhttp.status == 200){
+              pointArray.clear();
+              heatmapData = eval(_xmlhttp.responseText);
+              pointArray = new google.maps.MVCArray(heatmapData);
+              alert("Success");
+          }
+        }
+        _xmlhttp.open("GET", json_filename, true);
+        _xmlhttp.send();
+      }
     </script>
   </head>
 
   <body onload="initialize()">
     <div id="map_canvas" style="height: 600px; width: 800px;"></div>
-    <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+    <button onclick="loadNewData('./heatmap_data.js')">Look at unfiltered data</button>
     <button onclick="changeGradient()">Change gradient</button>
     <button onclick="changeRadius()">Change radius</button>
     <button onclick="changeOpacity()">Change opacity</button>
