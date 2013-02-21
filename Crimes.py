@@ -42,7 +42,7 @@ class Crimes:
         self.streetscoord = list()
         for row in street_data:
             for item in row:
-                temp=((item[0][0],item[0][1]),item[1])
+                temp=((item[0],item[1]),item[2])
                 print(item[0])
                 self.streetscoord.append(item)
         type_data = csv.reader(open(typepath,'r'))
@@ -69,7 +69,7 @@ class Crimes:
         out = ""
         for item in self.streetscoord:
             print(item)
-            out+= str(x[0]) +'\t'+str(x[1])+'\t'+str(x[2])+'\n'
+            out+= str(item[0]) +'\t'+str(item[1])+'\t'+str(item[2])+'\n'
         f.write(out)
         fileout.close()
 
