@@ -15,7 +15,7 @@
         var mapOptions = {
           zoom: 12,
           center: new google.maps.LatLng(55.95, -3.22),
-          mapTypeId: google.maps.MapTypeId.SATELLITE
+          mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
         map = new google.maps.Map(document.getElementById('map_canvas'),
@@ -29,8 +29,8 @@
 
         heatmap.setMap(map);
         heatmap.setOptions({dissipating: true});
-        heatmap.setOptions({radius: 30});
-        heatmap.setOptions({maxIntensity: 10});
+        heatmap.setOptions({radius: 25});
+        heatmap.setOptions({maxIntensity: 5});
       }
 
       function toggleHeatmap() {
