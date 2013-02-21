@@ -38,10 +38,11 @@ class Crimes:
     def __init__(self,datapath,typepath, optionalCsvStreetNameCoordinate):
         temp_data = open(datapath,'r')
         data = temp_data.read()
-        street_data = csv.reader(open(optionalCsvStreetNameCoordinate))
+        street_data = csv.reader(open(optionalCsvStreetNameCoordinate),delimiter='\n')
         self.streetscoord = list()
         for row in street_data:
             for item in row:
+                print(item[0])
                 self.streetscoord.append(item)
         type_data = csv.reader(open(typepath,'r'))
         self.types = list()
@@ -63,10 +64,12 @@ class Crimes:
                 if tempdata != None:
                     self.result.append(tempdata)
                 data = ""
-        
-        changes = csv.writer(open("output.csv",'w'))
+        fileout = open("output.csv",'w')
+        changes = csv.writer(fileout, delimiter=',',lineterminator='\n')
         for item in self.streetscoord:
-            changes.writerow(item)
+            print(item)
+            changes.writerow("["+item[0]+",'"+item[1]+"']")
+        fileout.close()
 
     def findofTypes (self, crimeTypes):
         finalres= list()
@@ -147,11 +150,10 @@ class Crimes:
 
             street = None
             if ('none'.lower() not in coords[0].lower()):
-                print (coords)
                 for streetname in self.streetscoord:
                     if (float(coords[0]),float(coords[1])) == streetname[0]:
                         street = streetname[1]
-                print('works')
+                        break
                 if street== None:
                     street = str(getLocation.getName((float(coords[0]),float(coords[1]))))
                     self.streetscoord.append(((float(coords[0]),float(coords[1])),street))
