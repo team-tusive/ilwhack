@@ -38,7 +38,7 @@ class Crimes:
     def __init__(self,datapath,typepath, optionalCsvStreetNameCoordinate):
         temp_data = open(datapath,'r')
         data = temp_data.read()
-        street_data = csv.reader(open(optionalCsvStreetNameCoordinate),delimiter='\n')
+        street_data = csv.reader(open(optionalCsvStreetNameCoordinate),delimiter='\t')
         self.streetscoord = list()
         for row in street_data:
             for item in row:
@@ -66,10 +66,11 @@ class Crimes:
                     self.result.append(tempdata)
                 data = ""
         fileout = open("output.csv",'w')
-        changes = csv.writer(fileout, delimiter=',',lineterminator='\n')
+        out = ""
         for item in self.streetscoord:
             print(item)
-            changes.writerow("['"+item[0][0]+"','"+ item[0][1] +",'"+item[1]+"']")
+            out+= str(x[0]) +'\t'+str(x[1])+'\t'+str(x[2])+'\n'
+        f.write(out)
         fileout.close()
 
     def findofTypes (self, crimeTypes):
