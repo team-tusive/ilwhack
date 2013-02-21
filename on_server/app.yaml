@@ -8,6 +8,9 @@ handlers:
 - url: /
   static_files: templates/index.html
   upload: templates/index\.html
+- url: /heatmap
+  static_files: templates/heatmap.html
+  upload: templates/heatmap\.html
 - url: /css/stylesheet.css
   static_files: css/stylesheet.css
   upload: css/stylesheet\.css
