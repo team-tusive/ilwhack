@@ -8,7 +8,7 @@ def getLocation(location):
    # build the url we will use to query googles API. We join the tokens in the location string with plusses, e.g. "Royal+Mile+Edinburgh"
    url = 'http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address='+"+".join(re.split(" +", location))
    
-   #send query, get json, ???, profit!
+   #send the query, get a json response
    response = urllib2.urlopen(url)
    data = json.load(response)
 

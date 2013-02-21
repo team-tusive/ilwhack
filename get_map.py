@@ -92,7 +92,7 @@ def get_coord_tuples(heatmap_filename):
 def plot_heatmap(heatmap_filename,color=(255,255,255)):
 	im = fromHeatmapFile(heatmap_filename)
 	h = get_coord_tuples(heatmap_filename)
-	h = convert_to_range(im.size[1],im.size[0],h) #gets reversed somewhere... maybe
+	h = convert_to_range(im.size[1],im.size[0],h)
 	h = pixelate_coords(h)
 	print h
 	im = plot_coords(h,im,color)

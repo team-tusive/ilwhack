@@ -51,9 +51,9 @@ def get_archive_page(month,year):
 	if not month in MONTHS:
 		raise ValueError("Illegal month: " + month)
 	url = fillable_archive_url(month,str(year))
-	if year == 2012 and MONTHS.index(month) < MONTHS.index('june'): #fuck you
-		url = url.replace('_','%20') # fucking dumb fucking replacement of underscores with spaces for 2012 only. wtf lothian police???
-	if year == 2012: #not even worth trying:
+	if year == 2012 and MONTHS.index(month) < MONTHS.index('june'): 
+		url = url.replace('_','%20') # Replacement of underscores with spaces for 2012 only.
+	if year == 2012: 
 		if month == 'august':
 			url = 'http://www.lbp.police.uk/information/latest_news/news_archives/2012/aug_2012.aspx'
 		elif month == 'september':
@@ -64,7 +64,7 @@ def get_archive_page(month,year):
 		if month == 'january':
 			url = url.replace('_2013','')
 		if month == 'february':
-			url = url.replace('_2013','-1') #???????? fuck whoever made this
+			url = url.replace('_2013','-1')
 	return url_request(url)
 
 def get_incident_urls(raw_html):
@@ -109,8 +109,6 @@ class Incident(object):
 		if self.full_location != ', ' and self.full_location != None:
 			self.viable = True
 			try:
-				#print "\t\tLocation: " + str(self.full_location)
-				#print "\t\tGetLocation: " + str(getLocation.getLocation(str(self.full_location)))
 				self.coords = getLocation.getLocation(str(self.full_location))
 			except Exception as e:
 				print e.message
