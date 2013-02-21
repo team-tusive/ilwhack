@@ -1,6 +1,7 @@
 import datetime
 import csv
 import getLocation
+import math
 
 class Crime:
     def __init__(self,crimetype,title,url,datet,coords,location):
@@ -12,8 +13,8 @@ class Crime:
         self.location = location
         self.datesec = datet % 86400
         if ('none'.lower() not in self.coords[0].lower()):
-            self.street = str(getLocation.getName((float(self.coords[0]),float(self.coords[1]))))
-        else:
+        #    self.street = str(getLocation.getName((float(self.coords[0]),float(self.coords[1]))))
+        #else:
             self.street = None
      
     def getDateTime(self):
@@ -46,13 +47,20 @@ class Crimes:
         for row in type_data:
             for item in row:
                 self.types.append(item)
-        self.result = list()    
+        self.result = list()
+        while (data.find(",\n,\n" )!= (-1)):
+            data=data.replace(",\n,\n",",\n")
+        
         while (data.find("}")!=(-1)):
             if data.find("\n")!= (-1):
-                self.result.append(self.toCrime(data[data.find("{")+1:data.find("\n")]))
+                tempdata = self.toCrime(data[data.find("{")+1:data.find("\n")])
+                if tempdata!=None:
+                    self.result.append(tempdata)
                 data = data[data.find("\n")+1:]
             else:
-                self.result.append(self.toCrime(data))
+                tempdata =self.toCrime(data)
+                if tempdata != None:
+                    self.result.append(tempdata)
                 data = ""
 
     def findofTypes (self, crimeTypes):
@@ -102,38 +110,44 @@ class Crimes:
         
 
     def toCrime (self,data):
-        crimetype = data[data.find(":")+1:data.find(",")]
-        data = data[data.find(",")+1:]
-        data = data[data.find("'")+1:]
-        data = data[data.find("'")+1:]
-        data = data[data.find("'")+1:]
-        title = data[:data.find("'")]
-        data = data[data.find("'"):]
-        data = data[data.find("'")+1:]
-        data = data[data.find("'")+1:]
-        data = data[data.find("'")+1:]
-        data = data[data.find("'")+1:]    
-        url = data[:data.find("'")]
-        data = data[data.find("'"):]
-        data = data[data.find(":")+2:]
-        datetimesec = float(data[:data.find(",")])
-        data = data[data.find(",")+1:]
-        data = data[data.find(":")+1:]
-        if (data.find("None)")!=-1):
-            coords = ["None","None"]
-        else:
-            coordx = data[data.find(":")+1:data.find(",")]
+        try:
+            crimetype = data[data.find(":")+1:data.find(",")]
             data = data[data.find(",")+1:]
-            coordy = data[data.find(":")+1:data.find("}")]
-            coords = [coordx,coordy]
-        data = data[data.find("}")+1:]
-        data = data[data.find(":")+1:]
-        data = data[data.find("'")+1:]
-        location = data[:data.find("'")]
-        if 'none' in crimetype.lower():
-            for item in self.types:
-                if item.lower() in title.lower():
-                        crimetype = item
-                        break
-        return Crime(crimetype,title,url,datetimesec,coords,location)
+            data = data[data.find("'")+1:]
+            data = data[data.find("'")+1:]
+            data = data[data.find("'")+1:]
+            title = data[:data.find("'")]
+            data = data[data.find("'"):]
+            data = data[data.find("'")+1:]
+            data = data[data.find("'")+1:]
+            data = data[data.find("'")+1:]
+            data = data[data.find("'")+1:]    
+            url = data[:data.find("'")]
+            data = data[data.find("'"):]
+            data = data[data.find(":")+2:]
+            datetimesec = float(data[:data.find(",")])
+            data = data[data.find(",")+1:]
+            data = data[data.find(":")+1:]
+            if (data.find("None)")!=-1):
+                coords = ["None","None"]
+            else:
+                coordx = data[data.find(":")+1:data.find(",")]
+                data = data[data.find(",")+1:]
+                coordy = data[data.find(":")+1:data.find("}")]
+                coords = [coordx,coordy]
+            data = data[data.find("}")+1:]
+            data = data[data.find(":")+1:]
+            data = data[data.find("'")+1:]
+            location = data[:data.find("'")]
+            if 'none' in crimetype.lower():
+                for item in self.types:
+                    if item.lower() in title.lower():
+                            crimetype = item
+                            break
+            if (coords!= ["None","None"]) :
+                if ( (math.sqrt((float(coordx)-55.954198)**2+(float(coordy) + 3.188782)**2)<2)):     
+                    return Crime(crimetype,title,url,datetimesec,coords,location)
+                return None
+        except:
+            return None
         
