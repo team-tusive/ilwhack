@@ -22,9 +22,16 @@ class GetRoutes(webapp.RequestHandler):
       path = os.path.join(os.path.dirname(__file__), 'templates/result.html')
       self.response.out.write(template.render(path, template_values))
 
+class GetApiResponse(webapp.RequestHandler):
+   def get(self):
+      data = {'key':'test value'}
+      dataSerialized = json.dumps(data)
+      self.response.headers.add_header('content-type', 'application/json', charset='utf-8')
+      self.response.out.write(dataSerialized)
+
 
 application = webapp.WSGIApplication(
-                                     [('/search', GetRoutes)],
+                                     [('/search', GetRoutes), ('/api', GetApiResponse)],
                                       debug=True)
 
 def main():
