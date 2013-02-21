@@ -5,7 +5,8 @@ import re
 
 def getRoutes(origin, destination):
 
-# Given origin and destination, returns list of routes in 5-tuples of the form:
+# Given origin and destination, returns a 2-tuple (routes, data)
+# where data is original response and routes is a list of routes in 5-tuples of the form:
 # (distance_text, distance_value, start_address, end_address, streets)
 # where "streets" is a set of 2-tuples (street, rating)
 # rating can be integer 0-4 or None and is taken from edinburgh_data_normalised.csv
@@ -35,4 +36,4 @@ def getRoutes(origin, destination):
       streets = set(streets)
       routedata = (distance_text, distance_value, start_address, end_address, streets)
       routes.append(routedata)
-   return routes
+   return (routes, data)

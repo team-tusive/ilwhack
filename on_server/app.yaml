@@ -11,5 +11,9 @@ handlers:
 - url: /css/stylesheet.css
   static_files: css/stylesheet.css
   upload: css/stylesheet\.css
+- url: /js/jquery-1.9.1.min.js
+  static_files: js/jquery-1.9.1.min.js
+  upload: js/jquery-1\.9\.1\.min\.js
+
 - url: /.*
   script: saferroute.py
