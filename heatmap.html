@@ -66,12 +66,17 @@
       function loadNewData(json_filename) {
         var _xmlhttp = new XMLHttpRequest();
         _xmlhttp.onreadystatechange = function() {
-          alert(_xmlhttp.readyState + ' ' + _xmlhttp.status);
           if (_xmlhttp.readyState == 4 && _xmlhttp.status == 200){
               pointArray.clear();
               heatmapData = eval(_xmlhttp.responseText);
               pointArray = new google.maps.MVCArray(heatmapData);
-              alert("Success");
+              heatmap = new google.maps.visualization.HeatmapLayer({
+                data: pointArray
+              });
+              heatmap.setMap(map);
+              heatmap.setOptions({dissipating: true});
+              heatmap.setOptions({radius: 25});
+              heatmap.setOptions({maxIntensity: 5});
           }
         }
         _xmlhttp.open("GET", json_filename, true);
