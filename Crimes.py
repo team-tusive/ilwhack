@@ -1,5 +1,6 @@
 import datetime
 import csv
+import getLocation
 
 class Crime:
     def __init__(self,crimetype,title,url,datet,coords,location):
@@ -10,7 +11,10 @@ class Crime:
         self.coords = coords
         self.location = location
         self.datesec = datet % 86400
-
+        if ('none'.lower() not in self.coords[0].lower()):
+            self.street = str(getLocation.getName((float(self.coords[0]),float(self.coords[1]))))
+        else:
+            self.street = None
      
     def getDateTime(self):
         return self.datet
@@ -26,7 +30,7 @@ class Crime:
         return self.title
     def getUrl(self):
         return self.url
-    def getLocation(self):
+    def getLocationnonUrl(self):
         return self.location
     def getCoords(self):
         return self.coords
@@ -51,6 +55,14 @@ class Crimes:
                 self.result.append(self.toCrime(data))
                 data = ""
 
+    def findofTypes (self, crimeTypes):
+        finalres= list()
+        for crimetype in crimeTypes:
+            for crime in self.result:
+               if (crimetype.lower() in crime.crimetype.lower()):
+                    finalres.append(crime)
+        return finalres
+
     
     def findWithinTime(self, targetTimeHour,targetTimeMinute, timeRangeMinutes):
        finalres= list()
@@ -66,6 +78,28 @@ class Crimes:
                finalres.append(crime)
        return finalres
     
+    def crimelisttoGoogle(self,listofCrimes):
+        result="heatmapData = [\n"
+        for crime in listofCrimes:
+            if 'none' not in crime.coords[0].lower():
+                result =result + "	new google.maps.LatLng(" + crime.coords[0]+", "+crime.coords[1]+"),\n"
+        result = result+ "];"
+        return result
+
+    def streetCrimed(self, listofStreets):
+        result = list()
+        for street in listofStreets:
+            tempres = 0
+            for crime in self.result:
+                if crime.street!=None:
+                    if street.lower() in crime.street.lower():
+                        tempres=tempres+1
+            if tempres !=0:
+                result.append((street,tempres))
+        return result
+    
+
+        
 
     def toCrime (self,data):
         crimetype = data[data.find(":")+1:data.find(",")]
@@ -97,7 +131,7 @@ class Crimes:
         data = data[data.find("'")+1:]
         location = data[:data.find("'")]
         if 'none' in crimetype.lower():
-        for item in self.types:
+            for item in self.types:
                 if item.lower() in title.lower():
                         crimetype = item
                         break
