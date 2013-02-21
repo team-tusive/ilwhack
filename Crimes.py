@@ -42,6 +42,7 @@ class Crimes:
         self.streetscoord = list()
         for row in street_data:
             for item in row:
+                temp=((item[0][0],item[0][1]),item[1])
                 print(item[0])
                 self.streetscoord.append(item)
         type_data = csv.reader(open(typepath,'r'))
@@ -68,7 +69,7 @@ class Crimes:
         changes = csv.writer(fileout, delimiter=',',lineterminator='\n')
         for item in self.streetscoord:
             print(item)
-            changes.writerow("["+item[0]+",'"+item[1]+"']")
+            changes.writerow("['"+item[0][0]+"','"+ item[0][1] +",'"+item[1]+"']")
         fileout.close()
 
     def findofTypes (self, crimeTypes):
