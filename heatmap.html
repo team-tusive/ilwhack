@@ -10,8 +10,10 @@
     <script>
       // Adding 500 Data Points
       var map, pointarray, heatmap;
-
+      var small_controls = true;
+      var geocoder;
       function initialize() {
+        geocoder = new google.maps.Geocoder();
         var mapOptions = {
           zoom: 12,
           center: new google.maps.LatLng(55.95, -3.22),
@@ -63,6 +65,31 @@
         heatmap.setOptions({opacity: heatmap.get('opacity') ? null : 0.2});
       }
 
+      function changeControlSize() {
+        if (small_controls){
+          small_controls = false;
+          document.getElementById('controls').style.height="100px;";
+        } else {
+          small_controls = true;
+          document.getElementById('controls').style.height="26px";
+        }
+      }
+
+      function changeCenter() {
+        var address = document.getElementById('location_search').value;
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+                map: map,
+                position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+
       function loadNewData(json_filename) {
         var _xmlhttp = new XMLHttpRequest();
         _xmlhttp.onreadystatechange = function() {
@@ -86,10 +113,31 @@
   </head>
 
   <body onload="initialize()">
-    <div id="map_canvas" style="height: 600px; width: 800px;"></div>
-    <button onclick="loadNewData('./heatmap_data.js')">Look at unfiltered data</button>
-    <button onclick="changeGradient()">Change gradient</button>
-    <button onclick="changeRadius()">Change radius</button>
-    <button onclick="changeOpacity()">Change opacity</button>
+    
+    <div id="map_canvas" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; "></div>
+    <div id="controls" style="position: fixed;
+top: 25px;
+left: 100px;
+width: auto;
+height: 26px;
+-webkit-transition: 300ms linear;
+-moz-transition: 300ms linear;
+-o-transition: 300ms linear;
+-ms-transition: 300ms linear;
+transition: 300ms linear;
+background-color: rgba(255,255,255,0.8);
+overflow: hidden;
+-moz-border-radius: 5px;
+border-radius: 5px;"
+>
+      <button onclick="loadNewData('./heatmap_data.js')">Look at unfiltered data</button>
+      <button onclick="changeControlSize()">Change location</button>
+      <button onclick="changeRadius()">Change radius</button>
+      <button onclick="changeOpacity()">Change opacity</button>
+      <button onclick="changeControlSize()">Filter</button><br />
+      <form name="form1">
+        <input type=text id='location_search' name='location_search' /><button onclick="changeCenter()">Search</button>
+      </form>
+    </div>
   </body>
 </html>
