@@ -8,9 +8,9 @@ class Results:
         for row in self.reader:
             if  len(row[6])==1:
                 if (row[1].lower() not in self.ratings):
-                    self.ratings[row[1].lower()] = (ord(row[6]) -64)) * .2 #score of 5 = 1 full crime
+                    self.ratings[row[1].lower()] = ((ord(row[6]) - 64)) * 0.2
                 else:
-                    self.ratings[row[1].lower()] = max((ord(row[6]) -64),self.ratings[row[1].lower()]) * .2 
+                    self.ratings[row[1].lower()] = (max((ord(row[6]) -64),self.ratings[row[1].lower()]) * 0.2)
 #        print(self.ratings)
 
     def getValue(self, streetName):

@@ -66,3 +66,7 @@ def filterRoutes(route_list):
    if safest_route == shortest_route:
       return [safest_route]
    return [safest_route,shortest_route]
+
+getBestRoutes = lambda origin, destination: filterRoutes(\
+                                                getRoutes(origin,destination)[0]\
+                                             )
