@@ -13,8 +13,8 @@ class Crime:
         self.location = location
         self.datesec = datet % 86400
         if ('none'.lower() not in self.coords[0].lower()):
-        #    self.street = str(getLocation.getName((float(self.coords[0]),float(self.coords[1]))))
-        #else:
+            self.street = str(getLocation.getName((float(self.coords[0]),float(self.coords[1]))))
+        else:
             self.street = None
      
     def getDateTime(self):
