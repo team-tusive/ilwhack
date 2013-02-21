@@ -1,0 +1,19 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+   </head>
+   <body>
+      {% for distance_text, distance_value, start_address, end_address, streets in routes %}
+
+         <p>Route from <b>{{ start_address }}</b> to <b>{{ end_address }}</b><br>
+         Distance: {{ distance_text }}</p>
+         <ul>
+         {% for street, rating in streets%}
+
+            <li>{{ street }} &mdash; {{ rating }}</li>
+
+         {% endfor %}
+         </ul>
+      {% endfor %}
+   </body>
+</html>

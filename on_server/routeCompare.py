@@ -3,7 +3,12 @@ import urllib2
 import json
 import re
 
-def testRoute(origin, destination):
+def getRoutes(origin, destination):
+
+# Given origin and destination, returns list of routes in 5-tuples of the form:
+# (distance_text, distance_value, start_address, end_address, streets)
+# where "streets" is a set of 2-tuples (street, rating)
+# rating can be integer 0-4 or None and is taken from edinburgh_data_normalised.csv
 
    url = "http://maps.googleapis.com/maps/api/directions/json?mode=walking&sensor=false&alternatives=true&origin=" + "+".join(re.split(" +", origin)) + "&destination=" + "+".join(re.split(" +", destination))
    
@@ -15,17 +20,19 @@ def testRoute(origin, destination):
 
    regex = ur"<b>[0-9]?/?([A-Z].+?)(?:/[A-Z][0-9]+?)??</b>+?"
 
-   thestring = ""
+   routes = []
    ratings = Results()
    for route in data['routes']:
-      thestring += "------------------\n"
+      distance_text = route['legs'][0]['distance']['text']
+      distance_value = route['legs'][0]['distance']['value']
+      start_address = route['legs'][0]['start_address']
+      end_address = route['legs'][0]['end_address']
       streets = []
       for step in route['legs'][0]['steps']:
-#        print step['html_instructions']
          if len(re.findall(regex, step['html_instructions']))>0:
-            streets.append(re.findall(regex, step['html_instructions'])[0])
-      streets = list(set(streets))
-      for street in streets:
-         rating = " None " if ratings.getValue(street) == None else " " + str(ratings.getValue(street)) + " "
-         thestring += street + rating + "\n"
-   return thestring
+            street = re.findall(regex, step['html_instructions'])[0]
+            streets.append((street, ratings.getValue(street)))
+      streets = set(streets)
+      routedata = (distance_text, distance_value, start_address, end_address, streets)
+      routes.append(routedata)
+   return routes
