@@ -14,6 +14,9 @@ handlers:
 - url: /js/jquery-1.9.1.min.js
   static_files: js/jquery-1.9.1.min.js
   upload: js/jquery-1\.9\.1\.min\.js
+- url: /js/heatmap_data_filtered.js
+  static_files: js/heatmap_data_filtered.js
+  upload: js/heatmap_data_filtered\.js
 
 - url: /.*
   script: saferroute.py
