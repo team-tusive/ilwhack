@@ -1,20 +1,33 @@
-
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>SaferRoute Mobile</title>
 		<link rel="stylesheet" href="css/mobi_style.css" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<script>
-			if (navigator.geolocation){
-				navigator.geolocation.getCurrentPosition(function (position) {
-					document.search_form.origin.value = position.coords.latitude + "," + position.coords.longitude;
-				});
-			} else {
-				alert("Sorry, geolocation services are unsupported by your browser.")
-				document.getElementById("origin").type = 'text';
-				document.getElementById("submit_button").style.marginTop = "auto";
-				document.getElementById("origin_text").style.display = "block";
-			}
+			var navigator_available = false;
+			window.onload = function() {
+				if (navigator.geolocation){
+					navigator_available = true;
+					navigator.geolocation.getCurrentPosition(function (position) {
+						document.searchForm.origin.value = position.coords.latitude + "," + position.coords.longitude;
+						document.getElementById("origin").style.display = "none";
+						document.getElementById("submit_button").style.marginTop = "-20px";
+						document.getElementById("origin_text").style.display = "none";
+					},
+					function (error) { 
+  						if (error.code = error.PERMISSION_DENIED){
+      					document.getElementById("origin").type = 'text';
+						document.getElementById("submit_button").style.marginTop = "auto";
+						document.getElementById("origin_text").style.display = "block";
+					}
+      				});
+   
+				} else {
+					navigator_available = false;
+					alert("Sorry, geolocation services are unsupported by your browser.");
+				}
+			};
 		</script>
 	</head>
 	<body>
@@ -23,11 +36,11 @@
 				<img src="assets/logo_mobile.png" alt="SaferRoute Logo" style="width:100%;max-width:375px;" />
 				<div style="margin-top:-30px;" >
 					<h1>Destination:</h1>
-						<form name="search_form" id="search_form" action="saferroute.py/search" method="get">
+						<form name="searchForm" id="searchForm" action="saferroute.py/search" method="get">
 							<input name="destination" id="destination" type='text' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px"/><br />
-							<h1 id="origin_text" style="display:none;margin-top:0px;">Origin:</h1>
-							<input name="origin" id="origin" type='hidden' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px" value='Edinburgh,UK' /><br />
-							<button id='submit_button' style="margin-top:-20px;" class="blue-pill">Find a Safer Route &#x25B6;</button>
+							<h1 id="origin_text" style="display:block;margin-top:0px;">Origin:</h1>
+							<input name="origin" id="origin" type='text' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px" placeholder='type your location' value='' /><br />
+							<button id='submit_button' style="margin-top:auto;" class="blue-pill">Find a Safer Route &#x25B6;</button>
 						</form>
 				</div>
 			</div>
