@@ -73,12 +73,12 @@ class Crimes:
                 if tempdata != None:
                     self.result.append(tempdata)
                 data = ""
-        fileout = open("output.csv",'w')
-        out = ""
-        for item in self.streetscoord:
-            out+= str(item[0][0]) +'\t'+str(item[0][1])+'\t'+str(item[1])+'\n'
-        fileout.write(out)
-        fileout.close()
+        #fileout = open("output.csv",'w')
+        #out = ""
+       # for item in self.streetscoord:
+        #    out+= str(item[0][0]) +'\t'+str(item[0][1])+'\t'+str(item[1])+'\n'
+       # fileout.write(out)
+       # fileout.close()
 
     def findofTypes (self, crimeTypes):
         finalres= list()
