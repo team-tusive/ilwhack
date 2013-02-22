@@ -89,7 +89,7 @@ class Crimes:
             coords = crime.coords
             lat = coords[0][1:]
             lon = coords[1][1:]
-            out += '{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(crime.title, crime.crimetype, crime.hour, lat, lon, crime.street)
+            out += '{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(crime.title, crime.crimetype, int(crime.unixtime), lat, lon, crime.street)
         fileout.write(out)
         fileout.close()
 

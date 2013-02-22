@@ -36,10 +36,9 @@ def getRoutes(origin, destination):
             street = re.findall(regex, step['html_instructions'])[0]
             try:
                deeds = db.GqlQuery("SELECT * "
-                                   "FROM Deed_entry "
-                                   "WHERE ANCESTOR IS :1 "
-                                   "AND street = :2",
-                                   deeds_data_key(), street)
+                          "FROM Deed_entry "
+                          "WHERE street = '%s'" %(str(street)),
+                          deeds_data_key())
                street_crimes = len([deed for deed in deeds])
             except:
                street_crimes = 0

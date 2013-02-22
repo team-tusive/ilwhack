@@ -62,7 +62,7 @@
 ///                    loadNewData('api?hour=all');
 
                 $("#showalltimes").click(function () {
-                    if ($("#showalltimes").attr('checked') {
+                    if ($("#showalltimes").getValue()) {
                         loadNewData('api?hour=all');
                     }
                 });

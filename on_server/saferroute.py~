@@ -34,6 +34,7 @@ class GetApiResponse(webapp.RequestHandler):
 
       self.response.headers.add_header('content-type', 'application/json', charset='utf-8')
 
+	 crime_type	 lat	 lon	 street	 time	 title
       data = []
       if hour == 'all':
          deeds = db.GqlQuery("SELECT * "
