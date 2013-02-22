@@ -130,9 +130,9 @@
          result = {% autoescape off %}{{ result }}{% endautoescape %}
          drawDirections(result);
       </script>
-      <table>
+      <table border=0>
          <tr>
-            <td><img src="logo_mobile.png" alt="SaferRoute logo" /><br /><i>shown in green</i></td><td><h3>Fastest route</h3><i>shown in red</i>
+            <td><center><img src="logo_mobile.png" alt="SaferRoute logo" width='120' height='88'/><br /><i>shown in green</i></center></td><td><center><h3>Fastest route</h3><i>shown in red</i><center></td>
          </tr>
          <tr>
       {% for distance_text, distance_value, start_address, end_address, streets,whatever in routes %}
