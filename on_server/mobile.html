@@ -1,0 +1,32 @@
+
+<html>
+	<head>
+		<title>SaferRoute Mobile</title>
+		<link rel="stylesheet" href="css/mobi_style.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<script>
+			if (navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(function (position) {
+					document.search_form.origin.value = position.coords.latitude + "," + position.coords.longitude;
+				});
+			} else {
+				alert("Sorry, geolocation services are unsupported by your browser.")
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div style="text-align: center;">
+				<img src="assets/logo.png" alt="SaferRoute Logo" style="width:100%;max-width:375px;" />
+				<div style="margin-top:-30px;" >
+					<h1>Destination:</h1>
+						<form name="search_form" id="search_form" action="saferroute.py/search" method="get">
+							<input name="destination" id="destination" type='text' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px"/><br />
+							<button class="blue-pill">Find a Safer Route &#x25B6;</button>
+							<input name="origin" id="origin" type='hidden' value='Edinburgh,UK' />
+						</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
