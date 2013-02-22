@@ -4,7 +4,6 @@
       <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
       <script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry,visualization&sensor=false"></script>
       <script src="http://www.google.com/jsapi?key=ABQIAAAAvpzZIJ6aE1PP3WOYtmjZ3BTq7sWfP_v_VCssE0RxAm52ohNf_RRHW8r2VF3Z1ijKTltH6UdcIQaiAw" type="text/javascript"></script>
-
       <script type="text/javascript">
 
          var directionDisplay;
@@ -130,13 +129,18 @@
          result = {% autoescape off %}{{ result }}{% endautoescape %}
          drawDirections(result);
       </script>
+<<<<<<< HEAD
+
+      {% for distance_text, distance_value, start_address, end_address, streets, whatever in routes %}
+=======
       <table>
          <tr>
             <td><img src="logo_mobile.png" alt="SaferRoute logo" /><br /><i>shown in green</i></td><td><h3>Fastest route</h3><i>shown in red</i>
          </tr>
          <tr>
-      {% for distance_text, distance_value, start_address, end_address, streets,whatever in routes %}
+      {% for distance_text, distance_value, start_address, end_address, streets in routes %}
          <td>
+>>>>>>> 38f830b54d74153e8c2be17e9f49b55a0c7d8c76
          <p>Route from <b>{{ start_address }}</b> to <b>{{ end_address }}</b><br>
          Distance: {{ distance_text }}</p>
          <ul>

@@ -20,6 +20,15 @@ handlers:
 - url: /js/heatmap_data_filtered.js
   static_files: js/heatmap_data_filtered.js
   upload: js/heatmap_data_filtered\.js
+- url: /logo_mobile.png
+  static_files: assets/logo_mobile.png
+  upload: assets/logo_mobile.png
+- url: /index.html
+  static_files: index.html
+  upload: index.html
+- url: /mobile.html
+  static_files: mobile.html
+  upload: mobile.html
 
 - url: /.*
   script: saferroute.py
