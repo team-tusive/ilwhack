@@ -7,13 +7,14 @@ import json
 from google.appengine.ext.webapp.util import run_wsgi_app
 from google.appengine.ext.webapp import template
 from google.appengine.ext import webapp
-from routeCompare import getRoutes
+from routeCompare import getBestRoutes
+from Crimes import *
 
 class GetRoutes(webapp.RequestHandler):
    def post(self):
       origin = cgi.escape(self.request.get('origin'))
       destination = cgi.escape(self.request.get('destination'))
-      routes,result = getRoutes(origin, destination)
+      routes,result = getBestRoutes(origin, destination)
 
       template_values = {
          'routes': routes,
@@ -24,14 +25,22 @@ class GetRoutes(webapp.RequestHandler):
 
 class GetApiResponse(webapp.RequestHandler):
    def get(self):
-      data = {'key':'test value'}
-      dataSerialized = json.dumps(data)
-      self.response.headers.add_header('content-type', 'application/json', charset='utf-8')
-      self.response.out.write(dataSerialized)
+      hour = int(self.request.get('hour'))
+      crimesService = Crimes()
+      crimelist = crimesService.findWithinTime(hour, 0, 60)
+      googlepoints = crimesService.crimelisttoGoogle(crimelist)
+      self.response.headers.add_header('content-type', 'application/javascript', charset='utf-8')
+      self.response.out.write(googlepoints)
+
+#      data = {'key':'test value'}
+#      dataSerialized = json.dumps(data)
+#      self.response.headers.add_header('content-type', 'application/json', charset='utf-8')
+#      self.response.out.write(dataSerialized)
 
 
 application = webapp.WSGIApplication(
-                                     [('/search', GetRoutes), ('/api', GetApiResponse)],
+                                     [('/search', GetRoutes),
+                                      ('/api', GetApiResponse)],
                                       debug=True)
 
 def main():

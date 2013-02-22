@@ -87,7 +87,7 @@ class Crimes:
        return finalres
     
     def crimelisttoGoogle(self,listofCrimes):
-        result="heatmapData = [\n"
+        result = "heatmapData = [\n"
         for crime in listofCrimes:
             if 'none' not in crime.coords[0].lower():
                 result =result + "	new google.maps.LatLng(" + crime.coords[0]+", "+crime.coords[1]+"),\n"

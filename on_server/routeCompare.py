@@ -38,6 +38,7 @@ def getRoutes(origin, destination):
                street_crimes = crimes.streetCrimed([street])[0][1] #returns [(streetname,#crimes)]
             except:
                street_crimes = 0
+            rating = 0 if ratings.getValue(street) == None else ratings.getValue(street)
             streets.append((street, (ratings.getValue(street) + street_crimes))) 
       streets = set(streets)
       routedata = (distance_text, distance_value, start_address, end_address, streets)
