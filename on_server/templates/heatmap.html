@@ -124,6 +124,14 @@
                 });
             }
 
+            function updateHeatmap(){
+                if (!document.getElementById('showalltimes').value){
+                    loadNewData('api?hour=' + document.getElementById('timerange').value);
+                } else {
+                    loadNewData('api?hour=all');
+                }
+            }
+
             function loadNewData(json_filename) {
                 var xhr = new XMLHttpRequest();
                 xhr.open("GET", json_filename, true);
@@ -158,9 +166,14 @@
             <img style="margin-bottom: -4px;" src="data:image/gif;base64,R0lGODlhEAAQAJEAAAAAAP///8bGxv///yH5BAEAAAMALAAAAAAQABAAAAIcnI+pIsaK3pCw2rva1FVSDIaHx0GkiIantaZHAQA7" />
             <button id="change_loc">Change location</button>
             <button id="change_opa" onclick="changeOpacity()">Change opacity</button>
+            <button id="filter">Filter data</button>
             <div id="searchbox" style="display: none;">
                 <input type="text" value="Enter location" id="location_search" />
                 <div></div>
+            <div id="filterbox" style="display: none;">
+                <input id="timerange" type="range" min=0 max=23 value=12 onChange="updateHeatmap()" /><span id="timerangedisplay">0</span><br />
+                Show all times: <input id="showalltimes" type="checkbox" value="all" onChange="updateHeatmap()" />
+            </div>
     </body>
 
 </html>
