@@ -115,8 +115,13 @@
          result = {% autoescape off %}{{ result }}{% endautoescape %}
          drawDirections(result);
       </script>
-
+      <table>
+         <tr>
+            <td><img src="logo_mobile.png" alt="SaferRoute logo" /><br /><i>shown in green</i></td><td><h3>Fastest route</h3><i>shown in red</i>
+         </tr>
+         <tr>
       {% for distance_text, distance_value, start_address, end_address, streets in routes %}
+         <td>
          <p>Route from <b>{{ start_address }}</b> to <b>{{ end_address }}</b><br>
          Distance: {{ distance_text }}</p>
          <ul>
@@ -126,6 +131,9 @@
 
          {% endfor %}
          </ul>
+      </td>
       {% endfor %}
+   </tr>
+</table>
    </body>
 </html>
