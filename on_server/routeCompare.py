@@ -40,7 +40,7 @@ def getRoutes(origin, destination):
             except:
                street_crimes = 0
             rating = 0 if ratings.getValue(street) == None else ratings.getValue(street)
-            streets.append((street, (ratings.getValue(street) + street_crimes))) 
+            streets.append((street, (rating + street_crimes))) 
       streets = set(streets)
       routedata = (distance_text, distance_value, start_address, end_address, streets)
       routes.append(routedata)
@@ -69,6 +69,6 @@ def filterRoutes(route_list):
       return [safest_route]
    return [safest_route,shortest_route]
 
-getBestRoutes = lambda origin, destination: filterRoutes(\
-                                                getRoutes(origin,destination)[0]\
-                                             )
+def getBestRoutes(origin, destination):
+   routes, data = getRoutes(origin,destination)
+   return (filterRoutes(routes), data)

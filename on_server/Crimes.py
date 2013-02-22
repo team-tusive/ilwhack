@@ -8,8 +8,10 @@ class Crime:
         self.crimetype = crimetype
         self.title = title
         self.url = url
+        self.unixtime = datet
         self.datet = datetime.datetime.fromtimestamp(int(datet)).strftime('%Y-%m-%d %H:%M:%S')
         self.coords = coords
+        self.street = streetname
         self.location = location
         self.datesec = datet % 86400
      
@@ -62,8 +64,8 @@ class Crimes:
         while (data.find(",\n,\n" )!= (-1)):
             data=data.replace(",\n,\n",",\n")
         
-        while (data.find("}")!=(-1)):
-            if data.find("\n")!= (-1):
+        while (data.find("}") != (-1)):
+            if data.find("\n") != (-1):
                 tempdata = self.toCrime(data[data.find("{")+1:data.find("\n")],self.streetscoord)
                 if tempdata!=None:
                     self.result.append(tempdata)
@@ -79,6 +81,17 @@ class Crimes:
         #    out+= str(item[0][0]) +'\t'+str(item[0][1])+'\t'+str(item[1])+'\n'
        # fileout.write(out)
        # fileout.close()
+    def printCrimeData(self):
+        fileout = open("usefuldata.csv",'w')
+        out = ""
+        for crime in self.result:
+            coords = crime.coords
+            lat = coords[0][1:]
+            lon = coords[1][1:]
+            out += '{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n'.format(crime.title, crime.crimetype, int(crime.unixtime), lat, lon, crime.street)
+        fileout.write(out)
+        fileout.close()
+
 
     def findofTypes (self, crimeTypes):
         finalres= list()
@@ -162,7 +175,7 @@ class Crimes:
                 for streetname in self.streetscoord: 
                     if (round(float(coords[0]),7),round(float(coords[1]),7)) == (round(float(streetname[0][0]),7),round(float(streetname[0][1]),7)):
                         street = streetname[1]
-                        print("found")
+#                        print("found")
                         break
                 if street== None:
                     print("search")

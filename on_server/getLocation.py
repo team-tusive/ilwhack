@@ -3,7 +3,7 @@ import json
 import re
 
 def getLocation(location):
-   "Given a string with a street name, this function returns a location ar an error"
+   "Given a string with a street name, this function returns a location or an error"
 
    # build the url we will use to query googles API. We join the tokens in the location string with plusses, e.g. "Royal+Mile+Edinburgh"
    url = 'http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address='+"+".join(re.split(" +", location))
