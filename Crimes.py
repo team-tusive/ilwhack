@@ -38,13 +38,21 @@ class Crimes:
     def __init__(self,datapath,typepath, optionalCsvStreetNameCoordinate):
         temp_data = open(datapath,'r')
         data = temp_data.read()
-        street_data = csv.reader(open(optionalCsvStreetNameCoordinate),delimiter='\t')
         self.streetscoord = list()
-        for row in street_data:
-            for item in row:
-                temp=((item[0],item[1]),item[2])
-                print(item[0])
-                self.streetscoord.append(item)
+        tempdata = open(optionalCsvStreetNameCoordinate).read()
+        
+        while (tempdata.find("\n")!=-1):
+            elem = tempdata[:tempdata.find("\n")]
+            x = tempdata[:tempdata.find("\t")]
+            tempdata = tempdata[tempdata.find("\t")+1:]
+            y = tempdata[:tempdata.find("\t")]
+            tempdata = tempdata[tempdata.find("\t")+1:]
+            streettmp = tempdata[:tempdata.find("\n")]
+            tempdata = tempdata[tempdata.find("\n")+1:]
+            item=((x,y),streettmp)
+            self.streetscoord.append(item)
+
+            
         type_data = csv.reader(open(typepath,'r'))
         self.types = list()
         for row in type_data:
@@ -68,7 +76,6 @@ class Crimes:
         fileout = open("output.csv",'w')
         out = ""
         for item in self.streetscoord:
-            print(item)
             out+= str(item[0][0]) +'\t'+str(item[0][1])+'\t'+str(item[1])+'\n'
         fileout.write(out)
         fileout.close()
@@ -152,14 +159,16 @@ class Crimes:
 
             street = None
             if ('none'.lower() not in coords[0].lower()):
-                for streetname in self.streetscoord:
-                    if (float(coords[0]),float(coords[1])) == streetname[0]:
+                for streetname in self.streetscoord: 
+                    if (round(float(coords[0]),7),round(float(coords[1]),7)) == (round(float(streetname[0][0]),7),round(float(streetname[0][1]),7)):
                         street = streetname[1]
+                        print("found")
                         break
                 if street== None:
+                    print("search")
                     street = str(getLocation.getName((float(coords[0]),float(coords[1]))))
                     self.streetscoord.append(((float(coords[0]),float(coords[1])),street))
-
+                    
 
             
             if 'none' in crimetype.lower():
@@ -172,5 +181,5 @@ class Crimes:
                     return Crime(crimetype,title,url,datetimesec,coords,location,street)
                 return None
         except:
-            return None
+                return None
         
