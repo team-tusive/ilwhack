@@ -120,8 +120,13 @@
          }
       </script>
    </head>
-   <body onload="initHeatmap()">
-      <div id="map_canvas" style="width: 640px; height: 300px"></div>
+   <body onload="initHeatmap()" style="margin: 10px;" background="../assets/pw_maze_white.png">
+      <img src="logo_mobile.png" style="float: left;" alt="SaferRoute logo" width='120' height='88'/>
+      <p style="float: left; margin-left: 30px; margin-top: 40px;"><b>Using police crime data to improve the safety of Edinburgh</b></p>
+      <div style="clear: both;"></div>
+
+      <div id="map_canvas" style="margin-top: 20px; width: 1000px; height: 500px"></div>
+
       <button onclick="toggleHeatmap()">Toggle Heatmap</button>
       <button onclick="changeGradient()">Change gradient</button>
       <button onclick="changeOpacity()">Change opacity</button>
@@ -130,25 +135,26 @@
          result = {% autoescape off %}{{ result }}{% endautoescape %}
          drawDirections(result);
       </script>
-      <table border=0>
-         <tr>
-            <td><center><img src="logo_mobile.png" alt="SaferRoute logo" width='120' height='88'/><br /><i>shown in green</i></center></td><td><center><h3>Fastest route</h3><i>shown in red</i><center></td>
-         </tr>
-         <tr>
+
+      <h3 style="font-size: 18px;">Safest route shown in green, fastest in red.</h3>
+      <h3 style="font-size: 18px;">Safest path shown first.</h3>
+
       {% for distance_text, distance_value, start_address, end_address, streets,whatever in routes %}
-         <td>
-         <p>Route from <b>{{ start_address }}</b> to <b>{{ end_address }}</b><br>
-         Distance: {{ distance_text }}</p>
-         <ul>
-         {% for street, rating in streets%}
+         <div style="border: 1px solid #000000; width: 1000px; padding: 10px; margin-top: 20px;">
+            <p>Route <b>from</b> {{ start_address }} <b>to</b> {{ end_address }}
+            </br>Distance: {{ distance_text }}</p>
+            <p>Directions:
+               </br>
+               <ul>
+                  {% for street, rating in streets%}
 
-            <li>{{ street }} &mdash; {{ rating }}</li>
+                     <li>{{ street }} | Danger rating {{ rating }}</li>
 
-         {% endfor %}
-         </ul>
-      </td>
+                  {% endfor %}
+               </ul>
+            </p>
+         </div>
       {% endfor %}
-   </tr>
-</table>
+
    </body>
 </html>
