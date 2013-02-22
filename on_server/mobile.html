@@ -11,19 +11,23 @@
 				});
 			} else {
 				alert("Sorry, geolocation services are unsupported by your browser.")
+				document.getElementById("origin").type = 'text';
+				document.getElementById("submit_button").style.marginTop = "auto";
+				document.getElementById("origin_text").style.display = "block";
 			}
 		</script>
 	</head>
 	<body>
 		<div class="main">
 			<div style="text-align: center;">
-				<img src="assets/logo.png" alt="SaferRoute Logo" style="width:100%;max-width:375px;" />
+				<img src="assets/logo_mobile.png" alt="SaferRoute Logo" style="width:100%;max-width:375px;" />
 				<div style="margin-top:-30px;" >
 					<h1>Destination:</h1>
 						<form name="search_form" id="search_form" action="saferroute.py/search" method="get">
 							<input name="destination" id="destination" type='text' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px"/><br />
-							<button class="blue-pill">Find a Safer Route &#x25B6;</button>
-							<input name="origin" id="origin" type='hidden' value='Edinburgh,UK' />
+							<h1 id="origin_text" style="display:none;margin-top:0px;">Origin:</h1>
+							<input name="origin" id="origin" type='hidden' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px" value='Edinburgh,UK' /><br />
+							<button id='submit_button' style="margin-top:-20px;" class="blue-pill">Find a Safer Route &#x25B6;</button>
 						</form>
 				</div>
 			</div>
