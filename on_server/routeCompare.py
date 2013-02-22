@@ -24,7 +24,8 @@ def getRoutes(origin, destination):
 
    routes = []
    ratings = Results()
-   crimes = Crimes.Crimes()
+
+   crimes = Crimes.Crimes("full_data.csv", "Crimes.types", "input.csv")
    for route in data['routes']:
       distance_text = route['legs'][0]['distance']['text']
       distance_value = route['legs'][0]['distance']['value']
