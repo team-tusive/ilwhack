@@ -70,7 +70,7 @@ class Crimes:
         for item in self.streetscoord:
             print(item)
             out+= str(item[0][0]) +'\t'+str(item[0][1])+'\t'+str(item[1])+'\n'
-        f.write(out)
+        fileout.write(out)
         fileout.close()
 
     def findofTypes (self, crimeTypes):
