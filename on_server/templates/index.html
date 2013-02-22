@@ -1,12 +1,52 @@
+<!DOCTYPE html>
 <html>
-   <head>
-      <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-   </head>
-   <body>
-      <form action="/search" method="post">
-         <div><label for="origin">Origin</label><input type="text" name="origin"></div>
-         <div><label for="destination">Destination</label><input type="text" name="destination"></div>
-         <div><input type="submit" value="Get Routes"></div>
-      </form>
-   </body>
+	<head>
+		<title>SaferRoute</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+	<body background="assets/pw_maze_white.png" style="width: 800px; margin: 0 auto;">
+		<script>
+		setTimeout(function()
+		{
+		  if ((screen.width < 480) || (screen.height < 480)) 
+		  {
+			location.replace('/mobile');
+		  }
+		}, 100);
+		</script>
+		
+		<div style="text-align:center; font-family:'Palatino Linotype', Palatino, serif, sans-serif;background-color: rgba(255,255,255,.8);
+				width: 800px; margin-top: 20px; background: none;">
+			<img src="assets/logo_mobile.png"/>
+			
+			<h1 style="margin-top: 10px; font-size: 50px; margin: 0; padding-bottom: 16px; border-bottom: 1px solid #333333;">
+				Using police crime data to improve the safety of Edinburgh
+			</h1>
+
+			<div style="margin-top: 60px; margin-left: 40px;">
+				<div style="float: left; width: 200px; height: 140px; border: 1px solid #333333; padding: 5px;">
+					<h2>Try the <a href="http://saferroute.appspot.com/mobile">app</a></h2>
+				</div>
+				
+				<div style="float: left; margin-left: 40px; width: 200px; height: 140px; border: 1px solid #333333; padding: 5px;">
+					<h2><a href="http://saferroute.appspot.com/heatmap">Explore</a> crime levels around you</h2>
+				</div>
+				
+				<div style="float: left; margin-left: 40px; width: 200px; height: 140px; border: 1px solid #333333; padding: 5px;">
+					<h2>Read the extensive <a href="http://saferroute.appspot.com/api_documtation">documentation</a></h2>
+				</div>
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+			<div style="margin-top: 20px; padding: 20px; font-size: 18px; font-color: #333333;">
+				Aggregates and parses details from <a href="http://www.lbp.police.uk">Lothian and Borders Police Reports</a>, enabling the utilization and leveraging of crime statistics to create actionable turnkey logistics/transportation solutions for end-users and thereby cultivate user empowerment and maximize user travel confidence. Also allows the user to dynamically explore crime statistics via an interactive data visualization interface.
+			</div>
+			
+			<div style="margin-top: 60px; margin-bottom: 40px; font-size: 14px; font-color: #888888;">
+				Public repository at <a href="http://github.com/team-tusive/ilwhack">Github</a> | Contact the developers at 
+				<a href="http://www.chasestevens.com">chasestevens.com</a>
+				and <a href="http://www.ingvaras.com">ingvaras.com</a>
+			</div>
+		</div>
+	</body>
 </html>
