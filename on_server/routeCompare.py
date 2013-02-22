@@ -1,8 +1,8 @@
 from rateStreet import Results
-import Crimes
 import urllib2
 import json
 import re
+from datastore_crimes import *
 
 def getRoutes(origin, destination):
 
@@ -11,7 +11,7 @@ def getRoutes(origin, destination):
 # (distance_text, distance_value, start_address, end_address, streets)
 # where "streets" is a set of 2-tuples (street, rating)
 # rating can be integer 0-4 or None and is taken from edinburgh_data_normalised.csv
-
+   
    url = "http://maps.googleapis.com/maps/api/directions/json?mode=walking&sensor=false&alternatives=true&origin=" + "+".join(re.split(" +", origin)) + "&destination=" + "+".join(re.split(" +", destination))
    
    response = urllib2.urlopen(url)
@@ -25,7 +25,8 @@ def getRoutes(origin, destination):
    routes = []
    ratings = Results()
 
-   crimes = Crimes.Crimes("full_data.csv", "Crimes.types", "input.csv")
+   add_data()
+
    for route in data['routes']:
       distance_text = route['legs'][0]['distance']['text']
       distance_value = route['legs'][0]['distance']['value']
@@ -36,7 +37,11 @@ def getRoutes(origin, destination):
          if len(re.findall(regex, step['html_instructions']))>0:
             street = re.findall(regex, step['html_instructions'])[0]
             try:
-               street_crimes = crimes.streetCrimed([street])[0][1] #returns [(streetname,#crimes)]
+               deeds = db.GqlQuery("SELECT * "
+                          "FROM Deed_entry "
+                          "WHERE street = '%s'" %(str(street)),
+                          deeds_data_key())
+               street_crimes = len([deed for deed in deeds])
             except:
                street_crimes = 0
             rating = 0 if ratings.getValue(street) == None else ratings.getValue(street)
