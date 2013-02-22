@@ -142,13 +142,13 @@
       {% for distance_text, distance_value, start_address, end_address, streets,whatever in routes %}
          <div style="border: 1px solid #000000; width: 1000px; padding: 10px; margin-top: 20px;">
             <p>Route <b>from</b> {{ start_address }} <b>to</b> {{ end_address }}
-            </br>Distance: {{ distance_text }}</p>
+            </br>Distance: <b>{{ distance_text }}</b></p>
             <p>Directions:
                </br>
                <ul>
                   {% for street, rating in streets%}
 
-                     <li>{{ street }} | Danger rating {{ rating }}</li>
+                     <li><b>{{ street }}</b> | Danger rating {{ rating }}</li>
 
                   {% endfor %}
                </ul>
