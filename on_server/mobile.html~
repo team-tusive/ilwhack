@@ -36,7 +36,7 @@
 				<img src="assets/logo_mobile.png" alt="SaferRoute Logo" style="width:100%;max-width:375px;" />
 				<div style="margin-top:-30px;" >
 					<h1>Destination:</h1>
-						<form name="searchForm" id="searchForm" action="/search" method="post">
+						<form name="searchForm" id="searchForm" action="saferroute.py/search" method="get">
 							<input name="destination" id="destination" type='text' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px"/><br />
 							<h1 id="origin_text" style="display:block;margin-top:0px;">Origin:</h1>
 							<input name="origin" id="origin" type='text' style="width:100%;max-width:375px;height:30px;margin-bottom:10px;font-size:20px" placeholder='type your location' value='' /><br />

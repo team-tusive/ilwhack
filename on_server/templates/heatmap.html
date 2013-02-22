@@ -57,12 +57,12 @@
                 $("#timerange").change(function () {
                     value = $("#timerange").val();
                     loadNewData('api?hour=' + value);
-                    $("timerangedisplay").html(value);
+                    $("timerangedisplay").innerHTML(value);
                 });
 ///                    loadNewData('api?hour=all');
 
                 $("#showalltimes").click(function () {
-                    if ($("#showalltimes").attr('checked') {
+                    if ($("#showalltimes").attr('checked')) {
                         loadNewData('api?hour=all');
                     }
                 });
@@ -192,19 +192,13 @@
             <img style="margin-bottom: -4px;" src="data:image/gif;base64,R0lGODlhEAAQAJEAAAAAAP///8bGxv///yH5BAEAAAMALAAAAAAQABAAAAIcnI+pIsaK3pCw2rva1FVSDIaHx0GkiIantaZHAQA7" />
             <button id="change_loc">Change location</button>
             <button id="change_opa" onclick="changeOpacity()">Change opacity</button>
-            <button id="filter" onclick="function(){
-            if (document.getElementById('filterbox').style.display == 'none'){
-            document.getElementById('filterbox').style.display = 'inline';
-        } else {
-            document.getElementById('filterbox').style.display = 'none';
-        }
-        }">Filter data</button>
+            <button id="filter">Filter data</button>
             <div id="searchbox" style="display: none;">
                 <input type="text" value="Enter location" id="location_search" />
             </div>
             <div id="filterbox" style="display: none;">
                 <input id="timerange" type="range" min=0 max=23 value=12 /><span id="timerangedisplay">0</span><br />
-                <p>Show all times:</p> <input id="showalltimes" type="checkbox" value="all" />
+                <p>Show all times:</p> <input id="showalltimes" type="checkbox" checked=false />
     </body>
 
 </html>

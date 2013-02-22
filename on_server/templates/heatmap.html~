@@ -57,12 +57,12 @@
                 $("#timerange").change(function () {
                     value = $("#timerange").val();
                     loadNewData('api?hour=' + value);
-                    $("timerangedisplay").html(value);
+                    $("timerangedisplay").innerHTML(value);
                 });
 ///                    loadNewData('api?hour=all');
 
                 $("#showalltimes").click(function () {
-                    if ($("#showalltimes").getValue()) {
+                    if ($("#showalltimes").attr('checked')) {
                         loadNewData('api?hour=all');
                     }
                 });
