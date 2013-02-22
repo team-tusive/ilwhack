@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SaferRoute</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+	<body>
+	<script>
+	setTimeout(function()
+	{
+      if ((screen.width < 480) || (screen.height < 480)) 
+	  {
+        location.replace('/mobile');
+      }
+    }, 100);
+	</script>
+	<div style="text-align:center">
+	    <img src="assets/logo_mobile.png" alt="SaferRoute Logo" style="width:100%;max-width:375px;" />
+	    <p>Try the <a href="http://saferroute.appspot.com/mobile.html">app</a>!</p>
+		<p><a href="http://saferroute.appspot.com/heatmap.html">Explore</a> crime levels around you!</p>
+		<p>Read the extensive <a href="http://saferroute.appspot.com/api.html">documentation</a>!</p>
+	</div>
+	</body>
+</html>
