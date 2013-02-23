@@ -20,9 +20,16 @@
                 -moz-border-radius: 5px;
                 border-radius: 5px;
             }
+
+            #timerange {
+                width: 90%;
+            }
+
+            p {
+                font-family: Arial, sans-serif;
+            }
         </style>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="css/stylesheet.css"></script>
         <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
         <script src="js/heatmap_data_filtered.js"></script>
@@ -58,7 +65,7 @@
                 $("#timerange").change(function () {
                     value = $("#timerange").val();
                     loadNewData('api?hour=' + value);
-                    $("timerangedisplay").html(value.toString());
+                    document.getElementById("timerangedisplay").innerText = value.toString();
                 });
 
                 $("#showalltimes").click(function () {
@@ -197,7 +204,7 @@
                 <input type="text" value="Enter location" id="location_search" />
             </div>
             <div id="filterbox" style="display: none;">
-                <input id="timerange" type="range" min=0 max=23 value=12 /><span id="timerangedisplay">0</span><br />
+                <input id="timerange" type="range" min=0 max=23 value=12 /><span id="timerangedisplay">12</span><br />
                 <p>Show all times: <input id="showalltimes" type="checkbox" checked=false /></p>
             </div>
     </body>
