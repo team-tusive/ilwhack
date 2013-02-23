@@ -25,8 +25,17 @@
                 width: 90%;
             }
 
-            p {
+            p, span#timerangedisplay {
                 font-family: Arial, sans-serif;
+                font-size: 10pt;
+                margin-left: 10px
+            }
+            div#map_canvas {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
             }
         </style>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -204,8 +213,9 @@
                 <input type="text" value="Enter location" id="location_search" />
             </div>
             <div id="filterbox" style="display: none;">
-                <input id="timerange" type="range" min=0 max=23 value=12 /><span id="timerangedisplay">12</span><br />
-                <p>Show all times: <input id="showalltimes" type="checkbox" checked=false /></p>
+                <p style="margin-bottom: 0">By hour:</p>
+                <input id="timerange" type="range" min="0" max="23" value="12" /><span id="timerangedisplay">12</span><br />
+                <p style="margin-top: 0">Show all times: <input id="showalltimes" type="checkbox" checked="false" /></p>
             </div>
     </body>
 </html>
