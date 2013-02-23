@@ -22,11 +22,12 @@
             }
         </style>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="css/stylesheet.css"></script>
         <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
         <script src="js/heatmap_data_filtered.js"></script>
         <script type="text/javascript">
-            // Adding 500 Data Points
+
             var map, pointarray, heatmap;
             var small_controls = true;
             var geocoder;
@@ -57,18 +58,17 @@
                 $("#timerange").change(function () {
                     value = $("#timerange").val();
                     loadNewData('api?hour=' + value);
-                    $("timerangedisplay").innerHTML(value);
+                    $("timerangedisplay").html(value.toString());
                 });
-///                    loadNewData('api?hour=all');
 
                 $("#showalltimes").click(function () {
                     if ($("#showalltimes").attr('checked')) {
                         loadNewData('api?hour=all');
                     }
                 });
-
-
                 //End of stuff
+
+
                 geocoder = new google.maps.Geocoder();
                 var mapOptions = {
                     zoom: 12,
@@ -198,7 +198,7 @@
             </div>
             <div id="filterbox" style="display: none;">
                 <input id="timerange" type="range" min=0 max=23 value=12 /><span id="timerangedisplay">0</span><br />
-                <p>Show all times:</p> <input id="showalltimes" type="checkbox" checked=false />
+                <p>Show all times: <input id="showalltimes" type="checkbox" checked=false /></p>
+            </div>
     </body>
-
 </html>
