@@ -8,9 +8,18 @@ handlers:
 - url: /
   static_files: templates/index.html
   upload: templates/index\.html
+- url: /mobile
+  static_files: templates/mobile.html
+  upload: templates/mobile\.html
 - url: /heatmap
   static_files: templates/heatmap.html
   upload: templates/heatmap\.html
+- url: /api_documentation
+  static_files: templates/api_documentation.html
+  upload: templates/api_documentation\.html
+- url: /favicon.ico
+  static_files: assets/favicon.ico
+  upload: assets/favicon\.ico
 - url: /css/stylesheet.css
   static_files: css/stylesheet.css
   upload: css/stylesheet\.css
@@ -29,12 +38,6 @@ handlers:
 - url: /assets/logo_mobile.png
   static_files: assets/logo_mobile.png
   upload: assets/logo_mobile\.png
-- url: /index.html
-  static_files: index.html
-  upload: index.html
-- url: /mobile
-  static_files: mobile.html
-  upload: mobile.html
 
 - url: /.*
   script: saferroute.py

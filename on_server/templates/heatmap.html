@@ -75,10 +75,12 @@
                     value = $("#timerange").val();
                     loadNewData('api?hour=' + value);
                     document.getElementById("timerangedisplay").innerText = value.toString();
+                    $("showalltimes").attr('checked', false);
                 });
 
                 $("#showalltimes").click(function () {
                     if ($("#showalltimes").attr('checked')) {
+                        document.getElementById("timerangedisplay").innerText = "All";
                         loadNewData('api?hour=all');
                     }
                 });
@@ -214,7 +216,7 @@
             </div>
             <div id="filterbox" style="display: none;">
                 <p style="margin-bottom: 0">By hour:</p>
-                <input id="timerange" type="range" min="0" max="23" value="12" /><span id="timerangedisplay">12</span><br />
+                <input id="timerange" type="range" min="0" max="23" value="12" /><span id="timerangedisplay">All</span><br />
                 <p style="margin-top: 0">Show all times: <input id="showalltimes" type="checkbox" checked="false" /></p>
             </div>
     </body>
